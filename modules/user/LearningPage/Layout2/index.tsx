@@ -1,9 +1,9 @@
 import React from "react";
 // import { NavLink, Route, Routes } from "react-router-dom";
-import AboutOption from "./AboutOption";
-import ProjectsResources from "./ProjectsResources";
-import Discussions from "./Discussions";
-import Review from "./Review";
+// import AboutOption from "./AboutOption";
+// import ProjectsResources from "./ProjectsResources";
+// import Discussions from "./Discussions";
+// import Review from "./Review";
 import "./index.scss";
 
 function Layout2() {
