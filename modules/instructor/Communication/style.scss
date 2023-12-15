@@ -1,0 +1,13 @@
+.communication_container {
+    width: 1000px;
+    margin: auto;
+    padding-top: 40px;
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .check_box {
+        margin-top: 32px;
+    }
+}
