@@ -1,0 +1,220 @@
+.Performance{
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    padding-top: 96px;
+    ul{
+        list-style: none;
+    }
+    .Header{
+        display: flex;
+        justify-content: space-between;
+        .title{
+            margin-bottom: 48px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
+    .Body{
+        .sort-button{
+            background-color: white;
+            width: 160px;
+            height: 40px;
+            flex-shrink: 0;
+            border-radius: 6px;
+            border: 1px solid #000;
+            font-size: 16px;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        .sort-button:hover{
+            background-color: rgb(240, 240, 240);
+            cursor: pointer;
+        }
+        .getTop{
+                margin-bottom: 48px;
+                font-size: 24px;
+                font-weight: 400;
+            }
+        .Revenue{
+            .lineGraph{
+                width: 1000px;
+                height: 786;
+                border: 1px solid;
+                .allTopic{
+                    display: flex;
+                    gap: 40px;
+                    padding-left: 25px;
+                    border-bottom: 1px solid;
+                    .element{
+                        padding: 16px 0px 22px 0px;
+                        border-bottom: 2px solid;
+                        transition: 0.2s;
+                        .topic{
+                            font-size: 14px;
+                            font-weight: 600;
+    
+                        }
+                        .num{
+                            font-size: 28px;
+                            font-weight: 400;
+                        }
+                        .thisMonth{
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+                    }
+                    .element:hover{
+                        cursor: pointer;
+                        background-color: rgb(238, 238, 238);
+                    }
+                }
+                .dateRange{
+                    margin: 24px 0px 0px 706px;
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    
+                    .dateRange-title{
+                        font-size: 16px;
+                    }
+                    
+                    .anticon-down{
+                        padding-left: 8px;
+                    }
+                }
+                .chart{
+                    padding: 86px 55px 52px 55px;
+                    border-bottom: 1px solid;
+                }
+                .export-withdraw{
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 24px 86px 24px 86px;
+                    .export{
+                        display: inline-flex;
+                        padding: 24px;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+                        border-radius: 8px;
+                        border: 1px solid;
+                        transition: 0.2s;
+                        font-size: 26px;
+                        font-weight: 600;
+                    }
+                    .export:hover{
+                        background-color: rgb(211, 211, 211);
+                        cursor: pointer;
+                    }
+                    .withdraw{
+                        @extend .export;
+                        border: none;
+                        background-color: #00FF84;
+                    }
+                    .withdraw:hover{
+                        background-color: rgb(0, 211, 130);
+                    }
+                }
+            }
+        }
+
+        .Students{
+            .student-statistic{
+                display: flex;
+                gap: 32px;
+                
+                .studentNum{
+                    display: flex;
+                    font-size: 32px;
+                    font-weight: 600;
+                    align-items: center;
+                    gap: 8px;
+                    .students-text{
+                        font-weight: 400;
+                        font-size: 24px;
+                    }
+                }
+
+                .region-button{
+                    @extend .sort-button;
+                    width: 121px;
+                }
+
+                .country-button{
+                    @extend .sort-button;
+                    width: 184px;
+                }
+            }
+            .allStudent{
+                margin: 57px 0px 142px 0px;
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                gap: 24px;
+            }
+        }
+
+        .Reviews{
+            .starRate{
+                display: flex;
+                gap: 8px;
+            }
+            .Rating{
+                display: flex;
+                .overallRating{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .rateNum{
+                        margin-bottom: 16px;
+                        font-size: 96px;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+                    .getTop{
+                        margin-top: 24px;
+                    }
+                }
+                .rateStatistic{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 40px;
+                    gap: 16px;
+                    .RatingPercent{
+                        display: flex;
+                        gap: 24px;
+                        position: relative;
+                        .greyBar{
+                            width: 512px;
+                            height: 38px;
+                            flex-shrink: 0;
+                            border-radius: 4px;
+                            background: #D9D9D9;
+                        }
+                        .blueBar{
+                            @extend .greyBar;
+                            width: 512px;
+                            position: absolute;
+                            background: #503ED8;
+                        }
+                        .percent{
+                            font-size: 24px;
+                            display: flex;
+                            align-items: center;
+                        }
+                        .starRate{
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            .AllReviews{
+                .reviewTitle{
+                    padding-top: 40px;
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}

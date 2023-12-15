@@ -5,7 +5,6 @@ import type { MenuProps } from "antd";
 import { Avatar, Button, Dropdown } from "antd";
 import Link from "next/link";
 
-import Notice from "../Notice";
 import "./index.scss";
 
 export function Header() {
@@ -43,12 +42,19 @@ export function Header() {
             src="/images/logo_business.png"
             height={48}
           ></img>
-          <Button className="btn" size="large">
-            Browse
-          </Button>
-          <Link href={"/user/learning_path"}>
+          <Link href={"/instructor/my_courses"}>
             <Button className="btn" size="large">
-              Learning Path
+              My Courses
+            </Button>
+          </Link>
+          <Link href={"/instructor/performance"}>
+            <Button className="btn" size="large">
+              Performance
+            </Button>
+          </Link>
+          <Link href={"/instructor/communication"}>
+            <Button className="btn" size="large">
+              Communication
             </Button>
           </Link>
           <div>
@@ -60,7 +66,7 @@ export function Header() {
             <span>Help Center</span>
           </Link>
           <Link href={"/user"} className="btn-text">
-            <span>Teacher</span>
+            <span>Students</span>
           </Link>
           <Link href={"/user/shop_cart"} className="btn-text">
             <ShoppingCartOutlined />
@@ -73,7 +79,6 @@ export function Header() {
           </Dropdown>
         </div>
       </div>
-      <Notice onClose={onClose} isOpenNotice={isOpenNotice}></Notice>
     </div>
   );
 }
