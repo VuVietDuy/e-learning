@@ -1,0 +1,48 @@
+@mixin size {
+    width: 50%;
+    height: 100%;
+}
+
+.card-horizontal {
+    width: 488px;
+    height: 162px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+
+    .left {
+        @include size();
+
+        img {
+            // width: 100%;
+            // object-fit: over;
+        }
+    }
+
+    .right {
+        width: 50%;
+        background-color: #D9D9D9;
+        padding: 16px;
+
+        .lession {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 19.2px
+        }
+
+        .title {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 19.2px;
+        }
+
+        .instructor {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 18px;
+        }
+    }
+}

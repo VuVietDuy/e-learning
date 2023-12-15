@@ -1,0 +1,191 @@
+.Profile{
+    width: 1000px;
+    margin: auto;
+    padding-top: 32px;
+    .line-1 {
+        margin-top: 16px;
+        height: 1px;
+        background: black;
+    }
+    .left{
+        width: 232px;
+        .profileimg{
+            text-align: center;
+            h2{
+                display: inline-block;
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+            .img{
+                height: 120px;
+                width: 120px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                margin-bottom: 24px;
+
+            }
+        }
+        .follower{
+            display: grid;
+            grid-template-columns: auto auto;
+            margin: 26px 0px 26px 0px;
+            .num{
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+        .hours-learning{
+            margin: 24px 0px 29px 10px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            span{
+                padding-left: 16px;
+            }
+        }
+        .chart{
+            width: 100px;
+            height:100px;
+        }
+        .statistics{
+            padding: 32px 24px 44px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            font-size: 14px;
+            .element{
+                display: flex;
+                justify-content: space-between;
+                .roundbox{
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 4px;
+                    margin-right: 10px;
+                    &.first{
+                        background: #5C5252;
+                    }
+                    &.second{
+                        background: #837B7B;
+                    }
+                    &.third{
+                        background: #C0BCBC;
+                    }
+                    &.fourth{
+                        background: #CFCCCC;
+                    }
+                    &.fifth{
+                        background: #E2E0E0;
+                    }
+                    &.sixth{
+                        background: #F2F1F1;
+                    }
+                }
+                div{
+                    display: flex;
+                }
+            }
+        }
+        .notice{
+            font-size: 14px;
+        }
+        
+    }
+
+    .right{
+        text-align: left;
+        
+        .body{
+            padding-top: 24px;
+            display: flex;
+            flex-direction: column;
+            font-weight: 600;
+            gap: 24px;
+            .box{
+                margin-top: 8px;
+                width: 256px;
+                height: 52px;
+                padding-left: 16px;
+            }
+            .name{
+                display: flex;
+                gap: 86px;
+            }
+            .phone_gender{
+                display: flex;
+                gap: 86px;
+                .gender{
+                    margin-top: 44px;
+                    display: flex;
+                    gap:24px;
+                    div{
+                        display: flex;
+                        gap: 10px;
+                        align-items:center;
+                    }
+                    .radio{
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+            }
+            .biography{
+                
+                textarea{
+                    margin: 24px 0px 23px 0px;
+                    padding-top: 16px;
+                    width: 488px;
+                    height: 249px;
+                    flex-shrink: 0;
+                }
+            }
+            .savechange{
+                width: 163px;
+                color: white;
+                background: #5B5757;
+                &:hover{
+                    background-color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+//          Chỉnh giao diện lịch
+:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-header {
+    color: rgba(255, 255, 255, 0.88);
+}
+:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-cell {
+    padding: 6px 0;
+    color: rgba(255, 255, 255, 0.144);
+    cursor: pointer;
+}
+:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-cell-in-view {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-panel-container {
+    background: #464646;
+}
+
+:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-content th {
+    color: #B5BEC6;
+}
+:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-header button {
+    color: rgb(255, 255, 255);
+}
+.ant-picker-dropdown{
+    &.css-dev-only-do-not-override-1vr7spz {
+        &.ant-picker-dropdown-placement-bottomLeft{
+            left: 1000px;
+        }
+    }
+}
+:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-cell:hover:not(.ant-picker-cell-in-view) .ant-picker-cell-inner, :where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end) .ant-picker-cell-inner{
+    background-color: white;
+    color: black;
+}
+:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-cell .ant-picker-cell-inner {
+    transition: 0s;
+}

@@ -1,0 +1,123 @@
+.LearningPage{
+    
+}
+.img-s{
+    height: 48px;
+    width: 48px;
+    margin: 16px 0px ;
+    margin-left: 16px;
+}
+.img-l{
+    height: 80px;
+    width: 80px;
+}
+.h-16{
+    height: 16px;
+}
+.padding-left-16{
+    padding-left: 16px;
+}
+.learning-main{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: auto;
+    margin-top: 80px;
+}
+.learning-contain{
+    display: flex;
+}
+.learning-video{
+    width: 660px;
+}
+.learning-video-watch{
+    width: 660px;
+}
+.learning-lessons{
+    display: flex;
+    flex-direction: column;
+    width: 316px;
+    
+    margin-left: 24px;
+}
+.learning-lessons-title{
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.learning-lessons-title-main{
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.learning-lessons-title-time{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.learning-lessons-list{
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    max-height: 450px;
+    overflow: hidden;
+}
+
+.learning-lessons-item{
+    display: flex;
+    padding: 12px 16px;
+    position: relative;
+}
+.learning-lessons-item:hover{
+    background-color: #FFA5A5;
+    cursor: pointer;
+}
+.learning-lessons-item-icon{
+
+}
+
+.learning-lessons-item-index{
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+.learning-lessons-item-introduction{
+    font-size: 14px;
+}
+
+.learning-lessons-item-time{
+    position: absolute;
+    right: 16px;
+}
+.learning-descript{
+    text-align: start;
+    margin-top: 32px;
+}
+
+.learning-descript-title{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.learning-descript-author{
+    display: flex;
+}
+
+.learning-descript-author-name{
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 8px;
+}
+
+.learning-descript-author-follow{
+    font-size: 18px;
+    font-weight: 600;
+}
+/*navbar--------------------------------*/
+
+/*project--------------------------*/
+
+/* discussions -------------------*/

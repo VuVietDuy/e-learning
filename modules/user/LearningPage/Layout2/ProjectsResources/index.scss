@@ -1,0 +1,54 @@
+.project{
+    display: flex;
+    width: 1000px;
+    
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 64px auto;
+}
+.project-instruction{
+    text-align: start;
+
+}
+.project-instruction-title{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+}
+.project-file-title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin-top: 24px;
+    text-decoration: underline;
+}
+.project-list{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 8px 0;
+    list-style: none;
+}
+.project-exam{
+    width: 366px;
+    display: flex;
+    flex-direction: column;
+    background-color: #D9D9D9;
+    padding: 24px 0;
+    border-radius: 16px;
+    margin-right: 60px;
+}
+.project-exam-title{
+    text-align: start;
+    font-size: 22px;
+    font-weight: 600;
+    margin-left: 24px;
+    margin-bottom: 8px;
+}
+.project-exam-contain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project-exam-img{
+    margin: 8px 12px;
+}

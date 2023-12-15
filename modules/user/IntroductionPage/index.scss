@@ -1,0 +1,213 @@
+.IntroductionPage {
+    width: 1000px;
+    margin: auto;
+    padding-top: 96px;
+    text-align: center;
+}
+
+.Body{
+    h2{
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 600;          
+    }    
+
+
+    .part1{
+        h1{
+            font-size: 58px;
+            font-weight: 400;
+            line-height: 113px;
+        }
+        h3{
+            font-size: 26px;
+            font-weight: 600;
+        }
+
+        .login-pic{
+            margin-top: 40px;
+            display: flex;
+            gap: 5rem;
+            justify-content: space-between;
+        }
+        .picture1{
+            width: 597px;
+            height: 460px;
+            flex-shrink: 0;
+            border-radius: 24px;
+            background: lightgray 50% / cover no-repeat, #D9D9D9;
+        }
+    }
+
+    .part2{
+        margin-top: 96px;
+        text-align: center;
+        h3{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 28.8px;
+        }
+    }
+
+    .part3{
+        display: flex;
+        justify-content: space-between;
+        margin:96px 0 0px 0px;
+        h2{
+            text-align: left;
+            overflow-wrap: break-word;
+            width: 256px;
+        }
+        li{
+            display: flex;
+            gap: 24px;
+            justify-content: space-between;
+            align-items: center;
+
+            img{
+                height: 30px;
+            }
+
+            p{
+                text-align: left;
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                word-break: break-word;
+                width: 573px;
+
+                font-size: 28px;
+                font-weight: 600;
+                line-height: 33.6px; /* 120% */
+            }
+        }
+    }
+
+    .part4{
+        margin-top: 96px;
+        .word-pic{
+            margin-top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap:39px;
+            .word{
+                text-align: left;
+                h3{
+                    font-size: 36px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 43.2px;
+                }
+                .line{
+                    width: 147px;
+                    height: 8px;
+                    flex-shrink: 0;
+                    border-radius: 24px;
+                    background: #D9D9D9;
+                }
+                p{
+                    width: 256px;
+                    font-size: 22px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26.4px;
+                }
+                .getStarted{
+                    border: none;
+                    background: #D9D9D9;
+                    font-weight: 600;
+                }
+
+                button:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+
+            .pic{
+                width: 155px * 4;
+                height: 500px;
+                flex-shrink: 0;
+            }
+        }
+    }
+
+    .part5{
+        align-items: center;
+        p{
+            font-size: 20px;
+            width: 658px;
+        }
+        h3{
+            font-size: 32px;
+            font-weight: 400;
+            width: 706px;
+        }
+        .quote {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+    }
+
+    .part6{
+        margin-top: 96px;
+        ul{
+            display: inline-block;
+
+            li{
+                margin-top: 24px;
+                .line{
+                    width: 706px;
+                    height: 2px;
+                    background: #000;
+                }
+                .word{
+                    display: flex;
+                    justify-content: space-between;
+                    p{
+                        font-size: 32px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    .part7{
+        margin: 96px 0;
+
+        h2 {
+            margin-bottom: 24px;
+        }
+
+        .joinus{
+            width: 194px;
+            height: 48px;
+            border: none;
+            flex-shrink: 0;
+            background: #D9D9D9;
+            font-weight: 600;
+        }
+
+        .joinus:hover{
+            color: white;
+            background-color: black;
+        }
+    }
+}
+
+
+.Footer{
+    display: flex;
+    gap: 223px;
+    padding: 23px 460px 23px 436px;
+    background-color: #b6b6b6;
+    p{
+        text-align: left;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}

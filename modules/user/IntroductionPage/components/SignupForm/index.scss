@@ -1,0 +1,57 @@
+
+.SignupForm{
+    width: 341px;
+    height: 460px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 24px 49px 24px;
+    gap: 8px;
+    p{
+        text-align: left;
+        font-size: 12px;
+        a{
+            color: #42AF53;
+            text-decoration: none;
+        }
+    }
+    .fullName{
+        display: flex;
+        gap: 24px;
+    }
+    .name{
+        width: 134px;
+        height: 49px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 1px solid #000;
+        padding-left: 16px;
+        font-size: 14px;
+    }
+    .email{
+        @extend .name;
+        width: 293px;
+    }
+    .passcode{
+        @extend .name;
+        width: 245px;
+    }
+    .signupButton{
+        width: 293px;
+        height: 49px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        padding: 0;
+        font-size: 18px;
+        font-weight: 600;
+        background: #4E4E4E;
+        color: white;
+        transition: .1s;
+    }
+    .signupButton:hover{
+        cursor: pointer;
+        background: black;
+    }
+}

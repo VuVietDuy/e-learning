@@ -1,0 +1,26 @@
+.change-purchased-form {
+    text-align: left;
+    padding: 40px;
+    border: 1px solid #000;
+
+    .title {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 38.4px;
+        margin-bottom: 40px;
+    }
+
+    .label {
+        display: block;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 21.6px;
+        margin-bottom: 8px;
+    }
+
+    .input {
+        height: 48px;
+    }
+}

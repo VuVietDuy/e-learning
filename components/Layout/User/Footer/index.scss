@@ -1,0 +1,69 @@
+.footer{
+    background-color: #DADADA;
+    margin-top: 100px;
+    padding-top: 40px;
+    padding-bottom: 66px;
+}
+.f-container{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: auto;
+    background-color: #DADADA;
+}
+
+
+.f-contain-top{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.f-contain-top-item{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding: 0;
+}
+.f-top-list{
+    list-style: none;
+    padding: 2px 0;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.f-top-list--bold{
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.f-contain-top-item-btn{
+    margin-top: 4px;
+    padding: 7px 10px;
+    background-color: #DADADA;
+}
+.f-contain-bottom{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #000;
+    margin-top: 48px;
+    
+}
+.f-contain-bottom-item{
+    margin-bottom: 16px;
+    margin-top: 24px;
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+.f-bottom-list{
+    list-style: none;
+    margin-right: 52px;
+    font-size: 14px;
+}
+.f-contain-bottom-item-btn{
+    width: 147px;
+    padding: 10px 20px;
+    background-color: #DADADA;
+}

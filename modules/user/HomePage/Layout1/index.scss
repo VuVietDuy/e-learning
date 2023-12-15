@@ -1,0 +1,36 @@
+.layout1-container {
+    width: 1000px;
+    margin: 0px auto 48px;
+    text-align: left;
+    
+    .title {
+        font-size: 28px;
+        font-weight: 600;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+    
+    .top {
+        margin-bottom: 142px;
+    }
+
+    .bottom {
+        .swiper-layout1 {
+            height: 400px;
+            margin: auto;
+            position: relative;
+    
+            .swiper-pagination-bullets {
+                position: relative;
+                bottom: -10px;
+                
+    
+                .swiper-pagination-bullet {
+                    width: 30px;
+                    border-radius: 4px;
+                }
+            }
+        }
+
+    }
+}

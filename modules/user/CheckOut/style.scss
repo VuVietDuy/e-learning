@@ -1,0 +1,60 @@
+.checkout_container {
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    .payment {
+        border-right: 1px solid #000;
+        .payment_method {
+            .credit_card {
+                background: #D9D9D9;
+                .credit_card_header {
+                    padding-left: 32px;
+                    height: 56px;
+                    border: 1px solid #000;
+                    display: flex;
+                    align-items: center;
+                    .radio {
+                        font-size: 24px;
+                        color: #002333;
+                        font-family: SF Pro Display;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 21.6px; /* 120% */
+                    }
+                    
+                }
+                .credit_card_info {
+                    padding: 24px 48px;
+                    border: 1px solid #000;
+                    border-bottom: none;
+                    border-top: none;
+                    background: #636363;
+                    color: #D9D9D9;
+                }
+            }
+        }
+    }
+
+                    
+    .title {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+    .sumary {
+        padding-left: 24px;
+    }
+    .sumary_item {
+        font-size: 20px;
+        padding: 12px 0;
+
+        .left {
+    
+        }
+        .right {
+            float: right;
+        }
+
+    }
+}

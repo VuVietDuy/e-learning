@@ -1,0 +1,1 @@
+export {AccountSetting as default} from "@/modules/user/AccountSettingPage"

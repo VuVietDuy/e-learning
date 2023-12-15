@@ -1,0 +1,41 @@
+.card_container {
+    display: flex;
+    align-items: center;
+
+    .icon_container {
+        width: 55px;
+        height: 55px;
+        background-color: #189D35;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        .icon {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 55px;
+            color: #fff;
+        }
+    }
+
+    .figure_container {
+        margin-left: 20px;
+        .figure_title {
+            font-size: 20px;
+            display: block;
+        }
+        .figure_content {
+            font-size: 22px;
+            font-weight: 600;
+        }
+    }
+}
+
+.mt_32 {
+    margin-top: 32px;
+}
+
+.mb_32 {
+    margin-bottom: 32px;
+}

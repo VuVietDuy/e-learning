@@ -1,0 +1,1 @@
+export {PurchasedCourses as default} from "@/modules/user/AccountSettingPage/componets/PurchasedCourses"

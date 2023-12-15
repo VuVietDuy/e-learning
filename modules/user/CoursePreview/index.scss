@@ -1,0 +1,470 @@
+.fz-20{
+    font-size: 20px;
+    font-weight: 400;
+}
+.fz-24{
+    font-size: 24px;
+    font-weight: 600;
+}
+.flex{
+    display: flex;
+}
+.ml5{
+    margin-right: 20px;
+}
+.coursepreview{
+    position: relative;
+    background-color: #fff;
+
+}
+
+.course__slider{
+    background-color: rgb(37, 28, 17);
+    margin-bottom: 36px;
+}
+
+.slider-contain{
+    width: 1000px;
+    margin: auto;
+    text-align: start;
+    padding: 80px 0;
+}
+.slider-title{
+    font-size: 46px;
+    color: #fff;
+    font-weight: 600;
+    line-height: 57.60px;
+}
+
+.slider-des{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 38.40px;
+    margin: 16px 0;
+    max-width: 915px;
+}
+
+.slider-rate{
+    color: white;
+    font-size: 20px;
+    
+}
+.slider-rate-content{
+    display: flex;
+    flex-direction: row;
+}
+.slider-rate-content-vol{
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.slider-link{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 24px;
+}
+.slider-link-created{
+    color: white;
+font-size: 20px;
+
+font-weight: 600;
+line-height: 24px;
+    margin-right: 10px;
+}
+.slider-link-nuke{
+    color: #21FF94;
+font-size: 20px;
+font-family: SF Pro Display;
+font-weight: 400;
+text-decoration: underline;
+line-height: 24px;
+}
+.slider-link-nuke:hover{
+    opacity: 0.8;
+}
+
+.slider-date{
+    display: flex;
+    color: #fff;
+    font-size: 20px;
+}
+.slider-date-pushlish{
+    display: flex;
+}
+.slider-date-pushlish-info{
+    font-weight: 600;
+    margin-right: 8px;
+}
+.slider-date-language{
+    margin: 0 32px;
+}
+
+.course__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.course__1{
+    display: flex;
+    justify-content: space-between;
+    width: 1000px;
+    margin: auto;
+    // padding: 0 460px;
+    
+}
+.course__1-body{
+    flex: 2;
+    text-align: left;
+    margin-right: 86px;
+   
+}
+.course__1-body-title{
+    font-size: 28px;
+    font-weight: 600;
+    margin: 16px 0;
+
+}
+
+
+.course__1-body-list{
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+    line-height: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.course__1-body-item{
+  padding: 8px 0;
+}
+.course__1-body-des-list{
+    margin-left: 55px;
+    margin-top: 8px;
+    list-style: none;
+}
+.des-list-item{
+    padding: 8px 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+.course__1-pay{
+    padding: 0 19px;
+    max-height: 800px;
+    border-radius: 16px;
+}
+
+// .course__1-pay{
+//     background-color: #d9d9d9;
+// }
+.pay-img{
+
+}
+.pay-price{
+    display: flex;
+}
+.pay-price-cash{
+    margin-left: 19px;
+    margin-right: 26px;
+}
+.pay-price-origin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pay-price-origin-up{
+    color: #565454;
+    font-size: 37.76px;
+    font-weight: 600;
+    line-height: 45.31px;
+    word-wrap: break-word;
+}
+.pay-price-origin-down{
+    color: #A0A0A0;
+    font-size: 15.73px;
+    font-weight: 600;
+    line-height: 21.93px;
+    word-wrap: break-word;
+    align-items: center;
+    display: flex;
+    text-decoration: line-through;
+}
+.pay-price-discount{
+    color: #3CAD99;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28.8px;
+    margin-bottom: 8px;
+}
+.pay-price-time{
+    display: flex;
+}
+.pay-price-time-icon{
+
+}
+.pay-price-time-hour{
+    color: black;
+font-size: 14px;
+font-family: SF Pro Display;
+font-weight: 600;
+line-height: 15.10px;
+}
+.pay-price-time-left{
+    color: black;
+font-size: 14px;
+font-family: SF Pro Display;
+font-weight: 400;
+line-height: 15.10px;
+padding-left: 3px;
+}
+.pay-price-btn{
+    color: #fff;
+    font-size: 16px;
+    background-color: #777777;
+    border: 1px solid #333;
+    border-radius: 6px;
+    height: 46px;
+    align-items: center;
+    display: flex;
+    margin: 27px 20px;
+}
+.pay-price-btn:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.pay-buy-now{
+    border: 1px solid #000;
+    border-radius: 8px;
+    background-color: #d9d9d9;
+    color: #000;
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 24.54px;
+    width: 280px;
+   height: 50px;
+   font-weight: 600;
+   padding: 0;
+}
+.pay-buy-now:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.pay-buy-left{
+    color: #6C6C6C;
+font-size: 14px;
+font-weight: 400;
+margin: 12px 0;
+}
+.pay-course{
+   
+}
+.pay-course-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.pay-course-include{
+    font-size: 19px;
+    font-weight: 600;
+    text-align: start;
+    margin-bottom: 10px;
+}
+.pay-course-item{
+    color: #565656;
+    padding: 12px 0;
+}
+.pay-coupon{
+    border-top: 1px solid #000;
+   margin-top: 32px;
+}
+.pay-coupon-btn{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    margin-top: 20px;
+}
+.pay-apply-coupon{
+    text-align: start;
+   margin-top: 12px;
+   font-size: 20px;
+   font-weight: 600;
+}
+.pay-coupon-input{
+    width: 160px;
+    color: #000;
+    background-color: #AEAEAE;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 20px;
+    padding: 16px;
+}
+
+.pay-coupon-enter{
+    width: 74px;
+    height: 38px;
+    border-radius: 8px;
+    border-style: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #000;
+}
+.pay-coupon-enter:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.course__2{
+    width: 1000px;
+    margin: auto;
+}
+.course__2-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course__2-item{
+    display: flex;
+    flex-direction: column;
+    max-width: 490px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-top: 1px solid #000;
+    margin-bottom: 88px;
+}
+.course__2-item-name{
+    display: flex;
+    margin-top: 32px;
+    position: relative;
+    width: 100%;
+}
+.item-name{
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+}
+.item-name-1{
+    font-size: 22px;
+    font-weight: 600;
+
+}
+.course-title{
+    text-align: start;
+}
+.course-title-info{
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    text-align: start;
+}
+.course__2-item-name-more{
+    
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+.course__2-item-des{
+    text-align: start;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 24px;
+}
+.course__2-item-more{
+    margin-top: 16px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000;
+
+}
+.item-name-rate{
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+}
+.course__2-btn{
+    text-align: start;
+    margin-bottom: 88px;
+}
+.show-all{
+    border: 1px solid #000;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 16px 24px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+.show-all:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.course__3{
+    width: 1000px;
+    margin: auto;
+}
+.course-3-body{
+    display: flex;
+    border-bottom: 1px solid #000;
+    padding-bottom: 24px;
+}
+.course-3-des{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.course-3-des-1{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    margin-bottom: 16px;
+}
+.course-3-des-2-contain{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: start;
+}.course-3-des-2-1{
+    line-height: 24px;
+}
+.des-2-4{
+    display: flex;
+}
+.des-2-4-1{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.course-3-des-2-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: end;
+}
+.course-3-des-2-2-1{
+    color: #3CAD99;
+font-size: 18.88px;
+
+font-weight: 500;
+}
+.course-3-des-2-2-2{
+    font-size: 15px;
+    text-decoration-line: line-through;
+    opacity: 0.7;
+}
+.course-3-des-2-2-3{
+    color: #565454;
+font-size: 37.76px;
+
+font-weight: 600;
+}

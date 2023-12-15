@@ -1,0 +1,37 @@
+import { Avatar, Button, Card, Typography } from "antd";
+import React from "react";
+import "./index.scss";
+const { Paragraph } = Typography;
+
+function NoticeItem() {
+  return (
+    <div>
+      <Card bodyStyle={{ borderColor: "black" }}>
+        <div className="user">
+          <Avatar>U</Avatar>
+          <div className="info">
+            <p>
+              <b>Vũ Viết Duy</b>
+            </p>
+            <p>
+              <b>Vũ Viết Duy</b> posted a new blog
+            </p>
+          </div>
+        </div>
+        <div className="notice_content">
+          <Paragraph ellipsis={{rows:3, }}>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit mollit. Exercitation
+            veniam consequat sunt nostrud amet ...
+          </Paragraph>
+        </div>
+        <div className="notice_footer">
+          <span className="notice_time">3 week ago</span>
+          <Button className="cmt_btn" size="small">Comment</Button>
+        </div>
+      </Card>
+    </div>
+  );
+}
+
+export default NoticeItem;

@@ -1,0 +1,1 @@
+export {EmailAddress as default} from "@/modules/user/AccountSettingPage/componets/EditEmail"

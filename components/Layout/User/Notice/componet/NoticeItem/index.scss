@@ -1,0 +1,20 @@
+.user {
+    display: flex;
+    align-items: center;
+    .info {
+        margin-left: 8px;
+    }
+    .notice_content {
+        max-height: 3em;
+        overflow: hidden;
+        text-overflow: ellipsis; /* Hiển thị dấu chấm (...) nếu văn bản vượt quá chiều cao tối đa */
+        white-space: normal;
+    }
+    .notice_footer {
+        display: flex;
+        justify-content: space-between !important;
+    }
+    .cmt_btn {
+        float: right;
+    }
+}

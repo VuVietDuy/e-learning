@@ -1,0 +1,77 @@
+.MyClasses{
+    text-align: left;
+    width: 1000px;
+    margin: auto;
+    padding-top: 40px;
+    .Top{
+        margin-bottom: 24px;
+        .Title{
+            font-size: 28px;
+            font-weight: 600;
+        }
+        .Category{
+            display: flex;
+            gap: 75px;
+            padding-left: 60px;
+            margin-top: 8px;
+            border-bottom: 1px solid;
+            .element{
+                font-size: 16px;
+                font-weight: 600;
+                padding: 16px 0px 16px 0px;
+                transition: 0.2s;
+            }
+            .element:hover{
+                background-color: rgb(223, 223, 223);
+                cursor: pointer;
+            }
+        }
+    }
+    .Body{
+        padding: 0px;
+        .MyLearningPaths{
+        }
+        .WatchHistory{
+            .top{
+                .title{
+                        margin-bottom: 16px;
+                        display: flex;
+                        gap: 496px;
+                        font-size: 14px;
+                        font-weight: 600;
+                }
+                .length-status{
+                    .cate{
+                        display: flex;
+                        gap: 80px;
+                        margin-bottom: 24px;
+                        .element{
+                            .borderBox{
+                                border-radius: 4px;
+                                border: 1px solid;
+                                background: #FFF;
+                                margin-right: 16px;
+                            }
+                            .borderBox-seperate{
+                                margin: 0px 16px 0px 70px;
+                            }
+                        }
+                    }
+                }
+                .skills{
+                    .cusButton{
+                        padding: 4.636px 18.542px;
+                        background-color: white;
+                        border-radius: 3.09px;
+                        border: 1px solid;
+                        font-weight: 600;
+                        font-size: 12.362px;
+                    }
+                }
+            }
+        }
+    }
+    .active {
+        border-bottom: 6px solid #503ED8;
+    }
+}

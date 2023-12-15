@@ -1,0 +1,57 @@
+@mixin size {
+    width: 50%;
+    height: 100%;
+}
+
+.purchased-course {
+    height: 140px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+
+    .image {
+        width: 170px;
+        height: 140px;
+        border-radius: 8px;
+        // overflow: hidden;
+        margin-right: 16px;
+
+        img {
+            width: 170px;
+            object-fit: over;
+        }
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        .title {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 19.2px;
+            margin-bottom: 0;
+        }
+
+        .instructor {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 18px;
+        }
+
+        .parchased_date{
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 19.2px;
+            .price {
+                font-size: 20px;
+            }
+        }
+    }
+}

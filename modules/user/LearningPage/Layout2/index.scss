@@ -1,0 +1,34 @@
+.layout2-learningpage {
+    .learning-nav{
+        margin-top: 64px;
+        width: 100%;
+        height: 64px;
+        background-color: #8F8F8F;
+    }
+    .learning-nav-contain{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .learning-nav-btn{
+        width: 194px;
+        height: 100%;
+        border: none;
+        background-color: #8F8F8F;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .learning-nav-btn:hover{
+        border-bottom: 4px solid #000;
+        border-radius: 4px;
+        background-color: #FFA5A5;
+        color: #000;
+        cursor: pointer;
+    }
+    .course__1-body-set-width{
+        width: 1000px;
+        margin: auto;
+        margin-top: 48px;
+    }
+}

@@ -1,0 +1,27 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+
+    .dot {
+        width: 60px;
+        height: 8px;
+        background-color: #D9D9D9;
+        border-radius: 4px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .activeIndex {
+        background-color: #656565;
+    }
+}
+
+.large {
+    width: 60px;
+    height: 8px;
+}
+
+.small {
+    width: 30px;
+    height: 4px;
+}

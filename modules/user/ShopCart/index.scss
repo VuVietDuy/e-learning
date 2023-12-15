@@ -1,0 +1,69 @@
+.shop_cart_container {
+    width: 1000px;
+    margin: 48px auto;
+    text-align: left;
+
+    .title-page {
+        margin-bottom: 24px;
+        
+        .title-page_text {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 57.6px;
+        }
+    }
+
+    .cart {
+        border-right: solid 1px black;
+        padding-right: 48px;
+
+        .cart_count{
+            font-size: 22px;
+            font-weight: 600;
+        }
+        .cart_item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+    }
+
+    .bill {
+        padding-left: 16px;
+        .title {
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 600;
+            padding-bottom: 24px;
+        }
+        .sale-price {
+            font-size: 28px;
+            font-weight: 600;
+            padding-bottom: 8px;
+        }
+        .regular-price {
+            font-size: 24px;
+            font-style: normal;
+            padding-bottom: 8px;
+            text-decoration: line-through;
+            color: rgb(143, 143, 143);
+        }
+        .percent-dicount {
+            font-size: 16px;
+            color: #3CAD99;
+            padding-bottom: 8px;
+        }
+        .go_to_check_out {
+            width: 100%;
+        }
+        .coupon {
+            padding-top: 32px;
+        }
+    }
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+}
