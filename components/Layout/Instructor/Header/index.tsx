@@ -1,9 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import { BellOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import Link from "next/link";
+import Image from "next/image";
 import type { MenuProps } from "antd";
 import { Avatar, Button, Dropdown } from "antd";
-import Link from "next/link";
+import { BellOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 
 import "./index.scss";
 
@@ -37,11 +38,13 @@ export function Header() {
     <div>
       <div className="header-container">
         <div className="left">
-          <img
+          <Image
             className="logo"
             src="/images/logo_business.png"
+            alt=""
+            width={140}
             height={48}
-          ></img>
+          />
           <Link href={"/instructor/my_courses"}>
             <Button className="btn" size="large">
               My Courses

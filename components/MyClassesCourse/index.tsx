@@ -1,5 +1,6 @@
 import React from 'react'
 import './index.scss'
+import Image from 'next/image';
 
 function MyClassesCourse(props: any) {
 
@@ -14,7 +15,7 @@ function MyClassesCourse(props: any) {
   return (
     <div className={`${size} MyClassesCourse`}>
         <div className='top'>
-            <img className='img' src={src} alt="" />
+            <Image className='img' src={src} alt="" width={317} height={150}/>
         </div>
         <div className='bottom'>
             <div className='lesson'>{lesson}</div>

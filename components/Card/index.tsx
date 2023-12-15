@@ -1,8 +1,9 @@
-import { StarFilled, StarOutlined } from '@ant-design/icons';
 import React from 'react';
+import Image from 'next/image';
+import { StarFilled } from '@ant-design/icons';
+import { Typography } from 'antd';
 
 import './index.scss'
-import { Typography } from 'antd';
 
 const {Paragraph} = Typography;
 
@@ -22,7 +23,7 @@ function Card(props :any) {
   return (
     <div className='Card' onClick={onClick}>
         <div className='upper'>
-            <img className='image' src={src} alt="" />
+            <Image src={src} alt="" width={232} height={200}/>
         </div>
         <div className='bottom'>
             <p className='time'>{time}</p>

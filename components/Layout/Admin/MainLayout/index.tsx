@@ -1,46 +1,18 @@
 'use client'
 import React, { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import {
     AreaChartOutlined,
     BookOutlined,
     TeamOutlined,
     UserOutlined,
 } from '@ant-design/icons';
-import { Layout, Menu, Button, theme, Avatar, Dropdown, Select } from 'antd';
+import { Layout, Menu } from 'antd';
 
-// import './style.scss'
-import Link from 'next/link';
 import { HeaderAdminPage } from '../Header';
-import LoadingLayout from '../LoadingLayout';
 
-const { Header, Sider, Content } = Layout;
-
-const items = [
-    {
-      key: '1',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-          Setting
-        </a>
-      ),
-    },
-    {
-      key: '2',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-          Log out
-        </a>
-      ),
-    },
-    {
-      key: '3',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-          3rd menu item
-        </a>
-      ),
-    },
-  ];
+const { Sider, Content } = Layout;
 
 export function MainLayout({
     children,
@@ -56,8 +28,8 @@ export function MainLayout({
     return (
         <Layout>
             <Sider trigger={null} collapsible collapsed={collapsed} width={250} style={{height: "100vh"}}>
-                <div className="logo-vertical">
-                    <img src='/images/logo_business.png'></img>
+                <div className="logo d_flex align_item_center justify_content_center" style={{ height: 64}}>
+                    <Image src='/images/logo_business.png' alt='' width={140} height={48}/>
                 </div>
                 <Menu
                     theme="dark"

@@ -12,11 +12,6 @@
 
     .left {
         @include size();
-
-        img {
-            // width: 100%;
-            // object-fit: over;
-        }
     }
 
     .right {

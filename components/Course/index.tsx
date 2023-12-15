@@ -1,10 +1,11 @@
 'use client'
-import { StarFilled, StarOutlined } from '@ant-design/icons';
 import React from 'react';
+import { useRouter } from 'next/navigation'
+import Image from 'next/image';
+import { StarFilled } from '@ant-design/icons';
+import { Typography } from 'antd';
 
 import './index.scss'
-import { Typography } from 'antd';
-import { useRouter } from 'next/navigation'
 
 const {Paragraph} = Typography;
 
@@ -17,8 +18,6 @@ function Course(props :any) {
         instructor,
         star,
         currentPrice,
-        defaultPrice,
-        viewer,
     } = props;
 
     const onClick = () => {
@@ -28,7 +27,7 @@ function Course(props :any) {
   return (
     <div className='Course' onClick={onClick}>
         <div className='upper'>
-            <img className='image' src={src} alt="" />
+            <Image src={src} alt="" width={232} height={120}/>
         </div>
         <div className='bottom'>
             <p className='time'>{time}</p>

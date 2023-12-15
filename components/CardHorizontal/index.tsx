@@ -1,6 +1,7 @@
 import React from 'react'
-import './index.scss'
+import Image from 'next/image';
 
+import './index.scss'
 function CardHorizontal(props: any) {
 
     const {
@@ -14,7 +15,7 @@ function CardHorizontal(props: any) {
   return (
     <div className='card-horizontal'>
         <div className='left'>
-            <img src={src} alt="" />
+            <Image src={src} alt="" width={244} height={162}/>
         </div>
         <div className='right'>
             <div className='lession'>{lession} | {time}</div>
