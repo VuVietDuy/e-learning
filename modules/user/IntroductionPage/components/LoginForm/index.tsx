@@ -10,7 +10,13 @@ export function LoginForm() {
   const router = useRouter()
   const handleLogin = (e : any) => {
     console.log(e);
-    router.push("/user/home")
+    if(e.username==="user") {
+      router.push("/user/home")
+    } else if(e.username==="instructor") {
+      router.push("/instructor/home")
+    } else if(e.username==="admin") {
+      router.push("/admin/course_management")
+    }
   }
   return (
     <div className="LoginForm">
@@ -20,11 +26,11 @@ export function LoginForm() {
       onFinish={handleLogin}
       >
         <div className="singin-infor">
-          <Form.Item name={"email"}>
+          <Form.Item name={"username"}>
             <input
               className="signin-box signin-input"
               type="text"
-              placeholder="Email address/ Phone number"
+              placeholder="Email address/ User name"
             />
           </Form.Item>
           <Form.Item name={"password"}>

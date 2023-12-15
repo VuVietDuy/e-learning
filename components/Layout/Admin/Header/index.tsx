@@ -49,7 +49,7 @@ export function HeaderAdminPage() {
     const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <Header className="d_flex justify_content_between" style={{ padding: 0, backgroundColor: "var(--gk-navbar-bg);" }}>
+    <Header className="d_flex justify_content_between" style={{ padding: 0}}>
       <Button
         type="text"
         icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
