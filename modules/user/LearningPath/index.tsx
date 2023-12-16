@@ -12,16 +12,49 @@ export function LearningPath() {
       </div>
       <div className='learning_path_content'>
         <Row gutter={[32, 32]}>
-          <Col span={6}>
-            <MyClassesCourse size="small"></MyClassesCourse>
-          </Col>
-          <Col span={6}>
+          <Col span={8}>
             <MyClassesCourse></MyClassesCourse>
           </Col>
-          <Col span={6}>
+          <Col span={8}>
             <MyClassesCourse></MyClassesCourse>
           </Col>
-          <Col span={6}>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
+            <MyClassesCourse></MyClassesCourse>
+          </Col>
+          <Col span={8}>
             <MyClassesCourse></MyClassesCourse>
           </Col>
         </Row>

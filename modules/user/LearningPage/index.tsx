@@ -17,7 +17,7 @@ export function LearningPage() {
 
                     <div className="learning-video">
                         {/* <video controls src="https://www.youtube.com/watch?v=CvcIDBhRjqk" className="learning-video-watch"></video> */}
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/u7ScW1kCgS0?si=n6GDgQf7YxXSQId6" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" className="learning-video-watch"></iframe>
+                        <iframe width="660" height="346" src="https://www.youtube.com/embed/2TKS1ifrhqI?si=HSVbf1-s42k-27MB" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                     </div>
                     <div className="learning-lessons">
                         <div className="learning-lessons-title">

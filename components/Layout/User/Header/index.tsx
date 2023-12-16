@@ -15,11 +15,11 @@ export function Header() {
       label: <Link href={"/user/my_classes"}>My Classs</Link>,
     },
     {
-      key: "1",
+      key: "2",
       label: <Link href={"/user/account_setting"}>Profile</Link>,
     },
     {
-      key: "2",
+      key: "3",
       label: <Link href={"/user/login"}>Log out</Link>,
     },
   ];
