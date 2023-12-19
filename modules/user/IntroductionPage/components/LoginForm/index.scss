@@ -3,15 +3,14 @@
 .LoginForm{
     padding: 40px 16px;
     font-size: 14px;
-    align-items: center;
     text-align: center;
     height: 380px;
     width: 341px;
     border-radius: 24px;
-    flex-shrink: 0;
     background: #D9D9D9;
 
     display: flex;
+    align-items: center;
     justify-content: space-between;
     flex-direction: column;
     gap: 1.5rem;
@@ -28,16 +27,9 @@ h4{
     font-size: 22px;
 }
 
-.singin-infor{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
 .signin-box{
     width: 273px;
     height: 49px;
-    flex-shrink: 0; 
     padding: 0 10px;
     border-radius: 4px;
     border: 1px solid #000;

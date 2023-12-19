@@ -19,7 +19,7 @@
     }
     .fullName{
         display: flex;
-        gap: 24px;
+        justify-content: space-between;
     }
     .name{
         width: 134px;
@@ -32,7 +32,7 @@
     }
     .email{
         @extend .name;
-        width: 293px;
+        width: 341px;
     }
     .passcode{
         @extend .name;

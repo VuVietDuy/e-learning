@@ -3,20 +3,36 @@ import React from "react";
 
 import "./index.scss";
 import Link from "next/link";
-import { Button, Form } from "antd";
+import { Button, Form, Input } from "antd";
 import { useRouter } from "next/navigation";
+import { checkExistUser, getAllUsers } from "@/services/ApiUser";
 
 export function LoginForm() {
   const router = useRouter()
+
   const handleLogin = (e : any) => {
-    console.log(e);
-    if(e.username==="user") {
-      router.push("/user/home")
-    } else if(e.username==="instructor") {
-      router.push("/instructor/home")
-    } else if(e.username==="admin") {
-      router.push("/admin/course_management")
-    }
+
+    checkExistUser(e.username, e.password)
+    .then((res) => {
+      console.log(res);
+      if(res) {
+        if(res.roleName==="user") {
+          router.push("/user/home")
+        } else if(res.roleName==="instructor") {
+          router.push("/instructor/home")
+        } else if(res.roleName==="admin") {
+          router.push("/admin/course_management")
+        }
+      }
+    })
+    
+    // if(e.username==="user") {
+    //   router.push("/user/home")
+    // } else if(e.username==="instructor") {
+    //   router.push("/instructor/home")
+    // } else if(e.username==="admin") {
+    //   router.push("/admin/course_management")
+    // }
   }
   return (
     <div className="LoginForm">
@@ -25,16 +41,16 @@ export function LoginForm() {
       <Form
       onFinish={handleLogin}
       >
-        <div className="singin-infor">
+        <div>
           <Form.Item name={"username"}>
-            <input
+            <Input
               className="signin-box signin-input"
               type="text"
               placeholder="Email address/ User name"
             />
           </Form.Item>
           <Form.Item name={"password"}>
-            <input
+            <Input
               className="signin-box signin-input"
               type="password"
               placeholder="Password"
@@ -42,9 +58,11 @@ export function LoginForm() {
           </Form.Item>
         </div>
 
-        <Button htmlType="submit" className="signin-box signin-button">
-          <strong>Sign in</strong>
-        </Button>
+        <Form.Item>
+          <Button htmlType="submit" className="signin-box signin-button">
+            <strong>Sign in</strong>
+          </Button>
+        </Form.Item>
       </Form>
       <div>
         or{" "}
@@ -58,7 +76,7 @@ export function LoginForm() {
         </div>
         <div>
           Don't have an account ?{" "}
-          <Link href="/signup">
+          <Link href="/introduction/signup">
             <strong>Sign up</strong>
           </Link>
         </div>

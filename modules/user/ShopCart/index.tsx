@@ -5,6 +5,7 @@ import { DeleteFilled } from '@ant-design/icons'
 
 import './index.scss'
 import CardHorizontal from '@/components/CardHorizontal'
+import Link from 'next/link'
 
 export function ShopCart() {
   const applyCoupon = (e: any) => {
@@ -47,7 +48,7 @@ export function ShopCart() {
                 <p className='sale-price'>$70.00</p>
                 <p className='regular-price'>$10.00</p>
                 <p className='percent-dicount'>23%</p>
-                <Button type='text' size='large' className='btn-dark go_to_check_out'>Go to check out</Button>
+                <Link href={"/user/checkout"}><Button type='text' size='large' className='btn-dark go_to_check_out'>Go to check out</Button></Link>
             </div>
             <div className='coupon'>
                 <p className='title'>Apply coupon</p>

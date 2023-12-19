@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import MyClassesCourse from "@/components/MyClassesCourse";
 import './index.scss';
-import { Col, Row } from 'antd';
+import { Button, Col, Radio, Row } from 'antd';
 import { useRouter } from 'next/router';
 import PurchasedCourseItem from '@/components/PurchasedCourseItem';
 
@@ -67,7 +67,183 @@ export function MyClasses() {
         </div>
 
         <div className="WatchHistory" style={{ display: activeTab === 'watchHistory' ? 'block' : 'none' }}>
-          {/* Nội dung của tab Watch History */}
+        <div className="watch-histoty">
+          {/**part 1 */}
+          <div className="class-option">
+            <div className="choose">
+              <div className="choose-item">
+                <h3 className="choose-title">CLASSLENGTH</h3>
+                <Radio.Group className='radio-btn'>
+                  <Radio value={1} className='radio'>&lt;30min</Radio>
+                  <Radio value={2} className='radio'>30-60min</Radio>
+                  <Radio value={3} className='radio'>&gt;60min</Radio>
+                </Radio.Group>
+              </div>
+              <div className="choose-item">
+                <h3 className="choose-title">STATUS</h3>
+                <Radio.Group className='radio-btn'>
+                    <Radio value={1} className='radio'>In progress</Radio>
+                    <Radio value={2} className='radio'>Completed</Radio>
+                </Radio.Group>
+              </div>
+            </div>
+            <h3>SKILLS</h3>
+            <div className="skills">
+              <div className="all-skill">
+                <Button>All skill</Button>
+              </div>
+              <div className="btn-list">
+                <Button className="item">3D Art</Button>
+                <Button className="item">Animation</Button>
+                <Button className="item">Graphic Design</Button>
+                <Button className="item">Illustration</Button>
+                <Button className="item">Photography</Button>
+                <Button className="item">UI/UX Design</Button>
+              </div>
+            </div>
+          </div>
+          <div className="class-list">
+            <div className="course__3 mt24">
+              
+              <div className="course-3-body">
+                <div  className="course-3-img">
+                   <img src="/images/classes/card4.png" alt="" />
+                   <div className="course-img-box"></div>
+                  </div>
+                <div className="course-3-des">
+                  <div className="course-3-des-1">Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D Meta Human</div>
+                  <div className="course-3-des-2-contain">
+                    
+                    <div className="course-3-des-2-1">
+                      <div className=" fz-20">Ginger Bear</div>
+                      
+                      <div className="des-2-3 flex des-2-3-margin mt80 mt80">
+                        <div className=" fz-20 ml5">1d 5h 28m</div>
+                        <div className=" fz-20">1,313,581 Students</div>
+                      </div>
+                     
+                    </div>
+                    
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+            <div className="course__3 mt24">
+            
+            <div className="course-3-body">
+                <div  className="course-3-img">
+                   <img src="/images/classes/img1.png" alt="" />
+                   <div className="course-img-box"></div>
+                  </div>
+              <div className="course-3-des">
+                <div className="course-3-des-1">Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D Meta Human</div>
+                <div className="course-3-des-2-contain">
+                  
+                  <div className="course-3-des-2-1">
+                    <div className=" fz-20">Ginger Bear</div>
+                    
+                    <div className="des-2-3 flex des-2-3-margin mt80">
+                      <div className=" fz-20 ml5">1d 5h 28m</div>
+                      <div className=" fz-20">1,313,581 Students</div>
+                    </div>
+                   
+                  </div>
+                  
+                </div>
+              
+              </div>
+            </div>
+            
+
+            </div>
+            <div className="course__3 mt24">
+            
+            <div className="course-3-body">
+                <div  className="course-3-img">
+                   <img src="/images/classes/img4.png" alt="" />
+                   <div className="course-img-box"></div>
+                  </div>
+              <div className="course-3-des">
+                <div className="course-3-des-1">Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D Meta Human</div>
+                <div className="course-3-des-2-contain">
+                  
+                  <div className="course-3-des-2-1">
+                    <div className=" fz-20">Ginger Bear</div>
+                    
+                    <div className="des-2-3 flex des-2-3-margin mt80">
+                      <div className=" fz-20 ml5">1d 5h 28m</div>
+                      <div className=" fz-20">1,313,581 Students</div>
+                    </div>
+                   
+                  </div>
+                  
+                </div>
+              
+              </div>
+            </div>
+            
+
+            </div>
+            <div className="course__3 mt24">
+            
+            <div className="course-3-body">
+                <div  className="course-3-img">
+                   <img src="/images/classes/img3.png" alt="" />
+                   <div className="course-img-box"></div>
+                  </div>
+              <div className="course-3-des">
+                <div className="course-3-des-1">Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D Meta Human</div>
+                <div className="course-3-des-2-contain">
+                  
+                  <div className="course-3-des-2-1">
+                    <div className=" fz-20">Ginger Bear</div>
+                    
+                    <div className="des-2-3 flex des-2-3-margin mt80">
+                      <div className=" fz-20 ml5">1d 5h 28m</div>
+                      <div className=" fz-20">1,313,581 Students</div>
+                    </div>
+                   
+                  </div>
+                  
+                </div>
+              
+              </div>
+            </div>
+            
+
+            </div>
+           <div className="course__3 mt24">
+            
+            <div className="course-3-body">
+                <div  className="course-3-img">
+                   <img src="/images/classes/img2.png" alt="" />
+                   <div className="course-img-box"></div>
+                  </div>
+              <div className="course-3-des">
+                <div className="course-3-des-1">Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D Meta Human</div>
+                <div className="course-3-des-2-contain">
+                  
+                  <div className="course-3-des-2-1">
+                    <div className=" fz-20">Ginger Bear</div>
+                    
+                    <div className="des-2-3 flex des-2-3-margin mt80">
+                      <div className=" fz-20 ml5">1d 5h 28m</div>
+                      <div className=" fz-20">1,313,581 Students</div>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          </div>
+          
+        </div>
         </div>
 
         <div className="PurchasedCourses" style={{ display: activeTab === 'purchasedCourses' ? 'block' : 'none' }}>

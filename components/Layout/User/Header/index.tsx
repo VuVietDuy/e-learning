@@ -20,7 +20,7 @@ export function Header() {
     },
     {
       key: "3",
-      label: <Link href={"/user/login"}>Log out</Link>,
+      label: <Link href={"/introduction/login"}>Log out</Link>,
     },
   ];
 
@@ -38,11 +38,13 @@ export function Header() {
     <div>
       <div className="header-container">
         <div className="left">
-          <img
-            className="logo"
-            src="/images/logo_business.png"
-            height={48}
-          ></img>
+          <Link href={"/user/home"}>
+            <img
+              className="logo"
+              src="/images/logo_business.png"
+              height={48}
+            ></img>
+          </Link>
           <Button className="btn" size="large">
             Browse
           </Button>
