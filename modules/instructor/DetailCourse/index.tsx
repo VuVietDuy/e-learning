@@ -7,13 +7,13 @@ import "./index.scss"
 export function DetailCourse() : JSX.Element {
   return (
     <div className='detail_course_container default_container'>
-        {/* <div className='d_flex justify_content_between'>
+        <div className='d_flex justify_content_between'>
           <h2>Course title</h2>
           <Button>Save Changes</Button>
         </div>
         <div>
           <Link href={"/user/course_preview"}><span>Preview course</span></Link>
-        </div> */}
+        </div>
         {/* <div>
           <Row>
             <Col span={6}>

@@ -3,9 +3,10 @@ import React from "react";
 import { Avatar, Button, DatePicker, Input, Space, Table } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { randomColor } from "@/utils/RandomColor";
+
 const { RangePicker } = DatePicker;
 
-export const ComplainsManagement = () => {
+export const ComplainsManagement = () :JSX.Element => {
   const columns = [
     {
       title: "User",
@@ -42,48 +43,6 @@ export const ComplainsManagement = () => {
   const data = [
     {
       key: "1",
-      name: "John Brown",
-      email: "vuvietduy@gmail.com",
-      createdAt: "10/10/2023",
-    },
-    {
-      key: "3",
-      name: "John Brown",
-      email: "vuvietduy@gmail.com",
-      createdAt: "10/10/2023",
-    },
-    {
-      key: "3",
-      name: "John Brown",
-      email: "vuvietduy@gmail.com",
-      createdAt: "10/10/2023",
-    },
-    {
-      key: "3",
-      name: "John Brown",
-      email: "vuvietduy@gmail.com",
-      createdAt: "10/10/2023",
-    },
-    {
-      key: "3",
-      name: "John Brown",
-      email: "vuvietduy@gmail.com",
-      createdAt: "10/10/2023",
-    },
-    {
-      key: "3",
-      name: "John Brown",
-      email: "vuvietduy@gmail.com",
-      createdAt: "10/10/2023",
-    },
-    {
-      key: "3",
-      name: "John Brown",
-      email: "vuvietduy@gmail.com",
-      createdAt: "10/10/2023",
-    },
-    {
-      key: "3",
       name: "John Brown",
       email: "vuvietduy@gmail.com",
       createdAt: "10/10/2023",
