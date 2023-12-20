@@ -57,7 +57,7 @@ export const ComplainsManagement = () :JSX.Element => {
 
   return (
     <div className="complains_management">
-      <div className="d_flex justify_content_start mb_4">
+      {/* <div className="d_flex justify_content_start mb_4">
         <Input
           className="me_4"
           placeholder="Search"
@@ -67,7 +67,7 @@ export const ComplainsManagement = () :JSX.Element => {
         />
         <RangePicker size="large" />
       </div>
-      <Table columns={columns} dataSource={data} />
+      <Table columns={columns} dataSource={data} /> */}
     </div>
   );
 };

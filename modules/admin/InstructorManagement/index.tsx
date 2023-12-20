@@ -18,7 +18,7 @@ interface DataType {
   rating: number,
 }
 
-export function InstructorManagement() {
+export function InstructorManagement() :JSX.Element {
   const columns : ColumnsType<DataType> = [
     {
       title: 'Name',

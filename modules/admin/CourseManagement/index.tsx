@@ -7,7 +7,7 @@ import './style.scss'
 const { RangePicker } = DatePicker;
 const { Title } = Typography;
 
-export const CourseManagement = () => {
+export const CourseManagement = () :JSX.Element => {
   const columns = [
     {
       title: 'Courses',
