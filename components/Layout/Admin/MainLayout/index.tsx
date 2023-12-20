@@ -5,6 +5,7 @@ import Link from 'next/link';
 import {
     AreaChartOutlined,
     BookOutlined,
+    ExceptionOutlined,
     TeamOutlined,
     UserOutlined,
 } from '@ant-design/icons';
@@ -56,6 +57,12 @@ export function MainLayout({
                     </Menu.Item>
                     <Menu.Item
                         key= {4}
+                        icon={<ExceptionOutlined />}
+                    >
+                        <Link href='/admin/complains_management'>Complains Management</Link>
+                    </Menu.Item>
+                    <Menu.Item
+                        key= {5}
                         icon={<AreaChartOutlined />}
                     >
                         <Link href='/admin/transactions_statistic'>Transactions Statistic</Link>
