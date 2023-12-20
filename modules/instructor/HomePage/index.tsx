@@ -4,7 +4,7 @@ import { MinusOutlined } from '@ant-design/icons'
 
 import './index.scss'
 
-export function HomePage() {
+export function HomePage() : JSX.Element {
   return (
       
       <div className="homePage">

@@ -7,8 +7,9 @@ import { DeleteFilled } from "@ant-design/icons";
 
 import "./style.scss";
 
-export function MyCourses() {
+export function MyCourses() : JSX.Element {
   const router = useRouter();
+  /* eslint-disable no-unused-vars */
   const editCourse = () => {
     router.push("/instructor/detail_course");
   }

@@ -5,7 +5,7 @@ import { Checkbox, Select } from 'antd'
 import { CheckboxChangeEvent } from 'antd/es/checkbox';
 import Question from './components/Question';
 
-export function Communication() {
+export function Communication() : JSX.Element {
   const handleChange = (value: string) => {
     console.log(`selected ${value}`);
     // setActiveTab(value);

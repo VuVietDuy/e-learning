@@ -4,7 +4,7 @@ import { Button, Col, Row } from 'antd'
 import Link from 'next/link'
 import "./index.scss"
 
-export function DetailCourse() {
+export function DetailCourse() : JSX.Element {
   return (
     <div className='detail_course_container default_container'>
         {/* <div className='d_flex justify_content_between'>
