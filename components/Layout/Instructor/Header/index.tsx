@@ -12,15 +12,15 @@ export function Header() {
   const items: MenuProps["items"] = [
     {
       key: "1",
-      label: <Link href={"/user/my_classes"}>My Classs</Link>,
+      label: <Link href={"/instructor/my_courses"}>My Courses</Link>,
     },
     {
       key: "1",
-      label: <Link href={"/user/account_setting"}>Profile</Link>,
+      label: <Link href={"/instructor/account_setting"}>Profile</Link>,
     },
     {
       key: "2",
-      label: <Link href={"/user/login"}>Log out</Link>,
+      label: <Link href={"/introduction/login"}>Log out</Link>,
     },
   ];
 

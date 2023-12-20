@@ -1,49 +1,46 @@
 'use client'
 import React from 'react'
-import './index.scss'
 import {QuestionCircleOutlined} from '@ant-design/icons';
 import {MinusOutlined } from '@ant-design/icons';
 import HelpCenterQuestion from './component/HelpCenterQuestion';
 
+import './index.scss'
 
 export function HelpCenter() {
-  let spwindow_OnorOff = false;
-  let isStudent = false;
-  function turnSP(){
-    // if(!spwindow_OnorOff){
-    //   document.getElementById('supportWindow').style.display = 'block'
-    //   document.getElementById('spButton')!.style.display = 'none'
-    // }
-    // else{
-    //   document.getElementById('supportWindow')!.style.display = 'none'
-    //   document.getElementById('spButton')!.style.display = 'block'
-    // }
-    spwindow_OnorOff = !spwindow_OnorOff;
-  }
+  // function turnSP(){
+  //   // if(!spwindow_OnorOff){
+  //   //   document.getElementById('supportWindow').style.display = 'block'
+  //   //   document.getElementById('spButton')!.style.display = 'none'
+  //   // }
+  //   // else{
+  //   //   document.getElementById('supportWindow')!.style.display = 'none'
+  //   //   document.getElementById('spButton')!.style.display = 'block'
+  //   // }
+  // }
 
-  function stuortecher(){
-    // if(isStudent) {
-    //   document.getElementById('teachers')!.style.backgroundColor = '#ffffff';
-    //   document.getElementById('students')!.style.backgroundColor = '#2CFF99';
-    // }else{
-    //   document.getElementById('teachers')!.style.backgroundColor = '#2CFF99';
-    //   document.getElementById('students')!.style.backgroundColor = '#ffffff';
-    // }
-  }
+  // function stuortecher(){
+  //   // if(isStudent) {
+  //   //   document.getElementById('teachers')!.style.backgroundColor = '#ffffff';
+  //   //   document.getElementById('students')!.style.backgroundColor = '#2CFF99';
+  //   // }else{
+  //   //   document.getElementById('teachers')!.style.backgroundColor = '#2CFF99';
+  //   //   document.getElementById('students')!.style.backgroundColor = '#ffffff';
+  //   // }
+  // }
 
-  function teacherOn(){
-    // isStudent = false;
-  }
-  function studentOn(){
-    // isStudent = true;
-  }
-  // document.getElementById('teachers')!.style.backgroundColor = '#ffffff';
+  // function teacherOn(){
+  //   // isStudent = false;
+  // }
+  // function studentOn(){
+  //   // isStudent = true;
+  // }
+  // // document.getElementById('teachers')!.style.backgroundColor = '#ffffff';
 
   return (
     <div className='HelpCenter'>
       <div className="support">
         <div className="supportWindow" id='supportWindow'>
-          <div className="title">Support <span className='minus' onClick={turnSP}><MinusOutlined /></span></div>
+          <div className="title">Support <span className='minus'><MinusOutlined /></span></div>
 
           <div className="result">
             <div className="search">
@@ -76,7 +73,7 @@ export function HelpCenter() {
           </div>
         </div>
 
-        <button className='spButton' id='spButton' onClick={turnSP}><QuestionCircleOutlined /> Support</button>
+        <button className='spButton' id='spButton' ><QuestionCircleOutlined /> Support</button>
       </div>
       <div className="Top">
         <div className="search">
@@ -93,10 +90,10 @@ export function HelpCenter() {
       </div>
       <div className="default_container Body">
         <div className="top">
-          <button className="chooseSide" id='students'onClick={() => { studentOn(); stuortecher();}}>
+          <button className="chooseSide" id='students'>
             Students
           </button>
-          <button className="chooseSide" id='teachers' onClick={() => { teacherOn(); stuortecher();}}>
+          <button className="chooseSide" id='teachers'>
             Teachers
           </button>
         </div>
