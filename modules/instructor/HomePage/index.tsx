@@ -1,7 +1,8 @@
+'use client'
 import React from 'react'
-import './index.scss'
-import { Button } from 'antd'
 import { MinusOutlined } from '@ant-design/icons'
+
+import './index.scss'
 
 export function HomePage() {
   return (

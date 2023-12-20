@@ -1,10 +1,11 @@
 'use client'
 import React from 'react'
-import './style.scss'
-import { Button } from 'antd';
 import Image from 'next/image';
-import { DeleteFilled } from '@ant-design/icons';
 import { useRouter } from 'next/navigation';
+import { Button } from 'antd';
+import { DeleteFilled } from '@ant-design/icons';
+
+import './style.scss'
 
 export function MyCourses() {
 
