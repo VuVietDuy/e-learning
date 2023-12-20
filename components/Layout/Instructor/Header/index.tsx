@@ -65,7 +65,7 @@ export function Header() {
           </div>
         </div>
         <div className="right">
-          <Link href={"/user/help_center"} className="btn-text">
+          <Link href={"/instructor/help_center"} className="btn-text">
             <span>Help Center</span>
           </Link>
           <Link href={"/instructor/home"} className="btn-text">

@@ -11,7 +11,7 @@ export function MyCourses() {
 
   const router = useRouter()
     function editCourse() {
-      router.push("detail_course")
+      router.push("/instructor/detail_course")
     }
   return (
     <div className='default_container my_courses_container'>

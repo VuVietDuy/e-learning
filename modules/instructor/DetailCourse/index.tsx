@@ -1,6 +1,8 @@
+'use client'
 import React from 'react'
 import { Button, Col, Row } from 'antd'
 import Link from 'next/link'
+import "./index.scss"
 
 export function DetailCourse() {
   return (
