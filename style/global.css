@@ -53,8 +53,16 @@
     background-color: #2CFF9A;
 }
 
+.bg_black {
+    background-color: #000;
+}
+
 .text_black {
     color: #000;
+}
+
+.text_white {
+    color: #fff;
 }
 
 .text_green {
@@ -67,4 +75,14 @@
 
 .border_black {
     border-color: #000;
+}
+
+.ms_4 {
+    margin-left: 24px;
+}
+
+.default_container {
+    width: 1000px;
+    margin: auto;
+    padding-top: 48px;
 }

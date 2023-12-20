@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import type { MenuProps } from "antd";
 import { Avatar, Button, Dropdown } from "antd";
-import { BellOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import { BellOutlined } from "@ant-design/icons";
 
 import "./index.scss";
 
@@ -68,11 +68,8 @@ export function Header() {
           <Link href={"/user/help_center"} className="btn-text">
             <span>Help Center</span>
           </Link>
-          <Link href={"/user"} className="btn-text">
+          <Link href={"/instructor/home"} className="btn-text">
             <span>Students</span>
-          </Link>
-          <Link href={"/user/shop_cart"} className="btn-text">
-            <ShoppingCartOutlined />
           </Link>
           <span className="btn-text" onClick={showDrawer}>
             <BellOutlined />

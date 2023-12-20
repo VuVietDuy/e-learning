@@ -203,8 +203,7 @@
     .Body{
         .top{
             display: flex;
-            gap: 25px;
-            margin: 56px 0px 0px 160px;
+            justify-content: center;
             .chooseSide{
                 width: 317px;
                 height: 160px;
@@ -214,6 +213,7 @@
                 font-size: 28px;
                 font-weight: 600;
                 transition: .2s;
+                margin: 0 16px;
             }
             .chooseSide:hover{
                 cursor: pointer;

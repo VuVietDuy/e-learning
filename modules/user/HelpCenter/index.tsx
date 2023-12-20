@@ -91,7 +91,7 @@ export function HelpCenter() {
         <div className="alpha">&nbsp;</div>
         <img src="/images/helpcenter.png" alt="" className='titleImage'/>
       </div>
-      <div className="Body">
+      <div className="default_container Body">
         <div className="top">
           <button className="chooseSide" id='students'onClick={() => { studentOn(); stuortecher();}}>
             Students

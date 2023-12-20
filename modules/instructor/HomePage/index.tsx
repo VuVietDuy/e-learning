@@ -8,7 +8,7 @@ export function HomePage() {
       
       <div className="homePage">
         <div className="part1">
-            <img src="/img/img9.png" alt="" className="poster" />
+            <img src="/images/instructor/banner.png" alt="" className="poster" />
             <div className="content">
               <div className="text-content">Inspire Creativity in Others.</div>
               <div className="text-des font22 bold">Teach on MegaSkill and share your passion with members around the world.</div>
@@ -21,25 +21,21 @@ export function HomePage() {
             <div className="text font16">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. iqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. quat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. iqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</div>
             <div className="list-people">
                 <div className="item">
-                  
-                    
-                    <img src="/img/img1.png" alt="" className="img-item" />
+                    <img src="/images/instructor/ellipse1.png" alt="" className="img-item" />
                     <div className="text bold font22 p-24">Earn Money</div>
                     <div className="text font20">“Teaching on MegaSkill gives me the financial flexibility to take on only the work I’m most passionate about.”</div>
                     <div className="text font16 pt-24 blue">Donal Reynoids</div>
                     <div className="text font14 pt-16 ">MegaSkill Instructor</div>
                 </div>
                 <div className="item pd-24">
-                    
-                    <img src="/img/img2.png" alt="" className="img-item" />
+                    <img src="/images/instructor/ellipse2.png" alt="" className="img-item" />
                     <div className="text bold font22 p-24">Earn Money</div>
                     <div className="text font20">“Teaching on MegaSkill gives me the financial flexibility to take on only the work I’m most passionate about.”</div>
                     <div className="text font16 pt-24 blue">Donal Reynoids</div>
                     <div className="text font14 pt-16 ">MegaSkill Instructor</div>
                 </div>
                 <div className="item">
-                    
-                    <img src="/img/img3.png" alt="" className="img-item" />
+                    <img src="/images/instructor/ellipse3.png" alt="" className="img-item" />
                     <div className="text bold font22 p-24">Earn Money</div>
                     <div className="text font20">“Teaching on MegaSkill gives me the financial flexibility to take on only the work I’m most passionate about.”</div>
                     <div className="text font16 pt-24 blue">Donal Reynoids</div>
@@ -65,21 +61,21 @@ export function HomePage() {
             <div className="text font28 bold">How Teaching Works</div>
             <div className="list-people mb-100">
                 <div className="item">
-                   <img src="/img/img5.png" alt="" className="img-item" />
+                   <img src="/images/instructor/icon1.png" alt="" className="img-item" />
                     <div className="text bold font22 p-24">Apply to Teach</div>
                     <div className="text font20">Start an account and submit your application. We will notify you once your’re approved, typically within 2 weeks.</div>
                     
                     <div className="text font16 pt-24 blue">Learn More</div>
                 </div>
                 <div className="item pd-24">
-                     <img src="/img/img6.png" alt="" className="img-item" />
+                     <img src="/images/instructor/icon2.png" alt="" className="img-item" />
                     <div className="text bold font22 p-24">Create Your First Class</div>
                     <div className="text font20">Film your MegaSkill class and publish it with our easy class upload tool. We provide help every step of the way. For English apllicants, you’re encouraged to create your first class via one of our teacher programs for first time teachers.</div>
                     
                     <div className="text font16 pt-24 blue">Learn More</div>
                 </div>
                 <div className="item">
-                     <img src="/img/img7.png" alt="" className="img-item" />
+                     <img src="/images/instructor/icon3.png" alt="" className="img-item" />
                     <div className="text bold font22 p-24">Start Earning</div>
                     <div className="text font20">You’ll be paid monthly for every member who watched your classNamees, forever. Top earning teachers make $100,000+ a year.</div>
                     <div className="text font16 pt-24 blue ">Learn More</div>
@@ -88,7 +84,7 @@ export function HomePage() {
         </div>
         
         <div className="part5">
-          <img src="/img/img8.png" alt="" className="img-program" />
+          <img src="/images/instructor/banner1.png" alt="" className="img-program" />
           <div className="content">
             <div className="text font46">New Teacher Programs</div>
             <div className="text font24 p-24">Our new teacher programs are designed to help new teachers create their first class and successfully launch their teaching journey on MegaSkill with feedback and support from our team and community. You’ll be invited into one of the programs once you are approved to teach.</div>
