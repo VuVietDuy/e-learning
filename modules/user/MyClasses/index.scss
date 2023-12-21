@@ -20,70 +20,56 @@
                 font-weight: 600;
                 padding: 16px 0px 16px 0px;
                 transition: 0.2s;
+                border-bottom: 6px solid #FFF;
+                transition: 0.5s;
+            }
+            .active {
+                border-bottom: 6px solid #503ED8;
             }
             .element:hover{
-                background-color: rgb(223, 223, 223);
                 cursor: pointer;
+                border-bottom: 6px solid #503ED8;
             }
         }
     }
     .Body{
         padding: 0px;
-        .watch-histoty {
-            .class-option {
-                .choose{
-                    display: flex;
-        
-                    .choose-item {
-                        width: 50%;
-                        .choose-title {
-                            text-align: start;
-                        }
-                        .radio-btn {
-                            margin-top: 16px;
-                            margin-bottom: 30px;
-                            display: flex;
-                            .radio{
-                                margin-right: 80px;
-                            }
-                        }
-                    }
-                }
-                h3{
-                    text-align: start;
-                    margin-bottom: 16px;
-                }
-            }
-            .skills {
+    }
+    .watch-histoty {
+        .class-option {
+            .choose{
                 display: flex;
-                justify-content: space-between;
-                padding-bottom: 24px;
-                border-bottom: 2px solid #000;
-                .btn-list {
-                    .item {
-                        margin-right: 6px
+
+                .choose-item {
+                    width: 50%;
+                    .choose-title {
+                        text-align: start;
+                    }
+                    .radio-btn {
+                        margin-top: 16px;
+                        margin-bottom: 30px;
+                        display: flex;
+                        .radio{
+                            margin-right: 80px;
+                        }
                     }
                 }
             }
-            .class-list{
-                .mt24{
-                    margin-top: 24px;
-                }
-                .mt80{
-                    margin-top: 80px;
-                    margin-bottom: unset;
-                }
-                .course-img-box{
-                    width: 317px;
-                    height: 16px;
-                    background-color: #ccc;
-                    margin-top: 8px;
-                    object-fit: cover;
+            h3{
+                text-align: start;
+                margin-bottom: 16px;
+            }
+        }
+        .skills {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 24px;
+            border-bottom: 2px solid #000;
+            .btn-list {
+                .item {
+                    margin-right: 6px
                 }
             }
         }
-    }
-    .active {
-        border-bottom: 6px solid #503ED8;
     }
 }

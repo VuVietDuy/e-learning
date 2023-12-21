@@ -1,55 +1,96 @@
-@mixin size {
-    width: 50%;
-    height: 100%;
-}
-
-.purchased-course {
-    height: 140px;
-    border-radius: 8px;
-    overflow: hidden;
-    display: flex;
-
-    .image {
-        border-radius: 8px;
-        // overflow: hidden;
-        margin-right: 16px;
-
-        img {
-            width: 170px;
-            object-fit: over;
-        }
+.purchase_course {
+    .course__3{
+        width: 1000px;
+        margin: auto;
     }
-
-    .right {
+    .course-3-body{
+        display: flex;
+        border-bottom: 1px solid #000;
+        padding-bottom: 24px;
+    }
+    .course-3-des{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .course-3-des-1{
+        font-size: 22px;
+        font-weight: 600;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: start;
+        margin-bottom: 16px;
+    
+    }
+    .course-3-des-1:hover{
+        text-decoration:underline;
+        cursor: pointer;
+    }
+    .course-3-des-2-contain{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        text-align: start;
+    }.course-3-des-2-1{
+        line-height: 24px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
-        .title {
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 19.2px;
-            margin-bottom: 0;
-        }
-
-        .instructor {
-            font-size: 15px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 18px;
-        }
-
-        .parchased_date{
-            display: flex;
-            justify-content: space-between;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 19.2px;
-            .price {
-                font-size: 20px;
-            }
-        }
+    }
+    .des-2-4{
+        display: flex;
+    }
+    .des-2-4-1{
+        margin-right: 10px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .course-3-des-2-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: end;
+    }
+    .course-3-des-2-2-1{
+        color: #3CAD99;
+        font-size: 18.88px;
+        font-weight: 500;
+    }
+    .course-3-des-2-2-2{
+        font-size: 15px;
+        text-decoration-line: line-through;
+        opacity: 0.7;
+    }
+    
+    .course-3-des-2-2-3{
+        color: #565454;
+        font-size: 37.76px;
+        font-weight: 600;
+    }
+    
+    .course-3-img{
+        margin-right: 26px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .mt24{
+        margin-top: 24px;
+    }
+    
+    .course-img-box{
+        width: 317px;
+        height: 16px;
+        background-color: #ccc;
+        margin-top: 8px;
+        object-fit: cover;
+    }
+    
+    .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 3px;
+        background-color: #000;
+        margin: 8px 16px;
     }
 }

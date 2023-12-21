@@ -5,6 +5,7 @@ import MyClassesCourse from "@/components/MyClassesCourse";
 import PurchasedCourseItem from "@/components/PurchasedCourseItem";
 
 import "./index.scss";
+import CoursePurchased from "./components/CoursePurchased";
 
 export function MyClasses(): JSX.Element {
   const [activeTab, setActiveTab] = useState("learningPaths");
@@ -19,25 +20,25 @@ export function MyClasses(): JSX.Element {
         <div className="Title">My Classes</div>
         <div className="Category">
           <div
-            className={`element ${
+            className={`${
               activeTab === "learningPaths" ? "active" : ""
-            }`}
+            } element`}
             onClick={() => handleTabChange("learningPaths")}
           >
             My Learning Paths
           </div>
           <div
-            className={`element ${
+            className={`${
               activeTab === "watchHistory" ? "active" : ""
-            }`}
+            } element`}
             onClick={() => handleTabChange("watchHistory")}
           >
             Watch History
           </div>
           <div
-            className={`element ${
+            className={`${
               activeTab === "purchasedCourses" ? "active" : ""
-            }`}
+            } element`}
             onClick={() => handleTabChange("purchasedCourses")}
           >
             Purchased Courses
@@ -72,6 +73,7 @@ export function MyClasses(): JSX.Element {
           </Row>
         </div>
 
+        {/* WatchHistory */}
         <div
           className="WatchHistory"
           style={{ display: activeTab === "watchHistory" ? "block" : "none" }}
@@ -122,126 +124,47 @@ export function MyClasses(): JSX.Element {
               </div>
             </div>
             <div className="class-list">
-              <div className="course__3 mt24">
-                <div className="course-3-body">
-                  <div className="course-3-img">
-                    <img src="/images/classes/card4.png" alt="" />
-                    <div className="course-img-box"></div>
-                  </div>
-                  <div className="course-3-des">
-                    <div className="course-3-des-1">
-                      Dynamic Male Anatomy for Artists in Mudbox: Make realistic
-                      3D Meta Human
-                    </div>
-                    <div className="course-3-des-2-contain">
-                      <div className="course-3-des-2-1">
-                        <div className=" fz-20">Ginger Bear</div>
+              <CoursePurchased
+                src="/images/user/my_classes1.png"
+                title="Dynamic Male Anatomy for Artists in Mudbox: Make realistic
+                      3D Meta Human"
+                instructor="Ginger Bear"
+                time="1d 5h 28m"
+                amount="1,313,581"
+              ></CoursePurchased>
 
-                        <div className="des-2-3 flex des-2-3-margin mt80 mt80">
-                          <div className=" fz-20 ml5">1d 5h 28m</div>
-                          <div className=" fz-20">1,313,581 Students</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="course__3 mt24">
-                <div className="course-3-body">
-                  <div className="course-3-img">
-                    <img src="/images/classes/img1.png" alt="" />
-                    <div className="course-img-box"></div>
-                  </div>
-                  <div className="course-3-des">
-                    <div className="course-3-des-1">
-                      Dynamic Male Anatomy for Artists in Mudbox: Make realistic
-                      3D Meta Human
-                    </div>
-                    <div className="course-3-des-2-contain">
-                      <div className="course-3-des-2-1">
-                        <div className=" fz-20">Ginger Bear</div>
-
-                        <div className="des-2-3 flex des-2-3-margin mt80">
-                          <div className=" fz-20 ml5">1d 5h 28m</div>
-                          <div className=" fz-20">1,313,581 Students</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="course__3 mt24">
-                <div className="course-3-body">
-                  <div className="course-3-img">
-                    <img src="/images/classes/img4.png" alt="" />
-                    <div className="course-img-box"></div>
-                  </div>
-                  <div className="course-3-des">
-                    <div className="course-3-des-1">
-                      Dynamic Male Anatomy for Artists in Mudbox: Make realistic
-                      3D Meta Human
-                    </div>
-                    <div className="course-3-des-2-contain">
-                      <div className="course-3-des-2-1">
-                        <div className=" fz-20">Ginger Bear</div>
-
-                        <div className="des-2-3 flex des-2-3-margin mt80">
-                          <div className=" fz-20 ml5">1d 5h 28m</div>
-                          <div className=" fz-20">1,313,581 Students</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="course__3 mt24">
-                <div className="course-3-body">
-                  <div className="course-3-img">
-                    <img src="/images/classes/img3.png" alt="" />
-                    <div className="course-img-box"></div>
-                  </div>
-                  <div className="course-3-des">
-                    <div className="course-3-des-1">
-                      Dynamic Male Anatomy for Artists in Mudbox: Make realistic
-                      3D Meta Human
-                    </div>
-                    <div className="course-3-des-2-contain">
-                      <div className="course-3-des-2-1">
-                        <div className=" fz-20">Ginger Bear</div>
-
-                        <div className="des-2-3 flex des-2-3-margin mt80">
-                          <div className=" fz-20 ml5">1d 5h 28m</div>
-                          <div className=" fz-20">1,313,581 Students</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="course__3 mt24">
-                <div className="course-3-body">
-                  <div className="course-3-img">
-                    <img src="/images/classes/img2.png" alt="" />
-                    <div className="course-img-box"></div>
-                  </div>
-                  <div className="course-3-des">
-                    <div className="course-3-des-1">
-                      Dynamic Male Anatomy for Artists in Mudbox: Make realistic
-                      3D Meta Human
-                    </div>
-                    <div className="course-3-des-2-contain">
-                      <div className="course-3-des-2-1">
-                        <div className=" fz-20">Ginger Bear</div>
-
-                        <div className="des-2-3 flex des-2-3-margin mt80">
-                          <div className=" fz-20 ml5">1d 5h 28m</div>
-                          <div className=" fz-20">1,313,581 Students</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <CoursePurchased
+                src="/images/user/my_classes2.png"
+                title="Dynamic Male Anatomy for Artists in Mudbox: Make realistic
+                      3D Meta Human"
+                instructor="Ginger Bear"
+                time="1d 5h 28m"
+                amount="1,313,581"
+              ></CoursePurchased>
+              <CoursePurchased
+                src="/images/user/my_classes3.png"
+                title="Dynamic Male Anatomy for Artists in Mudbox: Make realistic
+                      3D Meta Human"
+                instructor="Ginger Bear"
+                time="1d 5h 28m"
+                amount="1,313,581"
+              ></CoursePurchased>
+              <CoursePurchased
+                src="/images/user/my_classes4.png"
+                title="Dynamic Male Anatomy for Artists in Mudbox: Make realistic
+                      3D Meta Human"
+                instructor="Ginger Bear"
+                time="1d 5h 28m"
+                amount="1,313,581"
+              ></CoursePurchased>
+              <CoursePurchased
+                src="/images/user/my_classes2.png"
+                title="Dynamic Male Anatomy for Artists in Mudbox: Make realistic
+                    3D Meta Human"
+                instructor="Ginger Bear"
+                time="1d 5h 28m"
+                amount="1,313,581"
+              ></CoursePurchased>
             </div>
           </div>
         </div>
@@ -253,11 +176,12 @@ export function MyClasses(): JSX.Element {
           }}
         >
           <PurchasedCourseItem
-            src="/images/card.png"
-            title="Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D Meta Human"
-            instructor="Auther"
-            parchasedDate="20/12/2023"
-            star={3}
+            src="/images/user/my_classes2.png"
+            title="Dynamic Male Anatomy for Artists in Mudbox: Make realistic
+                      3D Meta Human"
+            instructor="Ginger Bear"
+            time="1d 5h 28m"
+            amount="1,313,581"
           ></PurchasedCourseItem>
         </div>
       </div>
