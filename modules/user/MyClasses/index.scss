@@ -29,106 +29,61 @@
     }
     .Body{
         padding: 0px;
-        .MyLearningPaths{
-        }
-        .WatchHistory{
-            .top{
-                .title{
-                        margin-bottom: 16px;
-                        display: flex;
-                        gap: 496px;
-                        font-size: 14px;
-                        font-weight: 600;
-                }
-                .length-status{
-                    .cate{
-                        display: flex;
-                        gap: 80px;
-                        margin-bottom: 24px;
-                        .element{
-                            .borderBox{
-                                border-radius: 4px;
-                                border: 1px solid;
-                                background: #FFF;
-                                margin-right: 16px;
-                            }
-                            .borderBox-seperate{
-                                margin: 0px 16px 0px 70px;
+        .watch-histoty {
+            .class-option {
+                .choose{
+                    display: flex;
+        
+                    .choose-item {
+                        width: 50%;
+                        .choose-title {
+                            text-align: start;
+                        }
+                        .radio-btn {
+                            margin-top: 16px;
+                            margin-bottom: 30px;
+                            display: flex;
+                            .radio{
+                                margin-right: 80px;
                             }
                         }
                     }
                 }
-                .skills{
-                    .cusButton{
-                        padding: 4.636px 18.542px;
-                        background-color: white;
-                        border-radius: 3.09px;
-                        border: 1px solid;
-                        font-weight: 600;
-                        font-size: 12.362px;
+                h3{
+                    text-align: start;
+                    margin-bottom: 16px;
+                }
+            }
+            .skills {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 24px;
+                border-bottom: 2px solid #000;
+                .btn-list {
+                    .item {
+                        margin-right: 6px
                     }
+                }
+            }
+            .class-list{
+                .mt24{
+                    margin-top: 24px;
+                }
+                .mt80{
+                    margin-top: 80px;
+                    margin-bottom: unset;
+                }
+                .course-img-box{
+                    width: 317px;
+                    height: 16px;
+                    background-color: #ccc;
+                    margin-top: 8px;
+                    object-fit: cover;
                 }
             }
         }
     }
     .active {
         border-bottom: 6px solid #503ED8;
-    }
-}
-
-.watch-histoty {
-    .class-option {
-        .choose{
-            display: flex;
-
-            .choose-item {
-                width: 50%;
-                .choose-title {
-                    text-align: start;
-                }
-                .radio-btn {
-                    margin-top: 16px;
-                    margin-bottom: 30px;
-                    display: flex;
-                    .radio{
-                        margin-right: 80px;
-                    }
-                }
-            }
-        }
-        h3{
-            text-align: start;
-            margin-bottom: 16px;
-        }
-    }
-    .skills {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 24px;
-        border-bottom: 2px solid #000;
-        .btn-list {
-            .item {
-                margin-right: 6px
-            }
-        }
-    }
-    .class-list{
-        .mt24{
-            margin-top: 24px;
-        }
-        .mt80{
-            margin-top: 80px;
-            margin-bottom: unset;
-        }
-        .fz-20{
-            
-        }
-        .course-img-box{
-            width: 317px;
-            height: 16px;
-            background-color: #ccc;
-            margin-top: 8px;
-            object-fit: cover;
-        }
     }
 }
