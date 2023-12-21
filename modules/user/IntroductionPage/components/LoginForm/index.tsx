@@ -1,46 +1,41 @@
-'use client'
+"use client";
 import React from "react";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { Button, Form, Input, notification } from "antd";
 
 import "./index.scss";
-import Link from "next/link";
-import { Button, Form, Input } from "antd";
-import { useRouter } from "next/navigation";
-import { checkExistUser, getAllUsers } from "@/services/ApiUser";
+import { checkExistUser } from "@/services/ApiUser";
 
 export function LoginForm() {
-  const router = useRouter()
+  const router = useRouter();
 
-  const handleLogin = (e : any) => {
-
-    checkExistUser(e.username, e.password)
-    .then((res) => {
+  const handleLogin = (e: any) => {
+    checkExistUser(e.username, e.password).then((res) => {
       console.log(res);
-      if(res) {
-        if(res.roleName==="user") {
-          router.push("/user/home")
-        } else if(res.roleName==="instructor") {
-          router.push("/instructor/home")
-        } else if(res.roleName==="admin") {
-          router.push("/admin/course_management")
+      if (res) {
+        if (res.roleName === "user") {
+          router.push("/user/home");
+        } else if (res.roleName === "instructor") {
+          router.push("/instructor/home");
+        } else if (res.roleName === "admin") {
+          router.push("/admin/course_management");
         }
+        notification.success({
+          message: "Login successfully"
+        })
+      } else {
+        notification.error({
+          message: "Login failed"
+        })
       }
-    })
-    
-    // if(e.username==="user") {
-    //   router.push("/user/home")
-    // } else if(e.username==="instructor") {
-    //   router.push("/instructor/home")
-    // } else if(e.username==="admin") {
-    //   router.push("/admin/course_management")
-    // }
-  }
+    });
+  };
   return (
     <div className="LoginForm">
       <h4>Login</h4>
 
-      <Form
-      onFinish={handleLogin}
-      >
+      <Form onFinish={handleLogin}>
         <div>
           <Form.Item name={"username"}>
             <Input

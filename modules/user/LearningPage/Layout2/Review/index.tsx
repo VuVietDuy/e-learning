@@ -1,6 +1,6 @@
 import { StarFilled, StarOutlined } from "@ant-design/icons";
 import React from "react";
-import './index.scss';
+import "./index.scss";
 
 function Review() {
   return (

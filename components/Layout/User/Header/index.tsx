@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { BellOutlined, ShoppingCartOutlined } from "@ant-design/icons";
+import { BellOutlined, DownOutlined, SearchOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
 import { Avatar, Button, Col, Dropdown, Input, Menu, Row } from "antd";
 import Link from "next/link";
@@ -61,7 +61,7 @@ export function Header() {
           </Link>
           <div className="browse">
             <Button className="btn" size="large" onClick={() => setOpenBrowse(!openBrowse)}>
-              Browse
+              Browse <DownOutlined />
             </Button>
             <div className={`browse_content ${openBrowse ? "d_block" : "d_none"}`} ref={browseContentRef}>
               <Row>
@@ -139,7 +139,7 @@ export function Header() {
             </Button>
           </Link>
           <div>
-            <Input className="search" type='text' placeholder="Search"></Input>
+            <Input className="search" type='text' placeholder="Search" prefix={<SearchOutlined />}></Input>
           </div>
         </div>
         <div className="right">
