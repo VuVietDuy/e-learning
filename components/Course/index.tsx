@@ -30,12 +30,15 @@ function Course(props :any) {
             <Image src={src} alt="" width={232} height={120}/>
         </div>
         <div className='bottom'>
-            <p className='time'>{time}</p>
+            <div className='d_flex justify_content_between'>
+                <p className='students'>10,290 student</p>
+                <p className='time'>{time}</p>
+            </div>
             <Paragraph ellipsis={{rows:3,}} className='title'>{title}</Paragraph>
             <div className='info'>
                 <div className='info1'>
                     <span className='instructor'>{instructor}</span>
-                    <span className='star'>{star} <StarFilled style={{color: "#FFD600"}} /></span>
+                    <span>{star} <StarFilled className='star' /></span>
                 </div>
                 <div className='info2'>
                     <span className='cur-price'>{currentPrice}</span>

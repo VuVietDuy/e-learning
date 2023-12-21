@@ -13,11 +13,16 @@ export function MyCourses(): JSX.Element {
   const editCourse = () => {
     router.push("/instructor/detail_course");
   };
+
+  const newCourse = () => {
+    router.push("/instructor/detail_course");
+  };
+
   return (
     <div className="default_container my_courses_container">
       <div className="header d_flex justify_content_between">
         <h2>My Courses</h2>
-        <Button>New course</Button>
+        <Button onClick={newCourse}>New course</Button>
       </div>
       <div className="courses d_flex justify_content_between align_item_center">
         <div className="d_flex justify_content_between align_item_center">

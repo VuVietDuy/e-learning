@@ -40,6 +40,14 @@
     margin-right: 24px;
 }
 
+.me_2 {
+    margin-right: 16px;
+}
+
+.ms_2 {
+    margin-left: 16px;
+}
+
 .wh_64 {
     width: 64px;
     height: 64px;
@@ -85,4 +93,8 @@
     width: 1000px;
     margin: auto;
     padding-top: 48px;
+}
+
+.fs_22 {
+    font-size: 22px;
 }

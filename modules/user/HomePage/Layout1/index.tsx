@@ -67,7 +67,7 @@ const Layout1 = () => {
             <SwiperSlide
               key={index}
             >
-              <Card
+              <Card 
                 src={card.src}
                 time={card.time}
                 title={card.title}

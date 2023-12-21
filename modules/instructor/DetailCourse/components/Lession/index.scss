@@ -1,0 +1,28 @@
+.lession {
+    padding: 16px;
+    width: 602px;
+    height: 123px;
+    border-radius: 6px;
+    border: 1px solid #000;
+    background: #E9E9E9;
+    display: flex;
+    .info {
+        width: 402px;
+        padding-left: 24px;
+        .info_1 {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            .infor_1-item {
+                font-size: 20px;
+                color: #625A5A;
+            }
+        }
+        .info_2 {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 19.2px;
+        }
+    }
+}
