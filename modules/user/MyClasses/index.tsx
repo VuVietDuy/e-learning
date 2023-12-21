@@ -1,10 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import { Button, Col, Radio, Row } from "antd";
-import MyClassesCourse from "@/components/MyClassesCourse";
-import PurchasedCourseItem from "@/components/PurchasedCourseItem";
 
 import "./index.scss";
+import MyClassesCourse from "@/components/MyClassesCourse";
+import PurchasedCourseItem from "@/components/PurchasedCourseItem";
 import CoursePurchased from "./components/CoursePurchased";
 
 export function MyClasses(): JSX.Element {
