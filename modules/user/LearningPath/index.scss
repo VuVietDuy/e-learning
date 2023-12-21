@@ -1,4 +1,30 @@
 .learning_path_text {
+    
+    position: relative;
+    .learning-img{
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .content{
+        position: absolute;
+        color: #fff;
+        top: 100px;
+        width: 1000px;
+        margin: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        .title{
+            font-size: 28px;
+        }
+        .description{
+            font-size: 46px;
+            margin: 24px 0;
+        }
+        .non-description{
+            font-size: 24px;
+        }
+    }
 }
 
 .learning_path_content {

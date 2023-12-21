@@ -1,7 +1,7 @@
 const listCard = [
   {
     src: "/images/card.png",
-    time: "1h 20p",
+    time: "1h 20m",
     title: "Photoshop Advance: Retouching with Master of Photoshop (2023) ...",
     instructor: "Duy Vu",
     star: "4/5",
@@ -11,7 +11,7 @@ const listCard = [
   },
   {
     src: "/images/card1.png",
-    time: "1h 20p",
+    time: "1h 20m",
     title:
       "Photoshop Advance: Retouching with Master of Photoshop (2023) with Master of Photoshop (2023), with Master of Photoshop (2023), with Master of Photoshop (2023)",
     instructor: "Duy Vu",
@@ -22,7 +22,7 @@ const listCard = [
   },
   {
     src: "/images/card2.png",
-    time: "1h 20p",
+    time: "1h 20m",
     title: "Photoshop Advance: Retouching with Master of Photoshop (2023) ...",
     instructor: "Duy Vu",
     star: "4/5",
@@ -32,7 +32,7 @@ const listCard = [
   },
   {
     src: "/images/card.png",
-    time: "1h 20p",
+    time: "1h 20m",
     title: "Photoshop Advance: Retouching with Master of Photoshop (2023) ...",
     instructor: "Jacod Andree",
     star: "4/5",
@@ -42,7 +42,7 @@ const listCard = [
   },
   {
     src: "/images/card.png",
-    time: "1h 10p",
+    time: "1h 10m",
     title: "Photoshop Advance: Retouching with Master of Photoshop (2023) ...",
     instructor: "Jacod Andree",
     star: "4/5",
@@ -52,7 +52,7 @@ const listCard = [
   },
   {
     src: "/images/card.png",
-    time: "1h 40p",
+    time: "1h 40m",
     title: "Photoshop Advance: Retouching with Master of Photoshop (2023) ...",
     instructor: "Jacod Andree",
     star: "4/5",
