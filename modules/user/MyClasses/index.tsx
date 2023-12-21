@@ -5,7 +5,7 @@ import { Button, Col, Radio, Row } from "antd";
 import "./index.scss";
 import MyClassesCourse from "@/components/MyClassesCourse";
 import PurchasedCourseItem from "@/components/PurchasedCourseItem";
-import CoursePurchased from "./components/CoursePurchased";
+import CoursePurchased from "./components/CoursePerchased";
 
 export function MyClasses(): JSX.Element {
   const [activeTab, setActiveTab] = useState("learningPaths");
