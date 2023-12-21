@@ -1,20 +1,37 @@
-import { Card } from 'antd'
-import React from 'react'
+import React from "react";
+import "./index.scss";
 
-function Question() {
+function Question(props: any) {
+  const {
+    lesson = "Question in Zbrush for Character Artist",
+    name = "Michael Lee",
+    date = "8 months ago",
+    questionContent = "How to custom my own Prefer Shortcut? I want to be efficient in using keyboard.\nAmet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+  } = props;
 
   return (
-    <div>
-        <Card title={<>
-                <img src='/images/card1.png' width={55}></img>
-                <span>Question in Zbrush for Character Artist</span>
-            </>} bordered={false} style={{ width: 300 }}>
-            <p>Card content</p>
-            <p>Card content</p>
-            <p>Card content</p>
-        </Card>
+    <div className="wholeQuestion">
+      <div className="Question">
+        <div className="Top">
+          <div className="lessonImg"></div>
+          {lesson}
+        </div>
+        <div className="Bottom">
+          <div className="User">
+            <div className="userImg"></div>
+            <div className="userName">{name}</div>
+            {date}
+          </div>
+          {questionContent}
+        </div>
+      </div>
+
+      <div className="Icon">
+        <img src="/icon/leftArrow.png" alt="" className="icon" />
+        <img src="/icon/trashcan.png" alt="" className="icon" />
+      </div>
     </div>
-  )
+  );
 }
 
-export default Question
+export default Question;

@@ -1,45 +1,114 @@
-'use client'
-import React from 'react'
-import './style.scss'
-import { Checkbox, Select } from 'antd'
-import { CheckboxChangeEvent } from 'antd/es/checkbox';
-import Question from './components/Question';
+'use client';
+import React from "react";
+import { useState } from "react";
+import { DownOutlined } from "@ant-design/icons";
 
-export function Communication() : JSX.Element {
-  const handleChange = (value: string) => {
-    console.log(`selected ${value}`);
-    // setActiveTab(value);
+import "./style.scss";
+import Question from "./components/Question";
+
+export function Communication() {
+  const [cateCurr, setCategory] = useState("Newest");
+  const [isShown, setIsShown] = useState(false);
+
+  const handleClick1 = () => {
+    setIsShown((current) => !current);
   };
 
-  const onChange = (e: CheckboxChangeEvent) => {
-    console.log(`checked = ${e.target.checked}`);
-  };
-  return (
-    <div className='communication_container'>
-      <div className='header'>
-        <h2>Communication</h2>
-        <Select
-          defaultValue="newest"
-          style={{ width: 150, height: 49 }}
-          onChange={handleChange}
-          options={[
-            { value: 'newest', label: 'Newest' },
-            { value: 'oldest', label: 'Oldest' },
-            { value: 'most_popular', label: 'Most popular' },
-          ]}
-        />
-      </div>
+  function allQuestion() {
+    return (
       <div>
-        <p>Question - Answer between Student and Teacher</p>
+        <Question></Question>
+        <Question></Question>
+        <Question></Question>
+        <Question></Question>
+        <Question></Question>
+        <Question></Question>
+        <Question></Question>
+        <Question></Question>
+        <Question></Question>
+        <Question></Question>
+        <Question></Question>
+        <Question></Question>
       </div>
-      <div className='check_box'>
-        <Checkbox onChange={onChange}>Unread</Checkbox>
-        <Checkbox onChange={onChange}>No answers</Checkbox>
-        <Checkbox onChange={onChange}>No teacher answers</Checkbox>
+    );
+  }
+
+  return (
+    <div className="Communication_deleteQuestion">
+      <div className="deleteQuestion" id="DeleteQuestionBox">
+        <div className="DeleteBox">
+          <img src="/icon/close.png" alt="" className="closeBtn" />
+          <div className="Title">Are you sure you want to delete question?</div>
+          <div className="allButton">
+            <button className="cancelBtn">CANCEL</button>
+            <button className="deleteBtn">YES, DELETE IT!</button>
+          </div>
+        </div>
       </div>
-      <div className='questions'>
-          <Question></Question>
+      <div className="Communication">
+        <div className="Header">
+          <div className="Left">
+            <div className="Title">Communication</div>
+            <div className="question">
+              Question - Answer between Student and Teacher
+            </div>
+            <div className="AllBox">
+              <div className="chooseBox">
+                <input type="checkbox" className="box" />
+                <span className="Label">Unread (6)</span>
+              </div>
+              <div className="chooseBox">
+                <input type="checkbox" className="box" />
+                <span className="Label">No anwsers (6)</span>
+              </div>
+              <div className="chooseBox">
+                <input type="checkbox" className="box" />
+                <span className="Label">No teacher answers (6)</span>
+              </div>
+            </div>
+          </div>
+          <div className="Right">
+            <button className="chooseCat" onClick={handleClick1}>
+              <span className="curCategory">{cateCurr}</span>
+              <DownOutlined />
+            </button>
+            {isShown && (
+              <div id="myDropdown" className="dropdown-content">
+                <a
+                  href="#"
+                  onClick={() => {
+                    setCategory("Newest");
+                    setIsShown(false);
+                  }}
+                >
+                  Newest
+                </a>
+
+                <a
+                  href="#"
+                  onClick={() => {
+                    setCategory("Oldest");
+                    setIsShown(false);
+                  }}
+                >
+                  Oldest
+                </a>
+
+                <a
+                  href="#"
+                  onClick={() => {
+                    setCategory("Most popular");
+                    setIsShown(false);
+                  }}
+                >
+                  Most popular
+                </a>
+              </div>
+            )}
+          </div>
+        </div>
+        <div className="Body">{allQuestion()}</div>
       </div>
     </div>
-  )
+  );
 }

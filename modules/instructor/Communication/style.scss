@@ -1,13 +1,154 @@
-.communication_container {
-    width: 1000px;
-    margin: auto;
-    padding-top: 40px;
-    .header {
-        display: flex;
-        justify-content: space-between;
+.Communication_deleteQuestion{
+    .deleteQuestion{
+        display: none;
+        position:fixed;
+        padding:0;
+        margin:0;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.50);
+        .DeleteBox{
+            margin: 150px 607px 0px 608px;
+            width: 705px;
+            height: 561px;
+            flex-shrink: 0;
+            border-radius: 32px;
+            background: #D9D9D9;
+            .closeBtn{
+                margin: 24px 24px 0px 649px;
+            }
+            .closeBtn:hover{
+                cursor: pointer;
+                background-color: rgb(184, 184, 184);
+            }
+            .Title{
+                font-family: Suranna;
+                font-size: 58px;
+                font-style: normal;
+                text-align: center;
+                margin: 40px 0px 108px 0px;
+            }
+            .allButton{
+                display: flex;
+                gap: 58px;
+                margin-left: 84px;
+                .cancelBtn{
+                    font-size: 28px;
+                    font-weight: 600;
+                    width: 173px;
+                    height: 98px;
+                    flex-shrink: 0;
+                    border-radius: 16px;
+                    border: 1px solid #000;
+                }
+                .cancelBtn:hover{
+                    cursor: pointer;
+                    background: rgb(228, 228, 228)
+                }
+                .deleteBtn{
+                    @extend .cancelBtn;
+                    border: none;
+                    width: 305px;
+                    height: 98px;
+                    color: white;
+                    background: #503ED8;
+                }
+                .deleteBtn:hover{
+                    cursor: pointer;
+                    background: rgb(43, 41, 160)
+                }
+            }
+        }
+    }
+    .Communication{
+        margin: 80px 436px 104px 460px;
+        text-align: left;
+        .Header{
+            display: flex;
+            justify-content: space-between;
+            .Left{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                .Title{
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+                .question{
+                    font-size: 24px;
+                }
+                .AllBox{
+                    display: flex;
+                    gap: 40px;
+                    font-size: 20px;
+                    .chooseBox{
+                        display: flex;
+                        gap: 12px;
+                        .box{
+                            width: 24px;
+                            height: 24px;
+                            flex-shrink: 0;
+                            border-radius: 2.924px;
+                            border: 0.731px solid #000;
+                            background: #FFF;
+                        }
+                    }
+                }
+            }
+            .Right{
+                .chooseCat{
+                    padding: 18px 20px 18px 16px;
+                    display: flex;
+                    justify-content: space-between;
+                   
+                    width: 318px;
+                    height: 63px;
+                    
+                    border-radius: 8px;
+                    border: 1px solid #000;
+                    background: #D9D9D9;
+                    transition: 0.1s;
+                    .curCategory{
+                        color: #000;
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                    .anticon-down{
+                        display: flex;
+                        height: 30px; 
+                        align-items: center;
+                        object-fit: cover;  
+                    }
+                }
+                .chooseCat:hover{
+                    cursor: pointer;
+                    background-color: rgb(177, 177, 177);   
+                }
+                .dropdown-content{
+                    margin-top: 8px;
+                    width: 317px;
+                    position: absolute;
+                    padding:14px 0px 14px 0px;
+                    background-color: #D9D9D9;
+                    border-radius: 8px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    a {
+                        font-size: 22px;
+                        font-weight: 600;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                    }
+                    a:hover {
+                        color: black;
+                        background-color: #ffffff;
+                    }
+                }
+            }
+        }
     }
 
-    .check_box {
-        margin-top: 32px;
-    }
 }

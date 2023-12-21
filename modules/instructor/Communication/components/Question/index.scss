@@ -1,0 +1,60 @@
+.wholeQuestion{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+    .Question{
+        font-size: 20px;
+        width: 852px;
+        height: 312px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 1px solid #000;
+        .Top{
+            display: flex;
+            align-items: center;
+            padding: 16px 0px 16px 36px;
+            border-bottom: 1px solid;
+            .lessonImg{
+                margin-right: 16px;
+                background-color: gray;
+                width: 64px;
+                height: 64px;
+            }
+        }
+        .Bottom{
+            padding: 24px 0px 24px 36px;
+            .User{
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                margin-bottom: 16px;
+                .userImg{
+                    background-color: gray;
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 64px;
+                }
+                .userName{
+                    font-size: 22px;
+                    font-weight: 600;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .Icon{
+        margin-top: 84px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        .icon{
+            padding: 10px;
+            border-radius: 24px;
+            transition: .1s;
+        }
+        .icon:hover{
+            background-color: rgb(202, 202, 202);
+            cursor: pointer;
+        }
+    }
+}
