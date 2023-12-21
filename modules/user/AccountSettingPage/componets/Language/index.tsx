@@ -10,9 +10,9 @@ export function Language(props : any) {
   const {className} = props;
   const regions = [
     { value: "Asian", label: "Asian" },
-    { value: "African", label: "African" },
-    { value: "Antarctica", label: "Antarctica" },
-    { value: "Americas", label: "Americas" },
+    { value: "Africa", label: "Africa" },
+    { value: "America", label: "America" },
+    { value: "Europe", label: "Europe" },
   ]
   const countries = [
     { value: "Viet Nam", label: "Vietnamese" },

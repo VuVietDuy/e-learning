@@ -1,9 +1,9 @@
 .layout2-learningpage {
     .learning-nav{
-        margin-top: 64px;
+        
         width: 100%;
         height: 64px;
-        background: #002333;
+        border-bottom: 2px solid #000;
     }
     .learning-nav-contain{
         height: 100%;
@@ -14,8 +14,7 @@
         width: 194px;
         height: 100%;
         border: none;
-        background: #002333;
-        color: #fff;
+        
         font-size: 18px;
         font-weight: 600;
     }
