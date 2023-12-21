@@ -9,28 +9,44 @@
     border-radius: 8px;
     overflow: hidden;
     display: flex;
-
+    border: 1px solid #000;
     .left {
         @include size();
+        overflow: visible;
+       
     }
 
     .right {
         width: 50%;
-        background-color: #D9D9D9;
+        background-color: #fff;
         padding: 16px;
 
         .lession {
             font-size: 16px;
             font-style: normal;
             font-weight: 600;
-            line-height: 19.2px
+            line-height: 19.2px;
+            display: flex;
         }
-
+        
+        .time{
+            font-weight: 300;
+            font-size: 14px;
+        }
         .title {
             font-size: 16px;
             font-style: normal;
             font-weight: 600;
             line-height: 19.2px;
+        }
+        .name{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 16px;
+            .time{
+                font-size: 15px;
+                color: #3722D3;
+            }
         }
 
         .instructor {

@@ -39,11 +39,11 @@ const Layout1 = () => {
           {listCard.map((card, index) => (
             <SwiperSlide key={index}>
               <CardHorizontal
-                src="/images/card.png"
-                lession="Lession 1"
-                time="1h20m"
-                title="Rigid bode"
-                instructor="Auther"
+                src={card.src}
+                lession="LESSON 2 OF 38"
+                time={card.time}
+                title={card.instructor}
+                instructor={card.instructor}
               ></CardHorizontal>
             </SwiperSlide>
           ))}

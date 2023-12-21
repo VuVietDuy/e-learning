@@ -8,7 +8,16 @@ export function LearningPath() {
   return (
     <div className="learning_path_contaier">
       <div className="learning_path_text">
-        <img src="/images/user/learningPaths.png" alt="" />
+        <div className="learning-img">
+
+          <img className="learning-img" src="/images/user/learningPaths.png" alt="" />
+        </div>
+
+        <div className="content">
+          <div className="title">Learning Paths</div>
+          <div className="description">Reach Your Learning Goals With Hand-Picked, Sequential Classes</div>
+          <div className="non-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. consequat sunt nostrud amet.</div>
+        </div>
       </div>
       <div className="learning_path_content">
         <Row gutter={[32, 32]}>

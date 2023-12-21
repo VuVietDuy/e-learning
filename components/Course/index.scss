@@ -4,7 +4,7 @@
     border-radius: 8px;
     overflow: hidden;
     transition: box-shadow 0.2s;
-
+    border: 1px solid #000;
     &:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         cursor: pointer;
@@ -17,7 +17,7 @@
 
     .bottom {
         height: 120px;
-        background-color: #ACACAC;
+        background-color: #fff;
         text-align: left;
         padding: 0px 16px 0px 16px;
 
@@ -33,7 +33,7 @@
             padding: 10px 0px 0px 0px;
             font-size: 13px;
             font-style: normal;
-            font-weight: 300;
+            font-weight: 600;
             line-height: 18px;
         }
 
