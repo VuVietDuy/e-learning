@@ -8,53 +8,53 @@ import "./index.scss";
 const { RangePicker } = DatePicker;
 
 export function ComplainsManagement(): JSX.Element {
-  const columns = [
-    {
-      title: "User",
-      dataIndex: "name",
-      key: "name",
-      render: (text: any) => (
-        <Space size="middle">
-          <Avatar style={{ backgroundColor: randomColor() }}>{text[0]}</Avatar>
-          <a>{text}</a>
-        </Space>
-      ),
-    },
-    {
-      title: "Email",
-      dataIndex: "email",
-      key: "email",
-    },
-    {
-      title: "Created at",
-      dataIndex: "createdAt",
-      key: "createdAt",
-    },
-    {
-      title: "Complain Detail",
-      key: "action",
-      render: (_: any, dataIndex: any) => (
-        <>
-          <Button>Xem chi tiết</Button>
-        </>
-      ),
-    },
-  ];
+  // const columns = [
+  //   {
+  //     title: "User",
+  //     dataIndex: "name",
+  //     key: "name",
+  //     render: (text: any) => (
+  //       <Space size="middle">
+  //         <Avatar style={{ backgroundColor: randomColor() }}>{text[0]}</Avatar>
+  //         <a>{text}</a>
+  //       </Space>
+  //     ),
+  //   },
+  //   {
+  //     title: "Email",
+  //     dataIndex: "email",
+  //     key: "email",
+  //   },
+  //   {
+  //     title: "Created at",
+  //     dataIndex: "createdAt",
+  //     key: "createdAt",
+  //   },
+  //   {
+  //     title: "Complain Detail",
+  //     key: "action",
+  //     render: (_: any, dataIndex: any) => (
+  //       <>
+  //         <Button>Xem chi tiết</Button>
+  //       </>
+  //     ),
+  //   },
+  // ];
 
-  const data = [
-    {
-      key: "1",
-      name: "John Brown",
-      email: "vuvietduy@gmail.com",
-      createdAt: "10/10/2023",
-    },
-    {
-      key: "3",
-      name: "John Brown",
-      email: "vuvietduy@gmail.com",
-      createdAt: "10/10/2023",
-    },
-  ];
+  // const data = [
+  //   {
+  //     key: "1",
+  //     name: "John Brown",
+  //     email: "vuvietduy@gmail.com",
+  //     createdAt: "10/10/2023",
+  //   },
+  //   {
+  //     key: "3",
+  //     name: "John Brown",
+  //     email: "vuvietduy@gmail.com",
+  //     createdAt: "10/10/2023",
+  //   },
+  // ];
 
   return (
     <div className="complains_management">
@@ -68,7 +68,7 @@ export function ComplainsManagement(): JSX.Element {
         />
         <RangePicker size="large" />
       </div>
-      <Table columns={columns} dataSource={data} />
+      {/* <Table columns={columns} dataSource={data} /> */}
     </div>
   );
 }
