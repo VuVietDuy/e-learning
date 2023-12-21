@@ -1,8 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { BellOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import type { MenuProps } from "antd";
-import { Avatar, Button, Dropdown } from "antd";
+import { Avatar, Button, Col, Dropdown, Input, Menu, Row } from "antd";
 import Link from "next/link";
 
 import Notice from "../Notice";
@@ -25,6 +25,8 @@ export function Header() {
   ];
 
   const [isOpenNotice, setIsOpenNotice] = useState(false);
+  const [openBrowse, setOpenBrowse] = useState(false);
+  const browseContentRef = useRef(null);
 
   const showDrawer = () => {
     setIsOpenNotice(true);
@@ -33,6 +35,18 @@ export function Header() {
   const onClose = () => {
     setIsOpenNotice(false);
   };
+
+  const menu = (
+    <Menu>
+      <Menu.Item>
+        <div>
+          <h2>test</h2>
+
+        </div>
+      </Menu.Item>
+      {/* Các menu item khác nếu cần */}
+    </Menu>
+  );
 
   return (
     <div>
@@ -45,16 +59,87 @@ export function Header() {
               height={48}
             ></img>
           </Link>
-          <Button className="btn" size="large">
-            Browse
-          </Button>
+          <div className="browse">
+            <Button className="btn" size="large" onClick={() => setOpenBrowse(!openBrowse)}>
+              Browse
+            </Button>
+            <div className={`browse_content ${openBrowse ? "d_block" : "d_none"}`} ref={browseContentRef}>
+              <Row>
+                <Col span={6}>
+                  <div className="browse_content-left">
+                    <div>
+                      <h4 className="title">Create</h4>
+                    </div>
+                    <ul className="create_list">
+                      <li>Animation</li>
+                      <li>3D Art</li>
+                      <li>Film & Video</li>
+                      <li>Fine Art</li>
+                      <li>Graphic Design</li>
+                      <li>Illustration</li>
+                      <li>Photography</li>
+                      <li>UI/UX Design</li>
+                    </ul>
+                  </div>
+                </Col>
+                <Col span={18}>
+                  <div className="browse_content-right">
+                    <div>
+                      <h4 className="title">Software</h4>
+                    </div>
+                    <Row>
+                      <Col span={8}>
+                      <ul className="create_list">
+                        <li>Photoshop</li>
+                        <li>Premiere</li>
+                        <li>After Effect</li>
+                        <li>Illustrator</li>
+                        <li>Figma</li>
+                        <li>Maya</li>
+                        <li>Substance Painter</li>
+                        <li>Zbrush</li>
+                      </ul>
+                      </Col>
+                      <Col span={8}>
+                      <ul className="create_list">
+                        <li>Unreal Engine</li>
+                        <li>Ziva</li>
+                        <li>Marmoset</li>
+                        <li>Mari</li>
+                        <li>Marvelous</li>
+                        <li>Mudbox</li>
+                        <li>Davinci Resolve</li>
+                        <li>Nuke</li>
+                      </ul>
+                      </Col>
+                      <Col span={8}>
+                      <ul className="create_list">
+                        <li>Blender</li>
+                        <li>Unity</li>
+                        <li>Fusion</li>
+                        <li>C4D</li>
+                        <li>3Dsmax</li>
+                        <li>Arnold</li>
+                        <li>Redshift</li>
+                        <li>Vray</li>
+                      </ul>
+                      </Col>
+                    </Row>
+                  </div>
+                </Col>
+              </Row>
+              <div>
+
+              </div>
+            </div>
+          </div>
           <Link href={"/user/learning_path"}>
             <Button className="btn" size="large">
               Learning Path
             </Button>
           </Link>
           <div>
-            {/* <Search className="search" type='text' placeholder="Search"></Search> */}
+            <Input className="search" type='text' placeholder="Search"></Input>
           </div>
         </div>
         <div className="right">
