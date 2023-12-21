@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Button, Col, Form, Input, Radio, Row, Select } from "antd";
+import { Button, Col, Form, Image, Input, Radio, Row, Select } from "antd";
 import Paragraph from "antd/es/typography/Paragraph";
 import { Option } from "antd/es/mentions";
 
@@ -20,12 +20,14 @@ export function CheckOut() {
               <Form.Item>
                 <Row gutter={[32, 32]}>
                   <Col span={12}>
+                    
                     <Form.Item name={"country"} label="Country">
                       <Select placeholder="Country" allowClear size="large">
-                        <Option value="vietnamese">Viet Nam</Option>
+                        <Option value="vietnamese"> Vietnamese</Option>
                         <Option value="english">English</Option>
                       </Select>
                     </Form.Item>
+                  
                   </Col>
                   <Col span={12}>
                     <Form.Item name={"zipCode"} label="Zip Code">
@@ -83,6 +85,34 @@ export function CheckOut() {
               </div>
             </div>
           </div>
+          <p className="order">Order details</p>
+          <div className="list-item">
+            <div className="item-list">
+              <div className="left"><Image src="/images/user/checkout1.png" width={147} height={84}></Image> </div>
+              <div className="right">
+                <div className="title">Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D Meta Human</div>
+                <div className="price">500$</div>
+              </div>
+            </div>
+          </div>
+          <div className="list-item">
+            <div className="item-list">
+              <div className="left"><Image src="/images/user/checkout1.png" width={147} height={84}></Image> </div>
+              <div className="right">
+                <div className="title">Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D Meta Human</div>
+                <div className="price">500$</div>
+              </div>
+            </div>
+          </div>
+          <div className="list-item">
+            <div className="item-list">
+              <div className="left"><Image src="/images/user/checkout1.png" width={147} height={84}></Image> </div>
+              <div className="right">
+                <div className="title">Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D Meta Human</div>
+                <div className="price">500$</div>
+              </div>
+            </div>
+          </div>
         </Col>
         <Col span={12}>
           <div className="sumary">
@@ -93,21 +123,20 @@ export function CheckOut() {
             </div>
             <div className="sumary_item">
               <span className="left">Discounts:</span>
-              <span className="right">$80.00</span>
+              <span className="right">-$10.00</span>
             </div>
             <div className="sumary_item">
-              <span className="left">Total:</span>
-              <span className="right">$160.00</span>
+              <span className="left  bold">Total:</span>
+              <span className="right bold">$70.00</span>
             </div>
-            <Paragraph>
-              By completing your purchase you agree to our Terms of Service
-            </Paragraph>
+            <div className="text-contain">
+              <p className="content">By completing your purchase you agree to our</p>
+              <a href="#" className="term">Terms of Service</a>
+            </div>
             <div className="sumary_item">
-              <Button size="large" style={{ width: "100%" }}>
-                Completed Check out
-              </Button>
+              <button className="complete-btn">Completed Checkout</button>
             </div>
-            <Paragraph>30-Day Money-Back Guarantee</Paragraph>
+            <Paragraph className="day">30-Day Money-Back Guarantee</Paragraph>
           </div>
         </Col>
       </Row>

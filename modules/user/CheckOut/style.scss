@@ -2,8 +2,17 @@
     width: 1000px;
     margin: auto;
     text-align: left;
+    .title-page_text{
+        font-family: Suranna;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 400;
+        margin-top: 80px;
+        margin-bottom: 32px;
+    }
     .payment {
         border-right: 1px solid #000;
+        padding-bottom: 70px;
         .payment_method {
             .credit_card {
                 background: #D9D9D9;
@@ -28,8 +37,38 @@
                     border: 1px solid #000;
                     border-bottom: none;
                     border-top: none;
-                    background: #636363;
+                    background: #fff;
                     color: #D9D9D9;
+                }
+            }
+        }
+        .order{
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 600;
+            margin: 32px 0;
+        }
+        .list-item{
+            .item-list{
+                display: flex;
+                padding: 16px 0;
+                border-bottom: 1px solid #000;
+                .left{
+                    margin-right: 20px;
+                }
+                .right{
+                    .title{
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                    }
+                    .price{
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 600;
+                        color: #565454;
+                        text-align: end;
+                    }
                 }
             }
         }
@@ -48,13 +87,48 @@
     .sumary_item {
         font-size: 20px;
         padding: 12px 0;
-
+        .bold{
+            font-weight: 600;
+        }
         .left {
-    
+            font-size: 24px;
+            font-style: normal;
+            
         }
         .right {
             float: right;
+            font-size: 24px;
+            font-style: normal;
+            
         }
 
+    }
+    .text-contain{
+        display: flex;
+        .content{
+            margin-right: 4px;
+            opacity: 0.8;
+        }
+        .term:hover{
+            text-decoration: underline ;
+        }
+    }
+    .complete-btn{
+        font-size: 22px;
+        font-weight: 600;
+        padding: 32px 96px;
+        background-color: #2CFF99;
+        margin-top: 24px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+    }
+    .complete-btn:hover{
+        cursor: pointer;
+        opacity: 0.8;
+        transition: 0.1s;
+    }
+    .day{
+        text-align: center;
+        opacity: 0.8;
     }
 }

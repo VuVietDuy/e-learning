@@ -6,6 +6,7 @@ import { DeleteFilled } from "@ant-design/icons";
 
 import "./index.scss";
 import CardHorizontal from "@/components/CardHorizontal";
+import ShopCardItem from "./component/ShopCardItem";
 
 export function ShopCart(): JSX.Element {
   const applyCoupon = (e: any) => {
@@ -22,25 +23,25 @@ export function ShopCart(): JSX.Element {
             <span>03 Courses in Cart</span>
           </div>
           <div className="cart_item">
-            <CardHorizontal
-              src="/images/card.png"
-              lession="Lession 1"
-              time="1h20m"
-              title="Rigid bode"
-              instructor="Auther"
-            ></CardHorizontal>
+            <div>
+              <ShopCardItem></ShopCardItem>
+            </div>
             <Button size="large">
               <DeleteFilled />
             </Button>
           </div>
           <div className="cart_item">
-            <CardHorizontal
-              src="/images/card.png"
-              lession="Lession 1"
-              time="1h20m"
-              title="Rigid bode"
-              instructor="Auther"
-            ></CardHorizontal>
+            <div>
+              <ShopCardItem></ShopCardItem>
+            </div>
+            <Button size="large">
+              <DeleteFilled />
+            </Button>
+          </div>
+          <div className="cart_item">
+            <div>
+              <ShopCardItem></ShopCardItem>
+            </div>
             <Button size="large">
               <DeleteFilled />
             </Button>

@@ -3,7 +3,7 @@ import React from "react";
 import "./index.scss";
 import Comment from "@/components/Comment";
 import { BranchesOutlined, ClockCircleOutlined, DownloadOutlined, FundProjectionScreenOutlined, GlobalOutlined, TranslationOutlined } from "@ant-design/icons";
-import { Card, Col, Row } from "antd";
+import { Card, Col, Image, Rate, Row } from "antd";
 
 export function CoursePreview() {
   return (
@@ -19,7 +19,7 @@ export function CoursePreview() {
             Zbrush and Keyshot.
           </div>
           <div className="slider-rate">
-            <div className="slider-rate-icon"></div>
+            <div className="slider-rate-icon"><Rate disabled defaultValue={5}></Rate></div>
             <div className="slider-rate-content">
               <div className="slider-rate-content-rating">
                 (100,558 ratings)
@@ -125,7 +125,7 @@ export function CoursePreview() {
             <Col span={8}>
               <Card className="border_black">
                 <div className="pay-img">
-                  <img src="" alt="" />
+                  <Image src="/images/user/courpreview1.png"></Image>
                 </div>
                 <div className="pay-price">
                   <div className="pay-price-cash">
@@ -142,7 +142,7 @@ export function CoursePreview() {
                   </div>
                 </div>
                 <button className="bg_green pay-buy-now">Add to cart</button>
-                <button className="pay-buy-now">Buy Now</button>
+                <button className="pay-buy-now pay-buy-now2">Buy Now</button>
                 <div className="pay-buy-left">30-Day Money-back Guarantee</div>
                 <div className="pay-course">
                   <div className="pay-course-include">This course includes:</div>
