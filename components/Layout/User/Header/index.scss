@@ -5,7 +5,7 @@
     height: 80px;
     align-items: center;
     color: #fff;
-    padding: 0 16px;
+    padding: 0 24px;
 
     .search {
         width: 447px;
@@ -94,6 +94,56 @@
             &:hover {
                 color: #1877f2;
                 cursor: pointer;
+            }
+        }
+    }
+
+    .avatar_dropdown {
+        position: relative;
+        .avatar_dropdown_content {
+            position: absolute;
+            top: 52px;
+            right: 0px;
+            width: 268px;
+            height: 545px;
+            border-radius: 8px;
+            border: 1px solid #000;
+            background: #808080;
+            z-index: 2;
+            .avatar_dropdown_top {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 24px 0;
+                border-bottom: 1px solid #fff;
+                .avatar {
+                    width: 88px;
+                    height: 88px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-bottom: 24px;
+                }
+                .name {
+                    margin-bottom: 24px;
+                }
+                .btn_view {
+                    height: 48px;
+                    border-radius: 8px;
+                    background: #2CFF9A;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                }
+            }
+            .avatar_dropdown_bottom {
+                padding: 24px 41px;
+                .item {
+                    font-size: 20px;
+                    margin-bottom: 24px;
+                    span {
+                        color: #fff;
+                    }
+                }
             }
         }
     }
