@@ -9,7 +9,7 @@ import React from "react";
 
 import "./index.scss";
 
-export default function Lession() {
+export default function Lession(): JSX.Element {
   return (
     <div className="lession">
       <div>
