@@ -9,7 +9,6 @@ export function LearningPath() {
     <div className="learning_path_contaier">
       <div className="learning_path_text">
         <div className="learning-img">
-
           <img className="learning-img" src="/images/user/learningPaths.png" alt="" />
         </div>
 

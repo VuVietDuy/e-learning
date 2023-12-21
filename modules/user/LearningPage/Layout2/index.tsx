@@ -9,22 +9,39 @@ import "./index.scss";
 function Layout2() {
   const [activeTab, setActiveTab] = useState("About");
 
+  const navItems = [
+    {
+      activeTab: "About",
+      label: "About",
+    },
+    {
+      activeTab: "ProjectsResources",
+      label: "Projects & Resources",
+    },
+    {
+      activeTab: "Discussions",
+      label: "Discussions",
+    },
+    {
+      activeTab: "Review",
+      label: "Review",
+    },
+  ];
+
   return (
     <div className="layout2-learningpage">
       <div className="learning-nav">
         <div className="learning-nav-contain">
-          <div className="learning-nav-btn d_flex justify_content_center align_item_center" onClick={() => setActiveTab("About")}>
-            <span>About</span>
-          </div>
-          <div className="learning-nav-btn d_flex justify_content_center align_item_center" onClick={() => setActiveTab("ProjectsResources")}>
-            <span>Projects & Resources</span>
-          </div>
-          <div className="learning-nav-btn d_flex justify_content_center align_item_center" onClick={() => setActiveTab("Discussions")}>
-            <span>Discussions</span>
-          </div>
-          <div className="learning-nav-btn d_flex justify_content_center align_item_center" onClick={() => setActiveTab("Review")}>
-            <span>Review</span>
-          </div>
+          {navItems.map((item, i) => (
+            <div
+              className={`learning-nav-btn d_flex justify_content_center align_item_center ${
+                activeTab === item.activeTab ? "active" : ""
+              }`}
+              onClick={() => setActiveTab(item.activeTab)}
+            >
+              <span>{item.label}</span>
+            </div>
+          ))}
         </div>
       </div>
       <div className={activeTab === "About" ? "d_block" : "d_none"}>

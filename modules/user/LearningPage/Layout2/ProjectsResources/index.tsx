@@ -28,34 +28,34 @@ function ProjectsResources() {
         <div className="project-exam-title">Example Results</div>
         <div className="project-exam-contain">
           <img
-            src="images/learning/244.png"
+            src="/images/user/learning1.png"
             alt=""
             className="project-exam-img"
           />
           <img
-            src="images/learning/245.png"
+            src="/images/user/learning2.png"
             alt=""
             className="project-exam-img"
           />
           <img
-            src="images/learning/246.png"
+            src="/images/user/learning3.png"
             alt=""
             className="project-exam-img"
           />
           <img
-            src="images/learning/247.png"
+            src="/images/user/learning1.png"
             alt=""
             className="project-exam-img"
           />
           <img
-            src="images/learning/248.png"
+            src="/images/user/learning2.png"
             alt=""
             className="project-exam-img"
           />
           <img
-            src="images/learning/249.png"
+            src="/images/user/learning3.png"
             alt=""
-            className="project-exam-img "
+            className="project-exam-img"
           />
         </div>
       </div>
