@@ -262,7 +262,7 @@ export function DetailCourse(): JSX.Element {
                   <div className="content_text">
                     <Select
                       defaultValue="english"
-                      className="Input fs_18"
+                      className="Input"
                       style={{ width: "100%" }}
                       options={[
                         { value: "English", label: "English" },
@@ -279,6 +279,8 @@ export function DetailCourse(): JSX.Element {
                       search results.
                     </p>
                     <Select
+                      allowClear={true}
+                      mode="multiple"
                       className="Input"
                       style={{ width: "100%" }}
                       placeholder="Class Skills"
@@ -328,7 +330,7 @@ export function DetailCourse(): JSX.Element {
             Are you sure you want <br></br> to delete this lesson?
           </h1>
           <div className="d_flex justify_content_around">
-            <Button className="btn_cf">CANCEL</Button>
+            <Button className="btn_cf" onClick={closeConfirmModal}>CANCEL</Button>
             <Button className="btn_cf cf">YES, DELETE!</Button>
           </div>
         </div>

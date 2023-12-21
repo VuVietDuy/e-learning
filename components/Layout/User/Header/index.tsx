@@ -195,7 +195,10 @@ export function Header() {
             <Avatar
               src="/images/avatar.jpg"
               size={"large"}
-              onClick={() => setOpenAvatar(!isOpenAvatar)}
+              onClick={() => {
+                setOpenAvatar(!isOpenAvatar);
+                closeBrowse();
+              }}
             ></Avatar>
             <div
               className={`${
