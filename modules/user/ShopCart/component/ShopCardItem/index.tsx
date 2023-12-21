@@ -19,13 +19,13 @@ export default function ShopCardItem() {
                   <div className="ginger ">Ginger Bear</div>
                   <div className="des-2-2"><Rate disabled defaultValue={4}></Rate></div>
                   <div className="des-2-3">
-                    <div className=" fz-20 ml5">1d 5h 28m</div>
+                    <div className="">1d 5h 28m</div>
                     <div className="dot"></div>
-                    <div className=" fz-20">1,313,581 Students</div>
+                    <div className=" ">1,313,581 Students</div>
                   </div>
                   <div className="des-2-4">
                     <div className="des-2-4-1">Purchased Date</div>
-                    <div className="fz-20">02/04/2023</div>
+                    <div className="">02/04/2023</div>
                   </div>
                 </div>
                 <div className="course-3-des-2-2">

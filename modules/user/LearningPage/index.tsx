@@ -9,6 +9,8 @@ export function LearningPage() {
   return (
     <div className="LearningPage">
       {/* phan 1- learning video */}
+      <div className="corver-leaning-main">
+
       <div className="learning-main">
         <div className="learning-contain">
           <div className="learning-video">
@@ -93,6 +95,54 @@ export function LearningPage() {
                 </div>
                 <div className="learning-lessons-item-time">12:00</div>
               </li>
+              <li className="learning-lessons-item">
+                <CheckOutlined className="check-icon"></CheckOutlined>
+                <div className="learning-lessons-item-index">009.</div>
+                <div className="learning-lessons-item-introduction">
+                  Introduction
+                </div>
+                <div className="learning-lessons-item-time">12:00</div>
+              </li>
+              <li className="learning-lessons-item">
+                <CheckOutlined className="check-icon"></CheckOutlined>
+                <div className="learning-lessons-item-index">010.</div>
+                <div className="learning-lessons-item-introduction">
+                  Introduction
+                </div>
+                <div className="learning-lessons-item-time">12:00</div>
+              </li>
+              <li className="learning-lessons-item">
+                <CheckOutlined className="check-icon"></CheckOutlined>
+                <div className="learning-lessons-item-index">011.</div>
+                <div className="learning-lessons-item-introduction">
+                  Introduction
+                </div>
+                <div className="learning-lessons-item-time">12:00</div>
+              </li>
+              <li className="learning-lessons-item">
+                <CheckOutlined className="check-icon"></CheckOutlined>
+                <div className="learning-lessons-item-index">012.</div>
+                <div className="learning-lessons-item-introduction">
+                  Introduction
+                </div>
+                <div className="learning-lessons-item-time">12:00</div>
+              </li>
+              <li className="learning-lessons-item">
+                <CheckOutlined className="check-icon"></CheckOutlined>
+                <div className="learning-lessons-item-index">013.</div>
+                <div className="learning-lessons-item-introduction">
+                  Introduction
+                </div>
+                <div className="learning-lessons-item-time">12:00</div>
+              </li>
+              <li className="learning-lessons-item">
+                <CheckOutlined className="check-icon"></CheckOutlined>
+                <div className="learning-lessons-item-index">014.</div>
+                <div className="learning-lessons-item-introduction">
+                  Introduction
+                </div>
+                <div className="learning-lessons-item-time">12:00</div>
+              </li>
             </ul>
           </div>
         </div>
@@ -107,6 +157,7 @@ export function LearningPage() {
             <div className="learning-descript-author-follow">Following</div>
           </div>
         </div>
+      </div>
       </div>
       {/* nav learning*/}
       <Layout2></Layout2>

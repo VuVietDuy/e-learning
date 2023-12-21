@@ -29,7 +29,7 @@ export function ChangePassword(props : any) {
           <Input className="input" name="confirmCode"></Input>
         </Form.Item>
         <Form.Item>
-          <Button type="primary" htmlType="submit" size="large" className="bg_green text_black">
+          <Button type="primary" htmlType="submit" size="large" className="bg_green text_black padding">
             Save
           </Button>
         </Form.Item>

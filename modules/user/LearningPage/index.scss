@@ -17,12 +17,18 @@
 .padding-left-16{
     padding-left: 16px;
 }
+.corver-leaning-main{
+    background-color: #002333;
+    width: 100%;
+}
 .learning-main{
     display: flex;
     flex-direction: column;
     width: 1000px;
     margin: auto;
-    margin-top: 80px;
+    padding-top: 80px;
+    background-color: #002333;
+    color: #fff;
 }
 .learning-contain{
     display: flex;
@@ -59,10 +65,12 @@
 .learning-lessons-list{
     display: flex;
     flex-direction: column;
-    background-color: #D9D9D9;
+    background-color: #002333;
     border-radius: 8px;
-    max-height: 450px;
+    max-height: 320px;
     overflow: hidden;
+    
+    overflow: auto;
 }
 
 .learning-lessons-item{
@@ -94,6 +102,7 @@
 .learning-descript{
     text-align: start;
     margin-top: 32px;
+    padding-bottom: 40px;
 }
 
 .learning-descript-title{
