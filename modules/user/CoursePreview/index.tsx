@@ -4,6 +4,7 @@ import "./index.scss";
 import Comment from "@/components/Comment";
 import { BranchesOutlined, ClockCircleOutlined, DownloadOutlined, FundProjectionScreenOutlined, GlobalOutlined, TranslationOutlined } from "@ant-design/icons";
 import { Card, Col, Row } from "antd";
+import Image from "next/image";
 
 export function CoursePreview() {
   return (
@@ -195,7 +196,9 @@ export function CoursePreview() {
         <div className="course__3">
           <div className="course-title-info">Students also bought</div>
           <div className="course-3-body">
-            <div className="course-3-img">anh chen</div>
+            <div className="course-3-img">
+              <Image src={"/images/user/course_preview.png"} alt="" width={317} height={180}></Image>
+            </div>
             <div className="course-3-des">
               <div className="course-3-des-1">
                 Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D

@@ -33,9 +33,9 @@
                 align-items: center;
                 font-size: 18px;
                 
-                :hover {
-                    background-color: #625A5A;
-                }
+            }
+            :hover {
+                cursor: pointer;
             }
             .active {
                 color: #FFF;
@@ -88,4 +88,22 @@
         font-size: 20px;
         color: #625A5A;
     }
+    .Input {
+        height: 48px;
+    }
+}
+
+.modal_cf {
+    padding: 0 40px;
+    text-align: center;
+}
+
+.btn_cf {
+    height: 56px;
+    font-size: 24px;
+}
+
+.cf {
+    background: #503ED8;
+    color: #fff;
 }

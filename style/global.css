@@ -28,6 +28,10 @@
     justify-content: center;
 }
 
+.justify_content_around {
+    justify-content: space-around;
+}
+
 .align_item_center {
     align-items: center;
 }
@@ -89,6 +93,14 @@
     margin-left: 24px;
 }
 
+.mt_4 {
+    margin-top: 24px;
+}
+
+.mb_3 {
+    margin-bottom: 16px;
+}
+
 .default_container {
     width: 1000px;
     margin: auto;
@@ -97,4 +109,8 @@
 
 .fs_22 {
     font-size: 22px;
+}
+
+.fs_18 {
+    font-size: 18px;
 }

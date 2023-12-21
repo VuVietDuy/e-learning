@@ -9,7 +9,8 @@ import React from "react";
 
 import "./index.scss";
 
-export default function Lession(): JSX.Element {
+export default function Lession(props: any): JSX.Element {
+  const { openConfirmModal } = props;
   return (
     <div className="lession">
       <div>
@@ -35,7 +36,10 @@ export default function Lession(): JSX.Element {
             <span className="infor_1-item ms_2">
               <TableOutlined />
             </span>
-            <span className="infor_1-item ms_2">
+            <span
+              className="infor_1-item ms_2"
+              onClick={() => openConfirmModal()}
+            >
               <DeleteOutlined />
             </span>
           </div>

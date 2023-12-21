@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { Button } from "antd";
+import { Button, Col, Row } from "antd";
 import { DeleteFilled } from "@ant-design/icons";
 
 import "./style.scss";
@@ -25,57 +25,46 @@ export function MyCourses(): JSX.Element {
         <h2>My Courses</h2>
         <Button onClick={newCourse}>New course</Button>
       </div>
-      <div className="courses d_flex justify_content_between align_item_center">
-        <div className="d_flex justify_content_between align_item_center">
-          <Image
-            src="/images/instructor/course_thumpail.png"
-            alt=""
-            width={232}
-            height={144}
-          ></Image>
-          <h3 className="ms_4">Course title</h3>
-        </div>
-        <div>
-          <Button onClick={editCourse}>Edit</Button>
-          <Button className="ms_4">
-            <DeleteFilled />
-          </Button>
-        </div>
-      </div>
-      <div className="courses d_flex justify_content_between align_item_center">
-        <div className="d_flex justify_content_between align_item_center">
-          <Image
-            src="/images/instructor/course_thumpail.png"
-            alt=""
-            width={232}
-            height={144}
-          ></Image>
-          <h3 className="ms_4">Course title</h3>
-        </div>
-        <div>
-          <Button onClick={editCourse}>Edit</Button>
-          <Button className="ms_4">
-            <DeleteFilled />
-          </Button>
-        </div>
-      </div>
-      <div className="courses d_flex justify_content_between align_item_center">
-        <div className="d_flex justify_content_between align_item_center">
-          <Image
-            src="/images/instructor/course_thumpail.png"
-            alt=""
-            width={232}
-            height={144}
-          ></Image>
-          <h3 className="ms_4">Course title</h3>
-        </div>
-        <div>
-          <Button onClick={editCourse}>Edit</Button>
-          <Button className="ms_4">
-            <DeleteFilled />
-          </Button>
-        </div>
-      </div>
+      <Row gutter={[24,24]}>
+        <Col span={24}>
+          <div className="courses d_flex justify_content_between align_item_center">
+            <div className="d_flex justify_content_between align_item_center">
+              <Image
+                src="/images/instructor/course_thumpail.png"
+                alt=""
+                width={232}
+                height={144}
+              ></Image>
+              <h3 className="ms_4">Course title</h3>
+            </div>
+            <div>
+              <Button onClick={editCourse}>Edit</Button>
+              <Button className="ms_4">
+                <DeleteFilled />
+              </Button>
+            </div>
+          </div>
+        </Col>
+        <Col span={24}>
+          <div className="courses d_flex justify_content_between align_item_center">
+            <div className="d_flex justify_content_between align_item_center">
+              <Image
+                src="/images/instructor/course_thumpail.png"
+                alt=""
+                width={232}
+                height={144}
+              ></Image>
+              <h3 className="ms_4">Course title</h3>
+            </div>
+            <div>
+              <Button onClick={editCourse}>Edit</Button>
+              <Button className="ms_4">
+                <DeleteFilled />
+              </Button>
+            </div>
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 }
