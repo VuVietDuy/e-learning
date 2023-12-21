@@ -16,8 +16,8 @@ import { useRouter } from "next/navigation";
 
 export function Header() {
   const [isOpenNotice, setIsOpenNotice] = useState(false);
-  const [openBrowse, setOpenBrowse] = useState(false);
-  const [openAvatar, setOpenAvatar] = useState(false);
+  const [isOpenBrowse, setIsOpenBrowse] = useState(false);
+  const [isOpenAvatar, setOpenAvatar] = useState(false);
   const router = useRouter();
 
   const showDrawer = () => {
@@ -30,6 +30,19 @@ export function Header() {
 
   const viewProfile = () => {
     router.push("/user/profile");
+  };
+
+  const closeAvatar = () => {
+    setOpenAvatar(false);
+  };
+
+  const openAvatar = () => {
+    setOpenAvatar(true);
+    closeBrowse();
+  };
+
+  const closeBrowse = () => {
+    setIsOpenBrowse(false);
   };
 
   const avatarItems = [
@@ -75,12 +88,14 @@ export function Header() {
             <Button
               className="btn"
               size="large"
-              onClick={() => setOpenBrowse(!openBrowse)}
+              onClick={() => setIsOpenBrowse(!isOpenBrowse)}
             >
               Browse <DownOutlined />
             </Button>
             <div
-              className={`browse_content ${openBrowse ? "d_block" : "d_none"}`}
+              className={`browse_content ${
+                isOpenBrowse ? "d_block" : "d_none"
+              }`}
             >
               <Row>
                 <Col span={6}>
@@ -180,11 +195,11 @@ export function Header() {
             <Avatar
               src="/images/avatar.jpg"
               size={"large"}
-              onClick={() => setOpenAvatar(!openAvatar)}
+              onClick={() => setOpenAvatar(!isOpenAvatar)}
             ></Avatar>
             <div
               className={`${
-                openAvatar ? "d_block" : "d_none"
+                isOpenAvatar ? "d_block" : "d_none"
               } avatar_dropdown_content`}
             >
               <div className="avatar_dropdown_top">
@@ -203,7 +218,7 @@ export function Header() {
               </div>
               <div className="avatar_dropdown_bottom">
                 {avatarItems.map((item, i) => (
-                  <div className="item" onClick={() => setOpenAvatar(false)}>
+                  <div className="item" key={i} onClick={() => closeAvatar()}>
                     <Link href={item.path} style={{ textDecoration: "none" }}>
                       <span>{item.label}</span>
                     </Link>
