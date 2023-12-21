@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { randomColor } from "@/utils/RandomColor";
 import { MenuFoldOutlined, MenuUnfoldOutlined } from "@ant-design/icons";
 import { Avatar, Button, Dropdown, Layout, Select } from "antd";
@@ -30,26 +30,14 @@ const items = [
         Log out
       </a>
     ),
-  },
-  {
-    key: "3",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.luohanacademy.com"
-      >
-        3rd menu item
-      </a>
-    ),
-  },
+  }
 ];
 
 export function HeaderAdminPage() {
-    const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <Header className="d_flex justify_content_between" style={{ padding: 0}}>
+    <Header className="d_flex justify_content_between" style={{ padding: 0 }}>
       <Button
         type="text"
         icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
@@ -84,7 +72,9 @@ export function HeaderAdminPage() {
               items,
             }}
           >
-            <Avatar size={40} style={{backgroundColor: `${randomColor()}`}}>U</Avatar>
+            <Avatar size={40} style={{ backgroundColor: `${randomColor()}` }}>
+              U
+            </Avatar>
           </Dropdown>
         </div>
       </div>
