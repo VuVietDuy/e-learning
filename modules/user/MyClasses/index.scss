@@ -19,16 +19,15 @@
                 font-size: 16px;
                 font-weight: 600;
                 padding: 16px 0px 16px 0px;
-                transition: 0.2s;
                 border-bottom: 6px solid #FFF;
                 transition: 0.5s;
             }
             .active {
-                border-bottom: 6px solid #503ED8;
+                border-bottom-color: #503ED8;
             }
             .element:hover{
                 cursor: pointer;
-                border-bottom: 6px solid #503ED8;
+                border-bottom-color: #503ED8;
             }
         }
     }
