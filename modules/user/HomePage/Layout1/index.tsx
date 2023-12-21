@@ -64,10 +64,8 @@ const Layout1 = () => {
           className="swiper-layout1"
         >
           {listCard.map((card, index) => (
-            <SwiperSlide
-              key={index}
-            >
-              <Card 
+            <SwiperSlide key={index}>
+              <Card
                 src={card.src}
                 time={card.time}
                 title={card.title}

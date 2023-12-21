@@ -6,6 +6,7 @@ import {
 } from "@ant-design/icons";
 import Image from "next/image";
 import React from "react";
+
 import "./index.scss";
 
 export default function Lession() {

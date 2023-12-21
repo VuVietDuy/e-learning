@@ -1,7 +1,7 @@
-import { Result, Button } from 'antd';
-import Link from 'next/link';
+import { Result, Button } from "antd";
+import Link from "next/link";
 
-export const NotFound = () : JSX.Element => {
+export const NotFound = (): JSX.Element => {
   return (
     <Result
       status="404"
@@ -15,4 +15,3 @@ export const NotFound = () : JSX.Element => {
     />
   );
 };
-

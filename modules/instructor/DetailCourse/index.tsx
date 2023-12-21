@@ -21,7 +21,9 @@ export function DetailCourse(): JSX.Element {
       </div>
       <div>
         <Link href={"/user/course_preview"}>
-          <p className="link_pre"><EyeOutlined /> Preview course</p>
+          <p className="link_pre">
+            <EyeOutlined /> Preview course
+          </p>
         </Link>
       </div>
       <div className="workspace">

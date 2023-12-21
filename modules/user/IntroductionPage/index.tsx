@@ -1,8 +1,10 @@
+"use client";
 import React from "react";
-import "./index.scss";
-import Layout1 from "../HomePage/Layout1";
 import { Button } from "antd";
 import { CheckCircleOutlined } from "@ant-design/icons";
+
+import "./index.scss";
+import Layout1 from "../HomePage/Layout1";
 
 export function IntroductionPage({ children }: { children: React.ReactNode }) {
   return (

@@ -6,7 +6,7 @@ import { DownOutlined } from "@ant-design/icons";
 import "./style.scss";
 import Question from "./components/Question";
 
-export function Communication() {
+export function Communication(): JSX.Element {
   const [cateCurr, setCategory] = useState("Newest");
   const [isShown, setIsShown] = useState(false);
 
