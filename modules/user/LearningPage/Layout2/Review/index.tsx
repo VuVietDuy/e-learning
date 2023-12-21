@@ -1,6 +1,8 @@
 import { StarFilled, StarOutlined } from "@ant-design/icons";
 import React from "react";
 import "./index.scss";
+import TextArea from "antd/es/input/TextArea";
+import { Checkbox } from "antd";
 
 function Review() {
   return (
@@ -63,35 +65,29 @@ function Review() {
                 <div className="col col-m col-no-color"></div>
                 <div className="col col-l col-no-color"></div>
                 <div className="suited-text-normal">Beginner</div>
-                <div className="suited-tick suited-tick-color"></div>
+                <input type="radio" className="suited-tick"></input>
+                {/* <div className="suited-tick suited-tick-color"></div> */}
               </li>
               <li className="suited-item">
                 <div className="col col-s col-color"></div>
                 <div className="col col-m col-color"></div>
                 <div className="col col-l col-no-color"></div>
                 <div className="suited-text-normal">Intermediate</div>
-                <div className="suited-tick"></div>
+                <input type="radio" className="suited-tick"></input>
               </li>
               <li className="suited-item">
                 <div className="col col-s col-color"></div>
                 <div className="col col-m col-color"></div>
                 <div className="col col-l col-color"></div>
                 <div className="suited-text-normal">Advance</div>
-                <div className="suited-tick"></div>
+                <input type="radio" className="suited-tick"></input>
               </li>
             </ul>
           </div>
           <div className="rate-write">
             <div className="rate-text-while">Write your Thoughts</div>
             <div className="write-box">
-              <div className="write-box-text">
-                This class is so amazing, I learnt a a lot of useful Techniques.
-                Thank you for your dedication. This class is so amazing, I
-                learnt a a lot of useful Techniques. Thank you for your
-                dedication.This class is so amazing, I learnt a a lot of useful
-                Techniques. Thank you for your dedication.This class is so
-                amazing, I learnt a a lot of useful Technique...
-              </div>
+              <TextArea className="write-box-text" rows={8} placeholder="Your Thoughts"></TextArea>
             </div>
           </div>
           <button className="rate-btn">Leave a Review</button>
@@ -102,7 +98,7 @@ function Review() {
           <div className="review-item">
             <div className="person-name">
               <img
-                src="/images/learning/person1.png"
+                src="/images/user/user1.png"
                 alt=""
                 className="person-img"
               />
@@ -126,7 +122,7 @@ function Review() {
           <div className="review-item">
             <div className="person-name">
               <img
-                src="/images/learning/person2.png"
+                src="/images/user/user1.png"
                 alt=""
                 className="person-img"
               />
@@ -150,7 +146,7 @@ function Review() {
           <div className="review-item">
             <div className="person-name">
               <img
-                src="/images/learning/person3.png"
+                src="/images/user/user2.png"
                 alt=""
                 className="person-img"
               />
@@ -174,7 +170,7 @@ function Review() {
           <div className="review-item">
             <div className="person-name">
               <img
-                src="/images/learning/person1.png"
+                src="/images/user/user3.png"
                 alt=""
                 className="person-img"
               />

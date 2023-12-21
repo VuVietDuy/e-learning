@@ -7,7 +7,7 @@ function Discussions() {
       {/* hoi thoai 1 */}
       <div className="discussions-member">
         <img
-          src="/images/learning/user1.png"
+          src="/images/user/user1.png"
           alt=""
           className="discussions-member-img img-l"
         />
@@ -19,7 +19,7 @@ function Discussions() {
       </div>
       <div className="discussions-member">
         <img
-          src="/images/learning/user2.png"
+          src="/images/user/user1.png"
           alt=""
           className="discussions-member-img img-l"
         />
@@ -47,7 +47,7 @@ function Discussions() {
       {/* hoi thoai 2 */}
       <div className="discussions-member">
         <img
-          src="/images/learning/user3.png"
+          src="/images/user/user1.png"
           alt=""
           className="discussions-member-img img-l"
         />
@@ -72,7 +72,7 @@ function Discussions() {
           </a>
           <div className="discussions-info-reply">
             <img
-              src="/images/learning/user4.png"
+              src="/images/user/user1.png"
               alt=""
               className="discussions-reply-img img-s"
             />
