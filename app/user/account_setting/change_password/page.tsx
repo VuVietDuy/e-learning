@@ -1,1 +1,1 @@
-export {ChangePassword as default} from "@/modules/user/AccountSettingPage/componets/ChangePassword"
+export { ChangePassword as default } from "@/modules/user/AccountSettingPage/componets/ChangePassword";

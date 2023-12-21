@@ -1,1 +1,1 @@
-export {InstructorManagement as default} from '@/modules/admin/InstructorManagement'
+export { InstructorManagement as default } from "@/modules/admin/InstructorManagement";

@@ -1,1 +1,1 @@
-export {DetailCourse as default} from "@/modules/instructor/DetailCourse"
+export { DetailCourse as default } from "@/modules/instructor/DetailCourse";

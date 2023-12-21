@@ -3,10 +3,11 @@ import React from "react";
 import { Avatar, Button, DatePicker, Input, Space, Table } from "antd";
 import { SearchOutlined } from "@ant-design/icons";
 import { randomColor } from "@/utils/RandomColor";
+import "./index.scss";
 
 const { RangePicker } = DatePicker;
 
-export const ComplainsManagement = () :JSX.Element => {
+export function ComplainsManagement(): JSX.Element {
   const columns = [
     {
       title: "User",
@@ -57,7 +58,7 @@ export const ComplainsManagement = () :JSX.Element => {
 
   return (
     <div className="complains_management">
-      {/* <div className="d_flex justify_content_start mb_4">
+      <div className="d_flex justify_content_start mb_4">
         <Input
           className="me_4"
           placeholder="Search"
@@ -67,7 +68,7 @@ export const ComplainsManagement = () :JSX.Element => {
         />
         <RangePicker size="large" />
       </div>
-      <Table columns={columns} dataSource={data} /> */}
+      <Table columns={columns} dataSource={data} />
     </div>
   );
-};
+}

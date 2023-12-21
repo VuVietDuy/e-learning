@@ -1,1 +1,1 @@
-export {Withdraw as default} from "@/modules/instructor/Withdraw"
+export { Withdraw as default } from "@/modules/instructor/Withdraw";

@@ -1,1 +1,1 @@
-export {Performance as default} from "@/modules/instructor/Performance"
+export { Performance as default } from "@/modules/instructor/Performance";

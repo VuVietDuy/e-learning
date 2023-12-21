@@ -1,14 +1,12 @@
-'use client'
+"use client";
 import React from "react";
 import { Button, Col, Form, Input, Radio, Row, Select } from "antd";
 import Paragraph from "antd/es/typography/Paragraph";
 import { Option } from "antd/es/mentions";
 
-import './style.scss'
-
+import "./style.scss";
 
 export function CheckOut() {
-
   return (
     <div className="checkout_container">
       <div className="title-page">
@@ -23,11 +21,7 @@ export function CheckOut() {
                 <Row gutter={[32, 32]}>
                   <Col span={12}>
                     <Form.Item name={"country"} label="Country">
-                      <Select
-                        placeholder="Country"
-                        allowClear
-                        size="large"
-                      >
+                      <Select placeholder="Country" allowClear size="large">
                         <Option value="vietnamese">Viet Nam</Option>
                         <Option value="english">English</Option>
                       </Select>
@@ -49,13 +43,13 @@ export function CheckOut() {
           <div className="payment_method">
             <div className="credit_card">
               <div className="credit_card_header">
-                <Radio className="radio" value={'creditCard'}>Credit/Debit Card</Radio>
+                <Radio className="radio" value={"creditCard"}>
+                  Credit/Debit Card
+                </Radio>
               </div>
               <div className="credit_card_info">
-                <Form
-                  layout="vertical"
-                >
-                  <Row gutter={[32,0]}>
+                <Form layout="vertical">
+                  <Row gutter={[32, 0]}>
                     <Col span={24}>
                       <Form.Item label="Name on card" name={"namOnCard"}>
                         <Input size="large"></Input>
@@ -72,7 +66,10 @@ export function CheckOut() {
                       </Form.Item>
                     </Col>
                     <Col span={12}>
-                      <Form.Item label="Expiration Date" name={"expirationDate"}>
+                      <Form.Item
+                        label="Expiration Date"
+                        name={"expirationDate"}
+                      >
                         <Input size="large"></Input>
                       </Form.Item>
                     </Col>
@@ -80,7 +77,9 @@ export function CheckOut() {
                 </Form>
               </div>
               <div className="credit_card_header">
-                <Radio className="radio" value={'creditCard'}>Visa</Radio>
+                <Radio className="radio" value={"creditCard"}>
+                  Visa
+                </Radio>
               </div>
             </div>
           </div>
@@ -100,9 +99,13 @@ export function CheckOut() {
               <span className="left">Total:</span>
               <span className="right">$160.00</span>
             </div>
-            <Paragraph>By completing your purchase you agree to our Terms of Service</Paragraph>
+            <Paragraph>
+              By completing your purchase you agree to our Terms of Service
+            </Paragraph>
             <div className="sumary_item">
-              <Button size="large" style={{width: "100%"}}>Completed Check out</Button>
+              <Button size="large" style={{ width: "100%" }}>
+                Completed Check out
+              </Button>
             </div>
             <Paragraph>30-Day Money-Back Guarantee</Paragraph>
           </div>

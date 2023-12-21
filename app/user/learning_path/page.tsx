@@ -1,1 +1,1 @@
-export {LearningPath as default} from "@/modules/user/LearningPath"
+export { LearningPath as default } from "@/modules/user/LearningPath";

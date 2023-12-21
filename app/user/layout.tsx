@@ -1,1 +1,1 @@
-export {MainLayout as default} from "@/components/Layout/User/MainLayout"
+export { MainLayout as default } from "@/components/Layout/User/MainLayout";

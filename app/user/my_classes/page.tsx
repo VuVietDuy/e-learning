@@ -1,1 +1,1 @@
-export {MyClasses as default} from "@/modules/user/MyClasses"
+export { MyClasses as default } from "@/modules/user/MyClasses";

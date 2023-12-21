@@ -1,1 +1,1 @@
-export {StudentManagement as default} from '@/modules/admin/StudentManagement'
+export { StudentManagement as default } from "@/modules/admin/StudentManagement";

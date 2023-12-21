@@ -1,1 +1,1 @@
-export {ShopCart as default} from "@/modules/user/ShopCart"
+export { ShopCart as default } from "@/modules/user/ShopCart";

@@ -7,12 +7,12 @@ import { DeleteFilled } from "@ant-design/icons";
 
 import "./style.scss";
 
-export function MyCourses() : JSX.Element {
+export function MyCourses(): JSX.Element {
   const router = useRouter();
   /* eslint-disable no-unused-vars */
   const editCourse = () => {
     router.push("/instructor/detail_course");
-  }
+  };
   return (
     <div className="default_container my_courses_container">
       <div className="header d_flex justify_content_between">

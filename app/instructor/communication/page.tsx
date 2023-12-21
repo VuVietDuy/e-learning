@@ -1,1 +1,1 @@
-export {Communication as default} from "@/modules/instructor/Communication"
+export { Communication as default } from "@/modules/instructor/Communication";

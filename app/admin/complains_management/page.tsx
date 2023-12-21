@@ -1,1 +1,1 @@
-export {ComplainsManagement as default} from '@/modules/admin/ComplainsManagement'
+export { ComplainsManagement as default } from "@/modules/admin/ComplainsManagement";

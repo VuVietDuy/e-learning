@@ -1,1 +1,1 @@
-export {NotFound as default} from "@/modules/user/NotFound"
+export { NotFound as default } from "@/modules/user/NotFound";

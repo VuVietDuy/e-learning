@@ -1,1 +1,1 @@
-export {HomePage as default} from "@/modules/instructor/HomePage"
+export { HomePage as default } from "@/modules/instructor/HomePage";
