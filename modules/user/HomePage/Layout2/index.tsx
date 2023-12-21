@@ -28,7 +28,8 @@ const Layout2 = () => {
     },
   ];
   return (
-    <div>
+    <div className="homepage-slide">
+      <div className="homepage-cover"></div>
       <Swiper
         modules={[Pagination, Autoplay, EffectFade, A11y]}
         slidesPerView={1}
@@ -38,6 +39,7 @@ const Layout2 = () => {
         autoplay={{
           delay: 4000,
           disableOnInteraction: false,
+          
         }}
         onSlideChange={handleSlideChange}
         initialSlide={0}
@@ -49,6 +51,13 @@ const Layout2 = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      <div className="slider-content">
+        <p className="text1">Original.</p>
+        <p className="text2">Transform your Refernce Photos into Watercolor Paintings</p>
+        <p className="text3">Use reference photo to build your own portfolio painting style with artist Jacob Chanderman.</p>
+        <button className="join">Join our Community</button>
+      </div>
     </div>
   );
 };
