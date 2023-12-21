@@ -48,7 +48,10 @@
 .slider-rate{
     color: white;
     font-size: 20px;
-    
+    display: flex;
+    .slider-rate-icon{
+        margin-right: 8px;
+    }
 }
 .slider-rate-content{
     display: flex;
@@ -160,7 +163,7 @@ line-height: 24px;
 //     background-color: #d9d9d9;
 // }
 .pay-img{
-
+    margin-bottom: 24px;
 }
 .pay-price{
     display: flex;
@@ -206,7 +209,7 @@ line-height: 24px;
 
 }
 .pay-price-time-hour{
-    color: black;
+    color: blue;
 font-size: 14px;
 font-family: SF Pro Display;
 font-weight: 600;
@@ -238,7 +241,7 @@ padding-left: 3px;
 .pay-buy-now{
     border: 1px solid #000;
     border-radius: 8px;
-    background-color: #d9d9d9;
+    background-color: #2CFF9A;
     color: #000;
     margin-top: 25px;
     font-size: 20px;
@@ -247,6 +250,12 @@ padding-left: 3px;
    height: 50px;
    font-weight: 600;
    padding: 0;
+}
+.pay-buy-now:hover{
+    opacity: 0.8;
+}
+.pay-buy-now2{
+    background-color: #fff;
 }
 .pay-buy-now:hover{
     opacity: 0.8;
@@ -299,12 +308,15 @@ margin: 12px 0;
 }
 .pay-coupon-input{
     width: 160px;
-    color: #000;
-    background-color: #AEAEAE;
+    color: #fff;
+    background-color: #503ED8;
     border-radius: 8px;
     border-style: none;
     font-size: 20px;
     padding: 16px;
+}
+.pay-coupon-input::placeholder{
+    color: white;
 }
 
 .pay-coupon-enter{

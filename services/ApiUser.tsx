@@ -51,6 +51,49 @@ async function getUser(id : string) {
     
 }
 
+const listStudents = [
+    {
+        id: "1",
+        src: "/images/instructor/instrutor1.png",
+        name: "Michael Duong",
+        region: "Americas",
+        country: "United States",
+        enrolledDate: " 21/10/2023",
+    },
+    {
+        id: "1",
+        src: "/images/instructor/instrutor2.png",
+        name: "Michael Duong",
+        region: "Americas",
+        country: "United States",
+        enrolledDate: " 21/10/2023",
+    },
+    {
+        id: "1",
+        src: "/images/instructor/instrutor3.png",
+        name: "Michael Duong",
+        region: "Americas",
+        country: "United States",
+        enrolledDate: " 21/10/2023",
+    },
+    {
+        id: "1",
+        src: "/images/instructor/instrutor4.png",
+        name: "Michael Duong",
+        region: "Americas",
+        country: "United States",
+        enrolledDate: " 21/10/2023",
+    },
+    {
+        id: "1",
+        src: "/images/instructor/instrutor5.png",
+        name: "Michael Duong",
+        region: "Americas",
+        country: "United States",
+        enrolledDate: " 21/10/2023",
+    },
+]
+
 export {
     createNewUser,
     getAllUsers,

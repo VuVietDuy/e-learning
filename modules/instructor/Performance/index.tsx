@@ -11,80 +11,11 @@ import {
   DatePickerProps,
   Rate,
   Select,
-  TimePicker,
 } from "antd";
+import PercentBar from "./components/PercentBar";
 
 export function Performance() {
   const [activeTab, setActiveTab] = useState("revenue");
-
-  // function changeStar(starNum){
-  //   switch(starNum){
-  //     case 1:{
-  //       return(
-  //         <div className='starRate'>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/nonStar.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/nonStar.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/nonStar.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/nonStar.png" alt="" width={"24px"} height={"24px"}/>
-  //             </div>
-  //       );
-  //     }
-  //     case 2:{
-  //       return(
-  //         <div className='starRate'>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/nonStar.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/nonStar.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/nonStar.png" alt="" width={"24px"} height={"24px"}/>
-  //             </div>
-  //       );
-  //     }
-  //     case 3:{
-  //       return(
-  //         <div className='starRate'>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/nonStar.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/nonStar.png" alt="" width={"24px"} height={"24px"}/>
-  //             </div>
-  //       );
-  //     }
-  //     case 4:{
-  //       return(
-  //         <div className='starRate'>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/nonStar.png" alt="" width={"24px"} height={"24px"}/>
-  //             </div>
-  //       );
-  //     }
-  //     default:{
-  //       return(
-  //         <div className='starRate'>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             <img src="/icon/Star.png" alt="" width={"24px"} height={"24px"}/>
-  //             </div>
-  //       );
-  //     }
-  //   }
-  // }
-
-  // function changePercent(){
-  //   document.getElementById("blueBar5").style.width = "461px";
-  //   document.getElementById("blueBar4").style.width = "26px";
-  //   document.getElementById("blueBar3").style.width = "10px";
-  //   document.getElementById("blueBar2").style.width = "10px";
-  //   document.getElementById("blueBar1").style.width = "0px";
-
-  // }
 
   const handleChange = (value: string) => {
     console.log(`selected ${value}`);
@@ -102,7 +33,7 @@ export function Performance() {
         <div className="category">
           <Select
             defaultValue="revenue"
-            style={{ width: 150, height: 49 }}
+            style={{ width: 300, height: 49 }}
             onChange={handleChange}
             options={[
               { value: "revenue", label: "Revenue" },
@@ -213,38 +144,28 @@ export function Performance() {
 
             <div className="rateStatistic">
               <div className="RatingPercent">
-                <div className="greyBar">
-                  <div id="blueBar5" className="blueBar"></div>
-                </div>
-                <div className="starRate">{/* {changeStar(5)} */}</div>
+                <PercentBar percent={90}></PercentBar>
+                <Rate disabled defaultValue={5}></Rate>
                 <div className="percent">90%</div>
               </div>
               <div className="RatingPercent">
-                <div className="greyBar">
-                  <div id="blueBar4" className="blueBar"></div>
-                </div>
-                <div className="starRate">{/* {changeStar(4)} */}</div>
+                <PercentBar percent={5}></PercentBar>
+                <Rate disabled defaultValue={4}></Rate>
                 <div className="percent">5%</div>
               </div>
               <div className="RatingPercent">
-                <div className="greyBar">
-                  <div id="blueBar3" className="blueBar"></div>
-                </div>
-                <div className="starRate">{/* {changeStar(3)} */}</div>
+                <PercentBar percent={2}></PercentBar>
+                <Rate disabled defaultValue={3}></Rate>
                 <div className="percent">2%</div>
               </div>
               <div className="RatingPercent">
-                <div className="greyBar">
-                  <div id="blueBar2" className="blueBar"></div>
-                </div>
-                <div className="starRate">{/* {changeStar(2)} */}</div>
+                <PercentBar percent={2}></PercentBar>
+                <Rate disabled defaultValue={2}></Rate>
                 <div className="percent">2%</div>
               </div>
               <div className="RatingPercent">
-                <div className="greyBar">
-                  <div id="blueBar1" className="blueBar"></div>
-                </div>
-                <div className="starRate">{/* {changeStar(1)} */}</div>
+                <PercentBar percent={0}></PercentBar>
+                <Rate disabled defaultValue={1}></Rate>
                 <div className="percent">0%</div>
               </div>
             </div>
