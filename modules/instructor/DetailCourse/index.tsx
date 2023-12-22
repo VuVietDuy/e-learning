@@ -12,11 +12,11 @@ import {
   Select,
   Space,
 } from "antd";
+import TextArea from "antd/es/input/TextArea";
 import { EyeOutlined, PlusOutlined } from "@ant-design/icons";
 
 import "./index.scss";
 import Lession from "./components/Lession";
-import TextArea from "antd/es/input/TextArea";
 
 let index = 0;
 
@@ -330,7 +330,9 @@ export function DetailCourse(): JSX.Element {
             Are you sure you want <br></br> to delete this lesson?
           </h1>
           <div className="d_flex justify_content_around">
-            <Button className="btn_cf" onClick={closeConfirmModal}>CANCEL</Button>
+            <Button className="btn_cf" onClick={closeConfirmModal}>
+              CANCEL
+            </Button>
             <Button className="btn_cf cf">YES, DELETE!</Button>
           </div>
         </div>

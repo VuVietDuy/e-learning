@@ -53,6 +53,9 @@
                     font-weight: 600;
                     line-height: 21.6px;
                 }
+                li :hover {
+                    cursor: pointer;
+                } 
             }
         }
     }

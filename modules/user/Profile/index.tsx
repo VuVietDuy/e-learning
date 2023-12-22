@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import "./index.scss";
 import { Button, Col, DatePicker, Form, Input, Row } from "antd";
 import { EyeOutlined } from "@ant-design/icons";
@@ -95,59 +95,48 @@ export function Profile() {
             <Form onFinish={handleSubmit}>
               <div className="body">
                 <div className="name">
-                  <p>First Name</p>
-                  <Form.Item name="firstName">
-                    <Input type="text" className="box" />
-                  </Form.Item>
-                  <p>Last Name</p>
-                  <Form.Item name="lastName">
-                    <Input type="text" className="box" />
-                  </Form.Item>
+                  <div>
+                    <p>First Name</p>
+                    <Input type="text" className="box" defaultValue={"Hai Dang"} />
+                  </div>
+                  <div>
+                    <p>Last Name</p>
+                    <Input type="text" className="box" defaultValue={"Phung Ba"}/>
+                  </div>
                 </div>
                 <div className="phone_gender">
-                  <p>Phone</p>
-                  <Form.Item className="phoneNumber">
-                    <Input type="text" className="box" />
-                  </Form.Item>
+                  <div>
+                    <p>Phone</p>
+                    <Input type="text" className="box" defaultValue={"0978028844"}/>
+                  </div>
                   <div className="gender">
                     <span>Gender: </span>
-                    <Form.Item name={"male"}>
-                      <Input className="radio" type="radio" />
-                    </Form.Item>
+                    <Input className="radio" type="radio" checked/>
                     <label>Male</label>
-                    <Form.Item name="female">
-                      <Input className="radio" type="radio" />
-                    </Form.Item>
+                    <Input className="radio" type="radio" />
                     <label>Female</label>
-                    <Form.Item name={"other"}>
-                      <Input className="radio" type="radio" />
-                    </Form.Item>
+                    <Input className="radio" type="radio" />
                     <label>Other</label>
                   </div>
                 </div>
                 <div className="dateofbirth">
                   <p>Date of Birth</p>
-                  <Form.Item name={"dateOfBirth"}>
-                    <DatePicker className="box" />
-                  </Form.Item>
+                  <DatePicker className="box"/>
                 </div>
                 <div className="biography">
                   <p>Biography</p>
-                  <Form.Item name={"biography"}>
-                    <textarea
-                      name="biography"
-                      className="box"
-                      id=""
-                      cols={30}
-                      rows={10}
-                    ></textarea>
-                  </Form.Item>
+                  <textarea
+                    name="biography"
+                    className="box"
+                    id=""
+                    cols={30}
+                    rows={10}
+                    defaultValue={"I'm PTITer"}
+                  ></textarea>
                 </div>
-                <Form.Item>
-                  <Button className="savechange" size="large" htmlType="submit">
-                    Save Changes
-                  </Button>
-                </Form.Item>
+                <Button className="savechange" size="large" htmlType="submit">
+                  Save Changes
+                </Button>
               </div>
             </Form>
           </div>

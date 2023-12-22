@@ -8,7 +8,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
       <div style={{ position: "fixed", top: 0, right: 0, left: 0, zIndex: 3 }}>
         <Header></Header>
       </div>
-      <div style={{height: "80px"}}></div>
+      <div style={{ height: "80px" }}></div>
       <div>{children}</div>
       <Footer></Footer>
     </div>

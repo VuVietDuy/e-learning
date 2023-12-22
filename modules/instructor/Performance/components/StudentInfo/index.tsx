@@ -1,10 +1,16 @@
-import React from 'react';
-import './index.scss'
-import { EnvironmentFilled, OrderedListOutlined, PlayCircleFilled } from '@ant-design/icons';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
+import {
+  EnvironmentFilled,
+  OrderedListOutlined,
+  PlayCircleFilled,
+} from "@ant-design/icons";
 
-function StudentInfo(props : any) {
-  const{
+import "./index.scss";
+
+function StudentInfo(props: any):JSX.Element {
+  
+  const {
     src = "/images/instructor/instrutor1.png",
     name = "Michael Duong",
     region = "Americas",
@@ -15,26 +21,25 @@ function StudentInfo(props : any) {
   return (
     <div className="StudentInfo">
       <div className="body">
-        <div className='studentImage'>
-          <Image src={src} alt='' width={110} height={110}></Image>
+        <div className="studentImage">
+          <Image src={src} alt="" width={110} height={110}></Image>
         </div>
-        <div className='studentName'>{name}</div>
+        <div className="studentName">{name}</div>
         <div className="studentRegion">
           <PlayCircleFilled />
           {region}
         </div>
         <div className="studentCountry">
-            <EnvironmentFilled />
+          <EnvironmentFilled />
           {country}
         </div>
         <div className="studentEnroll">
-            <OrderedListOutlined />
+          <OrderedListOutlined />
           {enrolledDate}
         </div>
       </div>
-      
     </div>
-  )
+  );
 }
 
-export default StudentInfo
+export default StudentInfo;

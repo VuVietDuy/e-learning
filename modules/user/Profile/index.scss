@@ -106,6 +106,7 @@
                 width: 256px;
                 height: 52px;
                 padding-left: 16px;
+                font-size: 18px;
             }
             .name{
                 display: flex;
@@ -150,42 +151,4 @@
             }
         }
     }
-}
-
-//          Chỉnh giao diện lịch
-:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-header {
-    color: rgba(255, 255, 255, 0.88);
-}
-:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-cell {
-    padding: 6px 0;
-    color: rgba(255, 255, 255, 0.144);
-    cursor: pointer;
-}
-:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-cell-in-view {
-    color: rgba(255, 255, 255, 0.88);
-}
-
-:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-panel-container {
-    background: #464646;
-}
-
-:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-content th {
-    color: #B5BEC6;
-}
-:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-header button {
-    color: rgb(255, 255, 255);
-}
-.ant-picker-dropdown{
-    &.css-dev-only-do-not-override-1vr7spz {
-        &.ant-picker-dropdown-placement-bottomLeft{
-            left: 1000px;
-        }
-    }
-}
-:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-cell:hover:not(.ant-picker-cell-in-view) .ant-picker-cell-inner, :where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-range-start):not(.ant-picker-cell-range-end):not(.ant-picker-cell-range-hover-start):not(.ant-picker-cell-range-hover-end) .ant-picker-cell-inner{
-    background-color: white;
-    color: black;
-}
-:where(.css-dev-only-do-not-override-1vr7spz).ant-picker-dropdown .ant-picker-cell .ant-picker-cell-inner {
-    transition: 0s;
 }

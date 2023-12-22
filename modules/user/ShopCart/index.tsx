@@ -5,7 +5,6 @@ import { Button, Col, Form, Input, Row } from "antd";
 import { DeleteFilled } from "@ant-design/icons";
 
 import "./index.scss";
-import CardHorizontal from "@/components/CardHorizontal";
 import ShopCardItem from "./component/ShopCardItem";
 
 export function ShopCart(): JSX.Element {

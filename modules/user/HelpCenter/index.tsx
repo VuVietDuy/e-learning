@@ -78,7 +78,7 @@ export function HelpCenter() {
       <div className="Top">
         <div className="search">
             <div className="searchTitle">
-              GraFish Help Center
+              MegaSkills Help Center
             </div>
             <div className="box-button">
               <input type="text" className='searchBox'/>

@@ -73,6 +73,11 @@ export function Header() {
     },
   ];
 
+  const handleSearch = () => {
+    router.push("/user/search_result");
+    closeBrowse()
+  };
+
   return (
     <div>
       <div className="header-container">
@@ -104,14 +109,14 @@ export function Header() {
                       <h4 className="title">Create</h4>
                     </div>
                     <ul className="create_list">
-                      <li>Animation</li>
-                      <li>3D Art</li>
-                      <li>Film & Video</li>
-                      <li>Fine Art</li>
-                      <li>Graphic Design</li>
-                      <li>Illustration</li>
-                      <li>Photography</li>
-                      <li>UI/UX Design</li>
+                      <li onClick={handleSearch}>Animation</li>
+                      <li onClick={handleSearch}>3D Art</li>
+                      <li onClick={handleSearch}>Film & Video</li>
+                      <li onClick={handleSearch}>Fine Art</li>
+                      <li onClick={handleSearch}>Graphic Design</li>
+                      <li onClick={handleSearch}>Illustration</li>
+                      <li onClick={handleSearch}>Photography</li>
+                      <li onClick={handleSearch}>UI/UX Design</li>
                     </ul>
                   </div>
                 </Col>
@@ -123,26 +128,26 @@ export function Header() {
                     <Row>
                       <Col span={8}>
                         <ul className="create_list">
-                          <li>Photoshop</li>
-                          <li>Premiere</li>
-                          <li>After Effect</li>
-                          <li>Illustrator</li>
-                          <li>Figma</li>
-                          <li>Maya</li>
-                          <li>Substance Painter</li>
-                          <li>Zbrush</li>
+                          <li onClick={handleSearch}>Photoshop</li>
+                          <li onClick={handleSearch}>Premiere</li>
+                          <li onClick={handleSearch}>After Effect</li>
+                          <li onClick={handleSearch}>Illustrator</li>
+                          <li onClick={handleSearch}>Figma</li>
+                          <li onClick={handleSearch}>Maya</li>
+                          <li onClick={handleSearch}>Substance Painter</li>
+                          <li onClick={handleSearch}>Zbrush</li>
                         </ul>
                       </Col>
                       <Col span={8}>
                         <ul className="create_list">
-                          <li>Unreal Engine</li>
-                          <li>Ziva</li>
-                          <li>Marmoset</li>
-                          <li>Mari</li>
-                          <li>Marvelous</li>
-                          <li>Mudbox</li>
-                          <li>Davinci Resolve</li>
-                          <li>Nuke</li>
+                          <li onClick={handleSearch}>Unreal Engine</li>
+                          <li onClick={handleSearch}>Ziva</li>
+                          <li onClick={handleSearch}>Marmoset</li>
+                          <li onClick={handleSearch}>Mari</li>
+                          <li onClick={handleSearch}>Marvelous</li>
+                          <li onClick={handleSearch}>Mudbox</li>
+                          <li onClick={handleSearch}>Davinci Resolve</li>
+                          <li onClick={handleSearch}>Nuke</li>
                         </ul>
                       </Col>
                       <Col span={8}>

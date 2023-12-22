@@ -25,7 +25,7 @@ export function MyCourses(): JSX.Element {
         <h2>My Courses</h2>
         <Button onClick={newCourse}>New course</Button>
       </div>
-      <Row gutter={[24,24]}>
+      <Row gutter={[24, 24]}>
         <Col span={24}>
           <div className="courses d_flex justify_content_between align_item_center">
             <div className="d_flex justify_content_between align_item_center">

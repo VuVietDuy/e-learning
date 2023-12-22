@@ -1,17 +1,11 @@
 "use client";
-import React from "react";
-import "./style.scss";
+import React, { useState } from "react";
+import { Button, DatePicker, DatePickerProps, Rate, Select } from "antd";
 import { DownOutlined } from "@ant-design/icons";
-import { useState } from "react";
+
+import "./style.scss";
 import Review from "./components/Review";
 import StudentInfo from "./components/StudentInfo";
-import {
-  Button,
-  DatePicker,
-  DatePickerProps,
-  Rate,
-  Select,
-} from "antd";
 import PercentBar from "./components/PercentBar";
 
 export function Performance() {
