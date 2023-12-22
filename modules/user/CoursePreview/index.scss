@@ -166,6 +166,7 @@ line-height: 24px;
     margin-bottom: 24px;
 }
 .pay-price{
+    margin-top: 24px;
     display: flex;
 }
 .pay-price-cash{
@@ -287,6 +288,7 @@ margin: 12px 0;
 .pay-course-item{
     color: #565656;
     padding: 12px 0;
+    font-size: 16px;
 }
 .pay-coupon{
     border-top: 1px solid #000;
@@ -422,6 +424,7 @@ margin: 12px 0;
 .course__3{
     width: 1000px;
     margin: auto;
+    margin-bottom: 26px;
 }
 .course-3-body{
     display: flex;
@@ -432,6 +435,8 @@ margin: 12px 0;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    margin-left: 26px;
+    margin-bottom: 26px;
 }
 .course-3-des-1{
     font-size: 22px;
