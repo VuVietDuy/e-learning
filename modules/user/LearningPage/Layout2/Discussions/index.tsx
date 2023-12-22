@@ -1,16 +1,13 @@
 import React from "react";
 import "./index.scss";
+import { Image } from "antd";
 
 function Discussions() {
   return (
     <div className="discussions">
       {/* hoi thoai 1 */}
       <div className="discussions-member">
-        <img
-          src="/images/user/user1.png"
-          alt=""
-          className="discussions-member-img img-l"
-        />
+        <Image src="/images/user/discussion4.png"></Image>
         <div className="discussions-member-chatbox">
           <button className="discussions-btn">Start a Conversation</button>
           <button className="discussions-btn">Ask a Question</button>
@@ -18,11 +15,7 @@ function Discussions() {
         </div>
       </div>
       <div className="discussions-member">
-        <img
-          src="/images/user/user1.png"
-          alt=""
-          className="discussions-member-img img-l"
-        />
+      <Image src="/images/user/discussion5.png"></Image>
         <div className="discussions-info">
           <div className="discussions-info-name">Wurvic Daniel</div>
           <div className="discussions-info-text">
@@ -46,11 +39,7 @@ function Discussions() {
       </div>
       {/* hoi thoai 2 */}
       <div className="discussions-member">
-        <img
-          src="/images/user/user1.png"
-          alt=""
-          className="discussions-member-img img-l"
-        />
+      <Image src="/images/user/discussion6.png"></Image>
         <div className="discussions-info">
           <div className="discussions-info-name">Wurvic Daniel</div>
           <div className="discussions-info-text">
@@ -71,11 +60,7 @@ function Discussions() {
             Cancel Reply
           </a>
           <div className="discussions-info-reply">
-            <img
-              src="/images/user/user1.png"
-              alt=""
-              className="discussions-reply-img img-s"
-            />
+          <Image src="/images/user/discussion7.png" width={48} height={48} className="margin-16"></Image>
             <div className="discussions-info-reply-contain">
               <div className="discussions-info-reply-icon">
                 <div className="discussions-info-reply-icon-tag">
@@ -95,11 +80,7 @@ function Discussions() {
             </div>
           </div>
           <div className="discussions-info-reply">
-            <img
-              src="/images/learning/user4.png"
-              alt=""
-              className="discussions-reply-img img-s"
-            />
+          <Image src="/images/user/discussion7.png" width={100} height={48} className="margin-16"></Image>
             <div className="reply-add-img">
               <div className="add-img-icon">
                 <img
@@ -124,11 +105,7 @@ function Discussions() {
           </div>
           {/* them file-anh*/}
           <div className="discussions-info-reply">
-            <img
-              src="/images/learning/user4.png"
-              alt=""
-              className="discussions-reply-img img-s"
-            />
+          <Image src="/images/user/discussion7.png" width={100} height={48} className="margin-16"></Image>
             <div className="reply-add-img">
               <div className="add-file">
                 <ul className="add-file-list">
@@ -196,11 +173,7 @@ function Discussions() {
       </div>
       {/* hoi thoai 3 */}
       <div className="discussions-member">
-        <img
-          src="/images/learning/user3.png"
-          alt=""
-          className="discussions-member-img img-l"
-        />
+      <Image src="/images/user/discussion4.png"></Image>
         <div className="discussions-info">
           <div className="discussions-info-name">Wurvic Daniel</div>
           <div className="discussions-info-text">

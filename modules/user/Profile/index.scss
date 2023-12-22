@@ -11,7 +11,11 @@
         width: 232px;
         .profileimg{
             text-align: center;
+            .mt16{
+                margin-top: 16px;
+            }
             h2{
+                
                 display: inline-block;
                 font-weight: 400;
                 margin-bottom: 24px;
@@ -26,14 +30,22 @@
 
             }
         }
+
         .follower{
             display: grid;
             grid-template-columns: auto auto;
             margin: 26px 0px 26px 0px;
+            .follow{
+                align-items: center;
+                text-align: center;
+            }
             .num{
                 font-size: 22px;
                 font-weight: 600;
             }
+        }
+        .thongke{
+            margin-left: 10px;
         }
         .hours-learning{
             margin: 24px 0px 29px 10px;
@@ -63,22 +75,26 @@
                     border-radius: 4px;
                     margin-right: 10px;
                     &.first{
-                        background: #5C5252;
+                        background: #503ED8;
                     }
                     &.second{
-                        background: #837B7B;
+                        background: #796BDF;
                     }
                     &.third{
-                        background: #C0BCBC;
+                        background: #B0A9E9;
                     }
                     &.fourth{
-                        background: #CFCCCC;
+                        background: rgba(176, 169, 233, 0.60);
+
+
                     }
                     &.fifth{
-                        background: #E2E0E0;
+                        background: rgba(204, 199, 238, 0.50);
                     }
                     &.sixth{
-                        background: #F2F1F1;
+                        background: rgba(224, 221, 241, 0.60);
+
+
                     }
                 }
                 div{
@@ -141,10 +157,11 @@
             }
             .savechange{
                 width: 163px;
-                color: white;
-                background: #5B5757;
+                color: #000;
+                background: #2CFF99;
                 &:hover{
-                    background-color: black;
+                    background-color: #000;
+                    color: #fff;
                     cursor: pointer;
                 }
             }

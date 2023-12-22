@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import "./index.scss";
-import { Button, Col, DatePicker, Form, Input, Row } from "antd";
+import { Button, Col, DatePicker, Form, Image, Input, Row } from "antd";
 import { EyeOutlined } from "@ant-design/icons";
 
 export function Profile() {
@@ -17,16 +17,16 @@ export function Profile() {
         <Col span={8}>
           <div className="left">
             <div className="profileimg">
-              <div className="img">{}</div>
-              <h2>Hai Dang Phung Ba</h2>
+              <Image src="/images/user/discussion6.png"></Image>
+              <h2 className="mt16">Hai Dang Phung Ba</h2>
               <div className="line-1"></div>
             </div>
             <div className="follower">
-              <div>
-                <p className="num">--</p>
+              <div className="follow">
+                <p className="num">16</p>
                 <p>Followers</p>
               </div>
-              <div>
+              <div className="follow">
                 <p className="num">25</p>
                 <p>Following</p>
               </div>
@@ -38,7 +38,7 @@ export function Profile() {
                 &nbsp;&nbsp;{hourlearn}&nbsp;&nbsp; Hours&nbsp; Learning
               </span>
             </div>
-            <img className="chart" src="/images/donutchart.png" alt="" />
+            <Image src="/images/user/thongke1.png" className="thongke"></Image>
             <div className="statistics">
               <div className="element">
                 <div>
