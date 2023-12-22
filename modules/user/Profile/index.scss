@@ -2,6 +2,12 @@
     width: 1000px;
     margin: auto;
     padding-top: 32px;
+    .avatar_img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        overflow: hidden;
+    }
     .line-1 {
         margin-top: 16px;
         height: 1px;
@@ -11,6 +17,9 @@
         width: 232px;
         .profileimg{
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .mt16{
                 margin-top: 16px;
             }

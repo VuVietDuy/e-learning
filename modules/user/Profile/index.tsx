@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
 import "./index.scss";
-import { Button, Col, DatePicker, Form, Image, Input, Row } from "antd";
+import { Button, Col, DatePicker, Form, Input, Row } from "antd";
 import { EyeOutlined } from "@ant-design/icons";
+import Image from "next/image";
 
 export function Profile() {
   let hourlearn = 216.8;
@@ -17,10 +18,12 @@ export function Profile() {
         <Col span={8}>
           <div className="left">
             <div className="profileimg">
-              <Image src="/images/user/discussion6.png"></Image>
+              <div className="avatar_img">
+                <Image src="/images/avatar.jpg" alt="" width={120} height={120}></Image>
+              </div>
               <h2 className="mt16">Hai Dang Phung Ba</h2>
-              <div className="line-1"></div>
             </div>
+            <div className="line-1"></div>
             <div className="follower">
               <div className="follow">
                 <p className="num">16</p>
@@ -38,7 +41,9 @@ export function Profile() {
                 &nbsp;&nbsp;{hourlearn}&nbsp;&nbsp; Hours&nbsp; Learning
               </span>
             </div>
-            <Image src="/images/user/thongke1.png" className="thongke"></Image>
+            <div className="d_flex justify_content_center">
+              <Image src="/images/user/chart.png" alt="" className="thongke" width={100} height={100}></Image>
+            </div>
             <div className="statistics">
               <div className="element">
                 <div>
