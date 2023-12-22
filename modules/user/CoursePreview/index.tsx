@@ -3,8 +3,8 @@ import React from "react";
 import "./index.scss";
 import Comment from "@/components/Comment";
 import { BranchesOutlined, ClockCircleOutlined, DownloadOutlined, FundProjectionScreenOutlined, GlobalOutlined, TranslationOutlined } from "@ant-design/icons";
-import { Card, Col, Rate, Row } from "antd";
-import Image from "next/image";
+import { Card, Col, Image, Rate, Row } from "antd";
+
 
 export function CoursePreview() {
   return (
@@ -125,8 +125,7 @@ export function CoursePreview() {
             </Col>
             <Col span={8}>
               <Card className="border_black">
-                <div className="pay-img">
-                </div>
+                <Image src="/images/user/coursepreview.png"></Image>
                 <div className="pay-price">
                   <div className="pay-price-cash">
                     <div className="pay-price-origin">
@@ -206,7 +205,73 @@ export function CoursePreview() {
               <div className="course-3-des-2-contain">
                 <div className="course-3-des-2-1">
                   <div className=" fz-20">Ginger Bear</div>
-                  <div className="des-2-2">icon star</div>
+                  <Rate disabled defaultValue={5}></Rate>
+                  <div className="des-2-3 flex">
+                    <div className=" fz-20 ml5">1d 5h 28m</div>
+                    <div className=" fz-20">1,313,581 Students</div>
+                  </div>
+                  <div className="des-2-4">
+                    <div className="des-2-4-1">Publish Date:</div>
+                    <div className="fz-20">02/04/2023</div>
+                  </div>
+                </div>
+                <div className="course-3-des-2-2">
+                  <div className="course-3-des-2-2-1">23% off</div>
+                  <div className="course-3-des-2-2-2">820$</div>
+                  <div className="course-3-des-2-2-3">500$</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="course__3">
+         
+          <div className="course-3-body">
+            <div className="course-3-img">
+              <Image src={"/images/user/course_preview.png"} alt="" width={317} height={180}></Image>
+            </div>
+            <div className="course-3-des">
+              <div className="course-3-des-1">
+                Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D
+                Meta Human
+              </div>
+              <div className="course-3-des-2-contain">
+                <div className="course-3-des-2-1">
+                  <div className=" fz-20">Ginger Bear</div>
+                  <Rate disabled defaultValue={5}></Rate>
+                  <div className="des-2-3 flex">
+                    <div className=" fz-20 ml5">1d 5h 28m</div>
+                    <div className=" fz-20">1,313,581 Students</div>
+                  </div>
+                  <div className="des-2-4">
+                    <div className="des-2-4-1">Publish Date:</div>
+                    <div className="fz-20">02/04/2023</div>
+                  </div>
+                </div>
+                <div className="course-3-des-2-2">
+                  <div className="course-3-des-2-2-1">23% off</div>
+                  <div className="course-3-des-2-2-2">820$</div>
+                  <div className="course-3-des-2-2-3">500$</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="course__3">
+          
+          <div className="course-3-body">
+            <div className="course-3-img">
+              <Image src={"/images/user/course_preview.png"} alt="" width={317} height={180}></Image>
+            </div>
+            <div className="course-3-des">
+              <div className="course-3-des-1">
+                Dynamic Male Anatomy for Artists in Mudbox: Make realistic 3D
+                Meta Human
+              </div>
+              <div className="course-3-des-2-contain">
+                <div className="course-3-des-2-1">
+                  <div className=" fz-20">Ginger Bear</div>
+                  <Rate disabled defaultValue={5}></Rate>
                   <div className="des-2-3 flex">
                     <div className=" fz-20 ml5">1d 5h 28m</div>
                     <div className=" fz-20">1,313,581 Students</div>
