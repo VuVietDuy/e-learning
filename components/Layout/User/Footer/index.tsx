@@ -35,14 +35,14 @@ export function Footer() {
               Subscribe our Youtube Channel
             </li>
             <Button className="f-contain-top-item-btn">
-              <YoutubeFilled className="icon" /> GraFish
+              <YoutubeFilled className="icon" /> MegaSkills
             </Button>
           </ul>
         </div>
         <div className="f-contain-bottom">
           <ul className="f-contain-bottom-item">
             <li className="f-bottom-list">
-              <CopyrightOutlined></CopyrightOutlined> GraFish, Inc. 2023
+              <CopyrightOutlined></CopyrightOutlined> MegaSkills, Inc. 2023
             </li>
             <li className="f-bottom-list">Help</li>
             <li className="f-bottom-list">Privacy</li>

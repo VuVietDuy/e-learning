@@ -187,9 +187,9 @@ export function Header() {
           <Link href={"/user/help_center"} className="btn-text">
             <span>Help Center</span>
           </Link>
-          <Link href={"/user"} className="btn-text">
+          {/* <Link href={"/user"} className="btn-text">
             <span>Teacher</span>
-          </Link>
+          </Link> */}
           <Link href={"/user/shop_cart"} className="btn-text">
             <ShoppingCartOutlined />
           </Link>

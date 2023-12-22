@@ -19,7 +19,12 @@ export function Profile() {
           <div className="left">
             <div className="profileimg">
               <div className="avatar_img">
-                <Image src="/images/avatar.jpg" alt="" width={120} height={120}></Image>
+                <Image
+                  src="/images/avatar.jpg"
+                  alt=""
+                  width={120}
+                  height={120}
+                ></Image>
               </div>
               <h2 className="mt16">Hai Dang Phung Ba</h2>
             </div>
@@ -42,7 +47,13 @@ export function Profile() {
               </span>
             </div>
             <div className="d_flex justify_content_center">
-              <Image src="/images/user/chart.png" alt="" className="thongke" width={100} height={100}></Image>
+              <Image
+                src="/images/user/chart.png"
+                alt=""
+                className="thongke"
+                width={100}
+                height={100}
+              ></Image>
             </div>
             <div className="statistics">
               <div className="element">
@@ -102,21 +113,33 @@ export function Profile() {
                 <div className="name">
                   <div>
                     <p>First Name</p>
-                    <Input type="text" className="box" defaultValue={"Hai Dang"} />
+                    <Input
+                      type="text"
+                      className="box"
+                      defaultValue={"Hai Dang"}
+                    />
                   </div>
                   <div>
                     <p>Last Name</p>
-                    <Input type="text" className="box" defaultValue={"Phung Ba"}/>
+                    <Input
+                      type="text"
+                      className="box"
+                      defaultValue={"Phung Ba"}
+                    />
                   </div>
                 </div>
                 <div className="phone_gender">
                   <div>
                     <p>Phone</p>
-                    <Input type="text" className="box" defaultValue={"0978028844"}/>
+                    <Input
+                      type="text"
+                      className="box"
+                      defaultValue={"0978028844"}
+                    />
                   </div>
                   <div className="gender">
                     <span>Gender: </span>
-                    <Input className="radio" type="radio" checked/>
+                    <Input className="radio" type="radio" checked />
                     <label>Male</label>
                     <Input className="radio" type="radio" />
                     <label>Female</label>
@@ -126,7 +149,7 @@ export function Profile() {
                 </div>
                 <div className="dateofbirth">
                   <p>Date of Birth</p>
-                  <DatePicker className="box"/>
+                  <DatePicker className="box" />
                 </div>
                 <div className="biography">
                   <p>Biography</p>

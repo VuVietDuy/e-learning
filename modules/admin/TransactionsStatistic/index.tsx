@@ -1,6 +1,5 @@
 'use client'
 import React, {useEffect, useRef, useState} from "react";
-import {useRouter} from "next/router";
 import {Button, Card, Col, DatePicker, Row, Table} from "antd";
 import {
   BarChartOutlined,
@@ -9,6 +8,7 @@ import {
   TeamOutlined,
 } from "@ant-design/icons";
 import "./index.scss";
+import Chart from "chart.js/auto";
 
 export function Dashboard(): JSX.Element {
   const canvasEl = useRef<any>();
@@ -67,46 +67,13 @@ export function Dashboard(): JSX.Element {
   };
 
   let bookingCounter = [
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0,
+    1, 2, 2, 5, 4, 7, 5, 4, 4, 6, 4, 7, 6, 6, 4, 3, 8, 2, 3, 4, 3, 1, 3, 2, 4,
+    5, 3, 5, 3, 4,
   ];
 
   let bookingSalesInMonth = [
-    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-    0, 0, 0, 0, 0,
-  ];
-
-
-  const columns = [
-    {
-      title: "Họ và tên",
-      dataIndex: "fullName",
-      key: "fullName",
-    },
-    {
-      title: "Mã nhân viên",
-      dataIndex: "helperInformationId",
-      key: "helperInformationId",
-    },
-    {
-      title: "Số đơn",
-      dataIndex: "counter",
-      key: "counter",
-    },
-    {
-      title: "Thao tác",
-      dataIndex: "action",
-      key: "action",
-      render: (_: any, dataIndex: any) => (
-        <Button
-          type="primary"
-          style={{borderRadius: "25px"}}
-          onClick={() => handleViewMore(dataIndex.helperInformationId)}
-        >
-          Xem chi tiết
-        </Button>
-      ),
-    },
+    1, 2, 2, 5, 4, 7, 5, 4, 5, 5, 6, 6, 6, 7, 4, 4, 6, 2, 4, 3, 3, 2, 1, 2, 4,
+    4, 4, 6, 3, 3,
   ];
 
   const handleViewMore = (helperId: string) => {
@@ -122,6 +89,102 @@ export function Dashboard(): JSX.Element {
     }
   };
 
+  useEffect(() => {
+    const colors = {
+      purple: {
+        default: "rgba(149, 76, 233, 1)",
+        half: "rgba(149, 76, 233, 0.5)",
+        quarter: "rgba(149, 76, 233, 0.25)",
+        zero: "rgba(149, 76, 233, 0)",
+      },
+      indigo: {
+        default: "rgba(90, 217, 255, 1)",
+        half: "rgba(90, 217, 255, 0.5)",
+        quarter: "rgba(90, 217, 255, 0.25)",
+        zero: "rgba(90, 217, 255, 0)",
+      },
+    };
+    const ctx = canvasEl.current.getContext("2d");
+    const gradient1 = ctx.createLinearGradient(0, 16, 0, 600);
+    const gradient2 = ctx.createLinearGradient(0, 16, 0, 600);
+    gradient1.addColorStop(0, colors.purple.half);
+    gradient1.addColorStop(0.65, colors.purple.quarter);
+    gradient1.addColorStop(1, colors.purple.zero);
+    gradient2.addColorStop(0, colors.indigo.half);
+    gradient2.addColorStop(0.65, colors.indigo.quarter);
+    gradient2.addColorStop(1, colors.indigo.zero);
+
+    dataChart?.map(
+      (item: {
+        dayOfMonth: string | number | Date;
+        bookingCounter: number;
+        bookingSalesInMonth: number;
+      }) => {
+        const date = new Date(item.dayOfMonth);
+        const dateNum: number = date.getDate();
+        bookingCounter.forEach((item1, i) => {
+          if (i === dateNum) {
+            bookingCounter[i - 1] = item.bookingCounter;
+          }
+        });
+        bookingSalesInMonth.forEach((item1, i) => {
+          if (i === dateNum) {
+            bookingSalesInMonth[i - 1] = item.bookingSalesInMonth / 1000000;
+          }
+        });
+      }
+    );
+
+    console.log("Data in chart >>", bookingSalesInMonth);
+
+    const data = {
+      labels: chartLabels,
+      datasets: [
+        {
+          backgroundColor: gradient1,
+          label: "Number of registration: day",
+          data: bookingCounter,
+          fill: true,
+          borderWidth: 2,
+          borderColor: colors.purple.default,
+          lineTension: 0.2,
+          pointBackgroundColor: colors.purple.default,
+          pointRadius: 3,
+        },
+        {
+          backgroundColor: gradient2,
+          label: "Revenue in day: Triệu vnđ",
+          data: bookingSalesInMonth,
+          fill: true,
+          borderWidth: 2,
+          borderColor: colors.indigo.default,
+          lineTension: 0.2,
+          pointBackgroundColor: colors.indigo.default,
+          pointRadius: 3,
+        },
+      ],
+    };
+
+    const config = {
+      type: "bar",
+      data: data,
+      options: {
+        responsive: true,
+        plugins: {
+          legend: {
+            display: true,
+          },
+        },
+      },
+    };
+
+    const myLineChart = new Chart(ctx, config);
+
+    return function cleanup() {
+      myLineChart.destroy();
+    };
+  }, [dataChart]);
+
   return (
     <div className="transaction-statistics-container">
       <Row gutter={[32, 24]}>
@@ -132,7 +195,7 @@ export function Dashboard(): JSX.Element {
                 <TeamOutlined className="icon" size={32} />
               </div>
               <div className="figure_container">
-                <span className="figure_title">Tổng người dùng</span>
+                <span className="figure_title">Total of user</span>
                 <span className="figure_content">
                   2534
                   {dataInit?.sumOfAllUserWithoutAdmin}
@@ -148,7 +211,7 @@ export function Dashboard(): JSX.Element {
                 <SnippetsOutlined className="icon" size={32} />
               </div>
               <div className="figure_container">
-                <span className="figure_title">Tổng khoá học</span>
+                <span className="figure_title">Total of courses</span>
                 <span className="figure_content">
                   124
                   {dataInit?.sumOfAllBooking}
@@ -164,7 +227,7 @@ export function Dashboard(): JSX.Element {
                 <DollarOutlined className="icon" size={32} />
               </div>
               <div className="figure_container">
-                <span className="figure_title">Tổng doanh thu</span>
+                <span className="figure_title">Total of revenue</span>
                 <span className="figure_content">
                   400.000.000
                   {dataInit?.sumOfAllServiceRegistration}
@@ -180,7 +243,7 @@ export function Dashboard(): JSX.Element {
                 <BarChartOutlined className="icon" size={32} />
               </div>
               <div className="figure_container">
-                <span className="figure_title">Người dùng mới</span>
+                <span className="figure_title">Total of new user</span>
                 <span className="figure_content">
                   242
                   {dataInit?.sumOfNewUserInCurrentWeek}
@@ -191,7 +254,7 @@ export function Dashboard(): JSX.Element {
         </Col>
       </Row>
       <Card
-        title="Biểu đồ"
+        title="Chart"
         className="mt_32"
         extra={
           <>
@@ -199,12 +262,12 @@ export function Dashboard(): JSX.Element {
           </>
         }
       >
-        <canvas id="myChart" ref={canvasEl} height={50} />
+        <canvas id="myChart" ref={canvasEl} height={80} />
       </Card>
 
-      <Card title={"Nhân viên chăm chỉ"} className="mt_32 mb_32">
+      {/* <Card title={"Nhân viên chăm chỉ"} className="mt_32 mb_32">
         <Table columns={columns} dataSource={dataInit?.topEmployees}></Table>
-      </Card>
+      </Card> */}
     </div>
   );
 }

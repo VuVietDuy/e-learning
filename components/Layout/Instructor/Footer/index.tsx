@@ -1,7 +1,7 @@
 import React from "react";
-import { Button } from "antd";
-
 import "./index.scss";
+import { Button } from "antd";
+import { CopyrightOutlined, YoutubeFilled } from "@ant-design/icons";
 
 export function Footer() {
   return (
@@ -35,21 +35,21 @@ export function Footer() {
               Subscribe our Youtube Channel
             </li>
             <Button className="f-contain-top-item-btn">
-              <div className="f-contain-top-item-btn-grafish">GraFish</div>
+              <YoutubeFilled className="icon" /> MegaSkills
             </Button>
           </ul>
         </div>
         <div className="f-contain-bottom">
           <ul className="f-contain-bottom-item">
-            <li className="f-bottom-list">GraFish, Inc. 2023</li>
+            <li className="f-bottom-list">
+              <CopyrightOutlined></CopyrightOutlined> MegaSkills, Inc. 2023
+            </li>
             <li className="f-bottom-list">Help</li>
             <li className="f-bottom-list">Privacy</li>
             <li className="f-bottom-list">Terms</li>
           </ul>
           <ul className="f-contain-bottom-item">
-            <Button className=" f-contain-bottom-item-btn">
-              <div className="f-contain-bottom-item-btn-Endlish">English</div>
-            </Button>
+            <Button className=" f-contain-bottom-item-btn">English</Button>
           </ul>
         </div>
       </div>

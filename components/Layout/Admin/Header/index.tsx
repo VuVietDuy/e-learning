@@ -33,11 +33,11 @@ const items = [
   }
 ];
 
-export function HeaderAdminPage() {
+export function HeaderAdminPage():JSX.Element {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <Header className="d_flex justify_content_between" style={{ padding: 0 }}>
+    <Header className="d_flex justify_content_between" style={{ padding: 0, backgroundColor: "#fff"}}>
       <Button
         type="text"
         icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
@@ -58,7 +58,7 @@ export function HeaderAdminPage() {
           options={[
             {
               value: "vietnamese",
-              label: "Tiếng Viết",
+              label: "Vietnamese",
             },
             {
               value: "english",

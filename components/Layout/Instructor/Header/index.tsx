@@ -20,7 +20,7 @@ export function Header() {
     },
     {
       key: "3",
-      label: <Link href={"/introduction/login"}>Log out</Link>,
+      label: <Link href={"/introduction/login"}>Sign out</Link>,
     },
   ];
 
@@ -68,9 +68,9 @@ export function Header() {
           <Link href={"/instructor/help_center"} className="btn-text">
             <span>Help Center</span>
           </Link>
-          <Link href={"/instructor/home"} className="btn-text">
+          {/* <Link href={"/instructor/home"} className="btn-text">
             <span>Students</span>
-          </Link>
+          </Link> */}
           <span className="btn-text" onClick={showDrawer}>
             <BellOutlined />
           </span>

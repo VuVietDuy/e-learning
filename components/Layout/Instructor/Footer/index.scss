@@ -1,5 +1,5 @@
 .footer{
-    background-color: #DADADA;
+    background-color: #002333;
     margin-top: 100px;
     padding-top: 40px;
     padding-bottom: 66px;
@@ -9,7 +9,8 @@
     flex-direction: column;
     width: 1000px;
     margin: auto;
-    background-color: #DADADA;
+    background-color: #002333;
+    color: #fff;
 }
 
 
@@ -28,7 +29,7 @@
 }
 .f-top-list{
     list-style: none;
-    padding: 2px 0;
+    padding: 4px 0;
     font-weight: 400;
     font-size: 14px;
 }
@@ -39,14 +40,18 @@
     font-size: 16px;
 }
 .f-contain-top-item-btn{
-    margin-top: 4px;
-    padding: 7px 10px;
-    background-color: #DADADA;
+    background-color: #002333;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 124px;
+    .icon{
+        color: red;
+    }
 }
 .f-contain-bottom{
     display: flex;
     justify-content: space-between;
-    border-top: 2px solid #000;
+    border-top: 2px solid #00FF84;
     margin-top: 48px;
     
 }
@@ -64,6 +69,9 @@
 }
 .f-contain-bottom-item-btn{
     width: 147px;
+    height: 40px;
     padding: 10px 20px;
-    background-color: #DADADA;
+    background-color: #002333;
+    color: #fff;
+    text-align: center;
 }

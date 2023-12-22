@@ -7,6 +7,7 @@ import "./style.scss";
 import Review from "./components/Review";
 import StudentInfo from "./components/StudentInfo";
 import PercentBar from "./components/PercentBar";
+import Image from "next/image";
 
 export function Performance() {
   const [activeTab, setActiveTab] = useState("revenue");
@@ -71,7 +72,7 @@ export function Performance() {
             </div>
 
             <div className="">
-              <canvas id="myChart" height={200} />
+              <Image src={"/images/instructor/chartPer.png"} alt="" width={891} height={440} style={{padding: "0 48px"}}></Image>
             </div>
 
             <div className="export-withdraw">
