@@ -90,7 +90,7 @@ export function HelpCenter() {
       </div>
       <div className="default_container Body">
         <div className="top">
-          <button className="chooseSide" id='students'>
+          <button className="chooseSide active" id='students'>
             Students
           </button>
           <button className="chooseSide" id='teachers'>

@@ -106,7 +106,7 @@ export function DetailCourse(): JSX.Element {
               </div>
               <div>
                 <Button className="btn">Get Started With Teaching</Button>
-                <Button className="btn">How Learning on MegaSkill Works</Button>
+                <Button className="btn">How Learning on MegaSkill</Button>
                 <Button className="btn">Class Quality With Guideliness</Button>
                 <Button className="btn">Filming & Editing Techniques</Button>
                 <Button className="btn">Export Settings</Button>

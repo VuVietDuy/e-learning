@@ -118,11 +118,10 @@ export const StudentManagement = () => {
     <Input
         className='me_4'
         placeholder="Search"  
-        size='large'
         prefix={<SearchOutlined />}
         style={{width: "300px"}}
     />
-    <RangePicker size='large'/>
+    <RangePicker/>
     </div>
     <Table columns={columns} dataSource={data} />
   </div>

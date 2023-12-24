@@ -3,4 +3,15 @@
     .thumnail {
         margin-right: 16px;
     }
+    .dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 2x;
+    }
+    .Approve {
+        background-color: #38a169;
+    }
+    .Pending {
+        background-color: #f59e0b;
+    }
 }

@@ -130,14 +130,13 @@ export function InstructorManagement(): JSX.Element {
           <Input
             className="me_4"
             placeholder="Search"
-            size="large"
             prefix={<SearchOutlined />}
             style={{ width: "300px" }}
           />
-          <RangePicker size="large" />
+          <RangePicker/>
         </div>
         <div>
-          <Button type="primary" size="large">
+          <Button type="primary">
             <PlusOutlined /> Add new instroctor
           </Button>
         </div>

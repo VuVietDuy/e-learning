@@ -8,7 +8,8 @@ import {
   TeamOutlined,
 } from "@ant-design/icons";
 import "./index.scss";
-import Chart from "chart.js/auto";
+import Chart, { ChartType } from "chart.js/auto";
+import Title from "antd/es/typography/Title";
 
 export function Dashboard(): JSX.Element {
   const canvasEl = useRef<any>();
@@ -49,6 +50,7 @@ export function Dashboard(): JSX.Element {
   const [dataChart, setDataChart] = useState<any>();
   const [month, setMonth] = useState<number>(new Date().getMonth() + 1);
   const [year, setYear] = useState<number>(new Date().getFullYear());
+  const chartType: ChartType = "bar";
 
 
   const colors = {
@@ -166,7 +168,7 @@ export function Dashboard(): JSX.Element {
     };
 
     const config = {
-      type: "bar",
+      type: chartType,
       data: data,
       options: {
         responsive: true,
@@ -184,6 +186,109 @@ export function Dashboard(): JSX.Element {
       myLineChart.destroy();
     };
   }, [dataChart]);
+
+  const columns = [
+    {
+      title: "Courses",
+      dataIndex: "name",
+      key: "name",
+      render: (_: any, dataIndex: any) => (
+        <div className="title_course">
+          <div>
+            <Title level={5}>{dataIndex.title}</Title>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: "Instructor",
+      dataIndex: "instructor",
+      key: "instructor",
+    },
+    {
+      title: "Enrolled",
+      dataIndex: "enrolled",
+      key: "enrolled",
+    },
+    {
+      title: "Status",
+      dataIndex: "status",
+      key: "status",
+      render: (_: any, dataIndex: any) => (
+        <>
+          <div
+            style={{
+              width: "8px",
+              height: "8px",
+              borderRadius: "50%",
+              display: "inline-block",
+              marginRight: "6px",
+              backgroundColor:
+                dataIndex.status === "Approve" ? "#38a169" : "#f59e0b",
+            }}
+          ></div>
+          <span>{dataIndex.status}</span>
+        </>
+      ),
+    },
+    {
+      title: "",
+      key: "setting",
+      render: (_: any, record: any) => (
+        <Button>View more</Button>
+      ),
+    },
+  ];
+
+  const data = [
+    {
+      key: "1",
+      title: "Ux ui design for beginer",
+      instructor: "Nguyen Xuan Trung",
+      enrolled: 53,
+      status: "Approve",
+    },
+    {
+      key: "3",
+      title: "Ux ui design for beginer",
+      instructor: "Nguyen Xuan Trung",
+      enrolled: 53,
+      status: "Approve",
+    },
+  ];
+
+  const topOfIntructorCol = [
+    {
+      title: "Full Name",
+      dataIndex: "fullName",
+      key: "fullName",
+    },
+    {
+      title: "Email",
+      dataIndex: "email",
+      key: "email",
+    },
+    {
+      title: "",
+      key: "setting",
+      render: (_: any, record: any) => (
+        <Button>View more</Button>
+      ),
+    },
+  ];
+
+  const topOfIntructor = [
+    {
+      key: "1",
+      fullName: "Nguyen Xuan Trung",
+      email: "nguyenxuantrung@gmail.com",
+    },
+    {
+      key: "2",
+      fullName: "Nguyen Van A",
+      email: "nguyenxuantrung@gmail.com",
+    }
+  ]
 
   return (
     <div className="transaction-statistics-container">
@@ -265,9 +370,19 @@ export function Dashboard(): JSX.Element {
         <canvas id="myChart" ref={canvasEl} height={80} />
       </Card>
 
-      {/* <Card title={"Nhân viên chăm chỉ"} className="mt_32 mb_32">
-        <Table columns={columns} dataSource={dataInit?.topEmployees}></Table>
-      </Card> */}
+
+        <Row gutter={[32,24]}>
+          <Col span={12}>
+            <Card title={"Top of courses"} className="mt_32 mb_32">
+              <Table columns={columns} dataSource={data}></Table>
+            </Card>
+          </Col>
+          <Col span={12}>
+            <Card title={"Top of instructor"} className="mt_32 mb_32">
+              <Table columns={topOfIntructorCol} dataSource={topOfIntructor}></Table>
+            </Card>
+          </Col>
+        </Row>
     </div>
   );
 }

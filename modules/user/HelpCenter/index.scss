@@ -215,6 +215,9 @@
                 transition: .2s;
                 margin: 0 16px;
             }
+            .active {
+                background-color: #fff;
+            }
             .chooseSide:hover{
                 cursor: pointer;
             }
@@ -226,5 +229,8 @@
             gap: 24px;
             margin-top: 61px;
         }
+    }
+    .active {
+        background-color: #FFF;
     }
 }
