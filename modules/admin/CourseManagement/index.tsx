@@ -15,7 +15,6 @@ import {
   Table,
   Tabs,
   TabsProps,
-  Tag,
   Typography,
 } from "antd";
 import "./style.scss";
@@ -32,10 +31,11 @@ export const CourseManagement = (): JSX.Element => {
       render: (_: any, dataIndex: any) => (
         <div className="title_course">
           <div className="thumnail">
-            <Image src="/images/card2.png" width={120} height={72}></Image>
+            <Image src={dataIndex.src} width={120} height={72}></Image>
           </div>
           <div>
-            <Title level={5}>{dataIndex.title}</Title>
+            <Title level={4}>{dataIndex.title}</Title>
+            <span>Added on {dataIndex.publishedAt}</span>
           </div>
         </div>
       ),
@@ -79,7 +79,9 @@ export const CourseManagement = (): JSX.Element => {
           {record.status === "Approve" ? (
             <>
               <Button style={{ marginRight: "8px" }}>Reject</Button>
-              <Button style={{backgroundColor: "#38a169", color: "#fff"}}>Approve</Button>
+              <Button style={{ backgroundColor: "#38a169", color: "#fff" }}>
+                Approve
+              </Button>
             </>
           ) : (
             <>
@@ -119,6 +121,8 @@ export const CourseManagement = (): JSX.Element => {
     {
       key: "1",
       title: "Ux ui design for beginer",
+      src: "/images/card2.png",
+      publishedAt: "Jun 23, 2023",
       instructor: "Vu Viet Duy",
       enrolled: 53,
       status: "Approve",
@@ -126,6 +130,8 @@ export const CourseManagement = (): JSX.Element => {
     {
       key: "2",
       title: "Ux ui design for beginer",
+      src: "/images/card1.png",
+      publishedAt: "Jun 23, 2023",
       instructor: "Vu Viet Duy",
       enrolled: 53,
       status: "Pending",
@@ -133,6 +139,8 @@ export const CourseManagement = (): JSX.Element => {
     {
       key: "3",
       title: "Ux ui design for beginer",
+      src: "/images/card.png",
+      publishedAt: "Jun 23, 2023",
       instructor: "Vu Viet Duy",
       enrolled: 53,
       status: "Approve",
@@ -140,6 +148,8 @@ export const CourseManagement = (): JSX.Element => {
     {
       key: "4",
       title: "Ux ui design for beginer",
+      src: "/images/card2.png",
+      publishedAt: "Jun 23, 2023",
       instructor: "Vu Viet Duy",
       enrolled: 53,
       status: "Pending",
@@ -147,6 +157,8 @@ export const CourseManagement = (): JSX.Element => {
     {
       key: "5",
       title: "Ux ui design for beginer",
+      src: "/images/card1.png",
+      publishedAt: "Jun 23, 2023",
       instructor: "Vu Viet Duy",
       enrolled: 53,
       status: "Pending",

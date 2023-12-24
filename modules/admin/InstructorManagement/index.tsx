@@ -133,7 +133,7 @@ export function InstructorManagement(): JSX.Element {
             prefix={<SearchOutlined />}
             style={{ width: "300px" }}
           />
-          <RangePicker/>
+          <RangePicker />
         </div>
         <div>
           <Button type="primary">

@@ -8,8 +8,7 @@ import {
 
 import "./index.scss";
 
-function StudentInfo(props: any):JSX.Element {
-  
+function StudentInfo(props: any): JSX.Element {
   const {
     src = "/images/instructor/instrutor1.png",
     name = "Michael Duong",

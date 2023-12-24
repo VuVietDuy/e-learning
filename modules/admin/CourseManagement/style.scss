@@ -2,6 +2,8 @@
     display: flex;
     .thumnail {
         margin-right: 16px;
+        border-radius: 4px;
+        overflow: hidden;
     }
     .dot {
         width: 4px;
