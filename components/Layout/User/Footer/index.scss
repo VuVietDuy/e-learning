@@ -33,6 +33,10 @@
     font-weight: 400;
     font-size: 14px;
 }
+.f-top-list:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 .f-top-list--bold{
     font-weight: 600;
@@ -66,6 +70,10 @@
     list-style: none;
     margin-right: 52px;
     font-size: 14px;
+}
+.f-bottom-list:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
 .f-contain-bottom-item-btn{
     width: 147px;

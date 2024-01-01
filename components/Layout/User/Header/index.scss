@@ -64,14 +64,15 @@
         display: flex;
 
         .logo {
-            margin: 0px 24px 0px 24px;
+            margin: 10px 24px 0px 24px;
         }
 
         .btn {
             width: 146px;
             height: 48px;
             margin: 0px 16px 0px 16px;
-            background-color: #E7E7E7;
+            background-color: #002333;
+            color: #fff;
         }
 
         .search {
@@ -137,17 +138,33 @@
                     font-style: normal;
                     font-weight: 600;
                 }
+                .btn_view:hover{
+                    background-color: #000;
+                    color: #fff;
+                }
             }
             .avatar_dropdown_bottom {
-                padding: 24px 41px;
+                
                 .item {
                     font-size: 20px;
-                    margin-bottom: 24px;
+                    padding: 12px 24px;
+                    border-radius: 6px;
                     span {
                         color: #fff;
                     }
                 }
+                .item:hover{
+                    background-color: #000;
+                }
             }
         }
+        .avatar_dropdown:hover{
+            cursor: pointer;
+            background-color: #000;
+
+        }
+    }
+    .avatar_dropdown:hover{
+        cursor: pointer;
     }
 }

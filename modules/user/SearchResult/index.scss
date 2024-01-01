@@ -1,7 +1,10 @@
 .SearchResult{
-    margin: 80px 460px 0px 460px;
+    width: 1100px;
+    margin: auto;
+    margin-top: 80px;
     align-items: normal;
     text-align: left;
+    transition: 2s;
     .Top{
         .resultTopic{
             font-size: 28px;
@@ -25,11 +28,11 @@
                 flex-shrink: 0;
                 border-radius: 24px;
                 border: 1px solid #000;
-                background: #D9D9D9;
+                
                 align-items: center;
                 font-size: 22px;
                 font-weight: 600;
-                transition: .1s;
+                transition: .5s;
             }
             .Dropdown-Sortby{
                 .Sortby{

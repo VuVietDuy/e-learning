@@ -12,6 +12,10 @@ function Notice(props: any) {
         <Drawer title="My Activity" placement="right" onClose={onClose} open={isOpenNotice}>
             <NoticeItem></NoticeItem>
         </Drawer>
+        <Drawer title="My Activity" placement="right" onClose={onClose} open={isOpenNotice}>
+            <NoticeItem></NoticeItem>
+            <NoticeItem></NoticeItem>
+        </Drawer>
     </div>
   )
 }

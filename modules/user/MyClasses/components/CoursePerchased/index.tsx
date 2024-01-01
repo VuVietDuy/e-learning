@@ -7,7 +7,7 @@ export default function CoursePurchased(props: any): JSX.Element {
   return (
     <div>
       <div className="course__3 mt24">
-        <div className="course-3-body">
+        <div className="course-3-body-new">
           <div className="course-3-img">
             <img src={src} alt="" />
             <div className="course-img-box"></div>

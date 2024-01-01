@@ -6,6 +6,7 @@
     overflow: hidden;
     transition: box-shadow 0.2s;
     border: 1px solid #000;
+    border-color: rgba($color: #000000, $alpha: 0.3);
 
     &:hover {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

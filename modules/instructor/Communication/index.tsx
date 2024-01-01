@@ -21,14 +21,8 @@ export function Communication(): JSX.Element {
         <Question></Question>
         <Question></Question>
         <Question></Question>
-        <Question></Question>
-        <Question></Question>
-        <Question></Question>
-        <Question></Question>
-        <Question></Question>
-        <Question></Question>
-        <Question></Question>
-        <Question></Question>
+      
+       
       </div>
     );
   }

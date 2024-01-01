@@ -16,11 +16,7 @@ export function AccountSetting() {
         <Col span={8}>
           <div className="navigation-container">
             <p className="title">ACCOUNT SETTING</p>
-            <Link href={"/user/profile"}>
-              <div className="option">
-                <span>View Profile</span>
-              </div>
-            </Link>
+            
             <div
               className={`option ${
                 activeTab === "EmailAddress" ? "active" : ""

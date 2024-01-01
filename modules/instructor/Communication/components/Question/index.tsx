@@ -13,12 +13,13 @@ function Question(props: any) {
     <div className="wholeQuestion">
       <div className="Question">
         <div className="Top">
-          <div className="lessonImg"></div>
+          <div className="lessonImg"><img src="/images/character2.png" alt="" /></div>
+          
           {lesson}
         </div>
         <div className="Bottom">
           <div className="User">
-            <div className="userImg"></div>
+            <div className="userImg"><img src="/images/character3.png" alt="" /></div>
             <div className="userName">{name}</div>
             {date}
           </div>
@@ -27,8 +28,8 @@ function Question(props: any) {
       </div>
 
       <div className="Icon">
-        <img src="/icon/leftArrow.png" alt="" className="icon" />
-        <img src="/icon/trashcan.png" alt="" className="icon" />
+        <img src="/images/icon1.png" alt="" className="icon" />
+        <img src="/images/icon2.png" alt="" className="icon" />
       </div>
     </div>
   );

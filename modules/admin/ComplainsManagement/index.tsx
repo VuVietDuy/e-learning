@@ -35,7 +35,7 @@ export function ComplainsManagement(): JSX.Element {
       key: "action",
       render: (_: any, dataIndex: any) => (
         <>
-          <Button>Xem chi tiết</Button>
+          <Button>View Detail</Button>
         </>
       ),
     },
@@ -45,13 +45,13 @@ export function ComplainsManagement(): JSX.Element {
     {
       key: "1",
       name: "John Brown",
-      email: "vuvietduy@gmail.com",
+      email: "tuanlinh@gmail.com",
       createdAt: "10/10/2023",
     },
     {
       key: "3",
       name: "John Brown",
-      email: "vuvietduy@gmail.com",
+      email: "tuanlinh@gmail.com",
       createdAt: "10/10/2023",
     },
   ];

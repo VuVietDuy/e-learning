@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import "./index.scss";
 import {
   AreaChartOutlined,
   BookOutlined,
@@ -20,25 +21,24 @@ const items = [
   {
     key: "1",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
+      <Link
+       
+        href="#"
       >
         Setting
-      </a>
+      </Link>
     ),
   },
   {
     key: "2",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.aliyun.com"
+      
+      <Link
+        
+        href="/introduction/login"
       >
         Log out
-      </a>
+      </Link>
     ),
   },
 ];
@@ -103,14 +103,15 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
       >
         <div
           className="logo d_flex align_item_center justify_content_center"
-          style={{ height: 64 }}
+          style={{marginTop: 20, marginBottom:20 }}
         >
           {!collapsed && (
             <Image
-              src="/images/logo_business.png"
+              src="/images/logonew.png"
               alt=""
               width={140}
               height={48}
+              className="logo-hover"
             />
           )}
         </div>
@@ -149,7 +150,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
           <div className="d_flex align_item_center">
             <Select
               className=" me_4"
-              defaultValue="vietnamese"
+              defaultValue="english"
               style={{
                 width: 120,
               }}
@@ -164,7 +165,7 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
                 },
               ]}
             />
-            <div className="wh_64 me_4">
+            <div className="wh_64 me_4 logo-hover">
               <Dropdown
                 menu={{
                   items,

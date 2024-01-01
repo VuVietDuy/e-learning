@@ -40,7 +40,7 @@ export function Header() {
         <div className="left">
           <Image
             className="logo"
-            src="/images/logo_business.png"
+            src="/images/logonew.png"
             alt=""
             width={140}
             height={48}
@@ -75,7 +75,7 @@ export function Header() {
             <BellOutlined />
           </span>
           <Dropdown menu={{ items }} placement="bottomRight">
-            <Avatar src="/images/avatar.jpg" size={"large"}></Avatar>
+            <Avatar src="/images/avatar.jpg" size={"large"} className="img-avatar"></Avatar>
           </Dropdown>
         </div>
       </div>

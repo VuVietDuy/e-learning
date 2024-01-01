@@ -11,10 +11,10 @@ function NoticeItem() {
           <Avatar>U</Avatar>
           <div className="info">
             <p>
-              <b>Vũ Viết Duy</b>
+              <b>Trần Tuấn Linh</b>
             </p>
             <p>
-              <b>Vũ Viết Duy</b> posted a new blog
+              <b>Trần Tuấn Linh</b> posted a new blog
             </p>
           </div>
         </div>

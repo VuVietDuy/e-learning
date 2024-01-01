@@ -155,7 +155,7 @@ export function Dashboard(): JSX.Element {
         },
         {
           backgroundColor: gradient2,
-          label: "Revenue in day: Triệu vnđ",
+          label: "Revenue in day: $",
           data: bookingSalesInMonth,
           fill: true,
           borderWidth: 2,
@@ -200,11 +200,11 @@ export function Dashboard(): JSX.Element {
         </div>
       ),
     },
-    {
-      title: "Instructor",
-      dataIndex: "instructor",
-      key: "instructor",
-    },
+    // {
+    //   title: "Instructor",
+    //   dataIndex: "instructor",
+    //   key: "instructor",
+    // },
     {
       title: "Enrolled",
       dataIndex: "enrolled",

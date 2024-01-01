@@ -28,7 +28,7 @@ export function EmailAddress(props : any) {
           <Input className="input" name="confirmCode"></Input>
         </Form.Item>
         <Form.Item>
-          <Button type="primary" htmlType="submit" size="large" className="bg_green text_black">
+          <Button type="primary" htmlType="submit" size="large" className="bg_green text_black ">
             Save
           </Button>
         </Form.Item>

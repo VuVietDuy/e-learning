@@ -51,18 +51,18 @@ export function HeaderAdminPage():JSX.Element {
       <div className="d_flex align_item_center">
         <Select
           className=" me_4"
-          defaultValue="vietnamese"
+          defaultValue="english"
           style={{
             width: 120,
           }}
           options={[
             {
-              value: "vietnamese",
-              label: "Vietnamese",
-            },
-            {
               value: "english",
               label: "English",
+            },
+            {
+              value: "vietnamese",
+              label: "Vietnamese",
             },
           ]}
         />

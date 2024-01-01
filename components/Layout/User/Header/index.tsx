@@ -85,8 +85,8 @@ export function Header() {
           <Link href={"/user/home"}>
             <img
               className="logo"
-              src="/images/logo_business.png"
-              height={48}
+              src="/images/logonew.png"
+              height={40}
             ></img>
           </Link>
           <div className="browse">

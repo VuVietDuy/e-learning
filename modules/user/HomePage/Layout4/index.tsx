@@ -51,7 +51,7 @@ function Layout4() {
         ></MyPagination>
       </div>
       <div className="row">
-        <h3 className="title">Inclusive Culinary Course</h3>
+        <h3 className="title">Photography and Video</h3>
         <Swiper
           modules={[Autoplay, A11y]}
           slidesPerView={4}
@@ -84,7 +84,7 @@ function Layout4() {
         ></MyPagination>
       </div>
       <div className="row">
-        <h3 className="title">Inclusive Culinary Course</h3>
+        <h3 className="title">3D Art with Pro Artist</h3>
         <Swiper
           modules={[Autoplay, A11y]}
           slidesPerView={4}
@@ -117,7 +117,7 @@ function Layout4() {
         ></MyPagination>
       </div>
       <div className="row">
-        <h3 className="title">Inclusive Culinary Course</h3>
+        <h3 className="title">Intriguing Audience with VFX Skill</h3>
         <Swiper
           modules={[Autoplay, A11y]}
           slidesPerView={4}

@@ -152,19 +152,21 @@
     }
     .Top{
         .titleImage{
-            width: 1903px;
+            width: 100%;
             height: 499px;
         }
         .alpha{
             background: rgba(0, 0, 0, 0.40);
             z-index: 0;
             position: absolute;
-            width: 1903px;
+            width: 100%;
             height: 499px;
         }
         .search{
             z-index: 1;
-            margin: 160px 583px 136px 460px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 160px;
             position: absolute;
             .searchTitle{
                 color: white;
@@ -209,6 +211,7 @@
                 height: 160px;
                 border-radius: 8px;
                 border: 1px solid #000;
+                border-color: rgba($color: #000000, $alpha: 0.3);
                 background: #2CFF99;
                 font-size: 28px;
                 font-weight: 600;

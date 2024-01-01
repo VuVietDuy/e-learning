@@ -4,7 +4,7 @@ import Image from "next/image";
 import "./index.scss";
 function CardHorizontal(props: any) {
   const { src, lession, time, title, instructor } = props;
-
+  
   return (
     <div className="card-horizontal">
       <div className="left">
@@ -16,7 +16,7 @@ function CardHorizontal(props: any) {
           {lession} | <div className="time">25m</div>
 
         </div>
-        <div className="title">{title}</div>
+        <div className="titles">Rigging Basics</div>
         <div className="name">
           <div className="instructor">{instructor}</div>
           <div className="time">8h 12m left</div>

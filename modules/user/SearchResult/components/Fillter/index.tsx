@@ -1,5 +1,7 @@
 import React from "react";
 import "./index.scss";
+import { Rate } from 'antd';
+
 
 export function Fillter() {
   const zeroStar = (
@@ -73,11 +75,8 @@ export function Fillter() {
             <div className="check-word">
               <input type="radio" className="square" name="rating" />
               <div className="starRating">
-                <div className="star">{Star}</div>
-                <div className="star">{Star}</div>
-                <div className="star">{Star}</div>
-                <div className="star">{Star}</div>
-                <div className="star">{Star}</div>
+                <Rate disabled defaultValue={5}></Rate>
+                
               </div>
             </div>
             <span className="resNum">3200</span>
@@ -86,11 +85,7 @@ export function Fillter() {
             <div className="check-word">
               <input type="radio" className="square" name="rating" />
               <div className="starRating">
-                <div className="star">{Star}</div>
-                <div className="star">{Star}</div>
-                <div className="star">{Star}</div>
-                <div className="star">{Star}</div>
-                <div className="star">{zeroStar}</div>
+              <Rate disabled defaultValue={4}></Rate>
               </div>
             </div>
             <span className="resNum">3200</span>
@@ -99,11 +94,7 @@ export function Fillter() {
             <div className="check-word">
               <input type="radio" className="square" name="rating" />
               <div className="starRating">
-                <div className="star">{Star}</div>
-                <div className="star">{Star}</div>
-                <div className="star">{Star}</div>
-                <div className="star">{zeroStar}</div>
-                <div className="star">{zeroStar}</div>
+              <Rate disabled defaultValue={3}></Rate>
               </div>
             </div>
             <span className="resNum">3200</span>
@@ -112,11 +103,7 @@ export function Fillter() {
             <div className="check-word">
               <input type="radio" className="square" name="rating" />
               <div className="starRating">
-                <div className="star">{Star}</div>
-                <div className="star">{Star}</div>
-                <div className="star">{zeroStar}</div>
-                <div className="star">{zeroStar}</div>
-                <div className="star">{zeroStar}</div>
+              <Rate disabled defaultValue={2}></Rate>
               </div>
             </div>
             <span className="resNum">3200</span>

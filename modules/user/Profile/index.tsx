@@ -132,7 +132,7 @@ export function Profile() {
                   <div>
                     <p>Phone</p>
                     <Input
-                      type="text"
+                      type="number"
                       className="box"
                       defaultValue={"0978028844"}
                     />
@@ -141,7 +141,7 @@ export function Profile() {
                     <span>Gender: </span>
                     <Input className="radio" type="radio" checked />
                     <label>Male</label>
-                    <Input className="radio" type="radio" />
+                    <Input className="radio" type="radio"  />
                     <label>Female</label>
                     <Input className="radio" type="radio" />
                     <label>Other</label>
@@ -149,7 +149,7 @@ export function Profile() {
                 </div>
                 <div className="dateofbirth">
                   <p>Date of Birth</p>
-                  <DatePicker className="box" />
+                  <DatePicker placeholder="2003-06-12"  className="box" />
                 </div>
                 <div className="biography">
                   <p>Biography</p>

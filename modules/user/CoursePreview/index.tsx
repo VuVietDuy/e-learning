@@ -146,7 +146,7 @@ export function CoursePreview() {
                 <div className="pay-course">
                   <div className="pay-course-include">This course includes:</div>
                   <ul className="pay-course-list">
-                    <li className="pay-course-item"><FundProjectionScreenOutlined /> 12 hours on-demand video</li>
+                    <li className="pay-course-item"><FundProjectionScreenOutlined  /> 12 hours on-demand video</li>
                     <li className="pay-course-item"><DownloadOutlined /> 55 downloadable resources</li>
                     <li className="pay-course-item"><BranchesOutlined /> Full lifetime access</li>
                   </ul>

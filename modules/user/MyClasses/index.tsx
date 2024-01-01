@@ -6,6 +6,8 @@ import "./index.scss";
 import MyClassesCourse from "@/components/MyClassesCourse";
 import PurchasedCourseItem from "@/components/PurchasedCourseItem";
 import CoursePurchased from "./components/CoursePerchased";
+import { isMainThread } from "worker_threads";
+import { url } from "inspector";
 
 export function MyClasses(): JSX.Element {
   const [activeTab, setActiveTab] = useState("learningPaths");
@@ -188,3 +190,4 @@ export function MyClasses(): JSX.Element {
     </div>
   );
 }
+

@@ -11,12 +11,14 @@
         display: flex;
 
         .logo {
-            margin: 0px 24px 0px 24px;
+            margin: 8px 24px 0px 24px;
+            
         }
 
         .btn {
             margin: 0px 16px 0px 16px;
-            background-color: #E7E7E7;
+            background-color: #002333;
+            color: #fff;
         }
 
         .search {
@@ -42,6 +44,9 @@
                 color: #1877f2;
                 cursor: pointer;
             }
+        }
+        .img-avatar:hover{
+            cursor: pointer;
         }
     }
 }

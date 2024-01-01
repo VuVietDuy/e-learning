@@ -8,9 +8,11 @@ import Review from "./components/Review";
 import StudentInfo from "./components/StudentInfo";
 import PercentBar from "./components/PercentBar";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 export function Performance() {
   const [activeTab, setActiveTab] = useState("revenue");
+  const router = useRouter();
 
   const handleChange = (value: string) => {
     console.log(`selected ${value}`);
@@ -79,7 +81,7 @@ export function Performance() {
               <Button className="export" size="large">
                 Export Revenue Report
               </Button>
-              <Button className="withdraw bg_green" size="large">
+              <Button className="withdraw bg_green" size="large" onClick={() => {router.push("/instructor/withdraw")}}>
                 Withdraw Money
               </Button>
             </div>

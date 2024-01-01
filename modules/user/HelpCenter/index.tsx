@@ -107,12 +107,7 @@ export function HelpCenter() {
           <HelpCenterQuestion></HelpCenterQuestion>
           <HelpCenterQuestion></HelpCenterQuestion>
           <HelpCenterQuestion></HelpCenterQuestion>
-          <HelpCenterQuestion></HelpCenterQuestion>
-          <HelpCenterQuestion></HelpCenterQuestion>
-          <HelpCenterQuestion></HelpCenterQuestion>
-          <HelpCenterQuestion></HelpCenterQuestion>
-          <HelpCenterQuestion></HelpCenterQuestion>
-          <HelpCenterQuestion></HelpCenterQuestion>
+         
         </div>
       </div>
       

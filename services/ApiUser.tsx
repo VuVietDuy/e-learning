@@ -31,7 +31,7 @@ async function checkExistUser(username: string, password: string) {
         if (user.password === password) {
             return user; // Return the user if the password is correct
         } else {
-            console.log("Pass word incorrect");
+            console.log("Password incorrect");
             return null; // Return null if the password is incorrect
         }
     } else {
